@@ -1,5 +1,5 @@
-#ifndef AIRHABITAT_H_INCLUDED
-#define AIRHABITAT_H_INCLUDED
+#ifndef AIRHABITAT_H
+#define AIRHABITAT_H
 
 #include "Habitat.h"
 #include <iostream>
@@ -13,4 +13,4 @@ private :
     string type_AirHabitat = "air";
 };
 
-#endif // AIRHABITAT_H_INCLUDED
+#endif
