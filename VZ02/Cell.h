@@ -1,11 +1,14 @@
 #ifndef CELL_H_INCLUDED
 #define CELL_H_INCLUDED
 
-class Cell {
+#include <string>
+#include "Renderable.h"
+
+class Cell : public Renderable {
 
 public :
     Cell(int x,int y);
-    char * getTipe();
+    virtual string getTipe();
     int getX();
     int getY();
     int setX(int a);
