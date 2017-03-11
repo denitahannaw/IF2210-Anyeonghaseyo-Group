@@ -10,6 +10,10 @@ Cell :: Cell(int x,int y){
     this->y = y;
 }
 
+string Cell :: getTipe(){
+       
+}
+
 int Cell :: getX(){
     return x;
 }
