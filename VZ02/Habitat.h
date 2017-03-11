@@ -1,5 +1,5 @@
-#ifndef HABITAT_H_INCLUDED
-#define HABITAT_H_INCLUDED
+#ifndef HABITAT_H
+#define HABITAT_H
 
 #include "Cell.h"
 #include <iostream>
@@ -11,7 +11,7 @@ public :
     ~Habitat();
 private :
     bool is_cage;
-    string type_habitat = "habitat";
+    const string type_habitat = "habitat";
 };
 
-#endif // HABITAT_H_INCLUDED
+#endif 
