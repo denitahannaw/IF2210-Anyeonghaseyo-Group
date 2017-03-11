@@ -10,7 +10,7 @@ public :
     AirHabitat();
     ~AirHabitat();
 private :
-    string type_AirHabitat = "air";
+   const string type_AirHabitat = "air";
 };
 
 #endif
