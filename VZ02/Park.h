@@ -1,5 +1,5 @@
-#ifndef PARK_H_INCLUDED
-#define PARK_H_INCLUDED
+#ifndef PARK_H
+#define PARK_H
 
 #include "Facility.h"
 #include <iostream>
@@ -10,7 +10,7 @@ public :
     Park();
     ~Park();
 private :
-    string type_Park = "park";
+    const string type_Park = "park";
 };
 
-#endif // PARK_H_INCLUDED
+#endif 
