@@ -10,7 +10,7 @@ public :
     Entrance();
     ~Entrance();
 private :
-    string type_Entrance = "entrance";
+    const string type_Entrance = "entrance";
 };
 
 #endif 
