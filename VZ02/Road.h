@@ -1,5 +1,5 @@
-#ifndef ROAD_H_INCLUDED
-#define ROAD_H_INCLUDED
+#ifndef ROAD_H
+#define ROAD_H
 
 #include "Facility.h"
 #include <iostream>
@@ -10,7 +10,7 @@ public :
     Road();
     ~Road();
 private :
-    string type_Road = "road";
+    const string type_Road = "road";
 };
 
-#endif // ROAD_H_INCLUDED
+#endif
