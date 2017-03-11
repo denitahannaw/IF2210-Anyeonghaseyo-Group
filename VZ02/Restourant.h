@@ -1,5 +1,5 @@
-#ifndef RESTOURANT_H_INCLUDED
-#define RESTOURANT_H_INCLUDED
+#ifndef RESTOURANT_H
+#define RESTOURANT_H
 
 #include "Facility.h"
 #include <iostream>
@@ -10,7 +10,7 @@ public :
     Restourant();
     ~Restourant();
 private :
-    string type_Restourant = "restourant";
+    const string type_Restourant = "restourant";
 };
 
-#endif // RESTOURANT_H_INCLUDED
+#endif
