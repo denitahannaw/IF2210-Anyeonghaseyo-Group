@@ -1,5 +1,5 @@
-#ifndef CELL_H_INCLUDED
-#define CELL_H_INCLUDED
+#ifndef CELL_H
+#define CELL_H
 
 #include <string>
 #include "Renderable.h"
@@ -19,4 +19,4 @@ private :
     int y;
 };
 
-#endif // CELL_H_INCLUDED
+#endif
