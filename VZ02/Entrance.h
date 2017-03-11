@@ -1,5 +1,5 @@
-#ifndef ENTRANCE_H_INCLUDED
-#define ENTRANCE_H_INCLUDED
+#ifndef ENTRANCE_H
+#define ENTRANCE_H
 
 #include "Road.h"
 #include <iostream>
@@ -13,4 +13,4 @@ private :
     string type_Entrance = "entrance";
 };
 
-#endif // ENTRANCE_H_INCLUDED
+#endif 
