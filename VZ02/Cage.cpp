@@ -92,6 +92,11 @@ int Cage::maxAnimal(){
 	return 30*cageArea/100;
 }
 
+/**
+* @brief Menentukan apakah suatu cell cage telah ditempati animal atau belum
+* @param c Cell
+* @return bool
+*/
 bool isPositionEmpty(Cell* c){
 	int i=0;
 	bool empty = true;
@@ -126,7 +131,8 @@ void Cage::createAnimal(){
 			
 			int x = pos->getX();
 			int y = pos->getY();
-
+			
+			int i = nAnimal;
 			//ciptakan hewan
 			nr = rand() % 12 + 1;
 			switch(nr){
@@ -144,7 +150,7 @@ void Cage::createAnimal(){
 				case 12: animals[i] = new Animal(x,y,"beetle");
 			}
 			
-			
+			nAnimal++;
 		}else if (getTipeHabitat()=="waterhabitat"){
 			//random posisi awal, pastikan masih kosong
 			//random dari listOfPosisiCage
@@ -161,7 +167,8 @@ void Cage::createAnimal(){
 			
 			int x = pos->getX();
 			int y = pos->getY();
-
+			
+			int i = nAnimal;
 			nr = rand() % 5 + 1;
 			switch(nr){
 				case 1: animals[i] = new Animal(x,y,"fish");
@@ -170,7 +177,8 @@ void Cage::createAnimal(){
 				case 4: animals[i] = new Animal(x,y,"duck");
 				case 5: animals[i] = new Animal(x,y,"flyingfish");
 			}
-		
+			nAnimal++;
+			
 		}else if (getTipeHabitat()=="airhabitat"){
 			//random posisi awal, pastikan masih kosong
 			//random dari listOfPosisiCage
@@ -187,7 +195,7 @@ void Cage::createAnimal(){
 			
 			int x = pos->getX();
 			int y = pos->getY();
-
+			int i = nAnimal;
 			nr = rand() % 7 + 1;
 			switch(nr){
 				case 1: animals[i] = new Animal(x,y,"beetle");
@@ -198,7 +206,8 @@ void Cage::createAnimal(){
 				case 6: animals[i] = new Animal(x,y,"bird");
 				case 7: animals[i] = new Animal(x,y,"flyingfish");
 			}
-		
+			
+			nAnimal++;
 		}	
 	}
 	

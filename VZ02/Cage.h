@@ -80,6 +80,13 @@ public:
 	int maxAnimal();
 
 	/**
+	* @brief Menentukan apakah suatu cell cage telah ditempati animal atau belum
+	* @param c Cell
+	* @return bool
+	*/
+	bool isPositionEmpty(Cell* c);
+	
+	/**
 	* @brief Setter
 	* Menambahkan 1 animal secara random berdasarkan tipeHabitat
 	*/
