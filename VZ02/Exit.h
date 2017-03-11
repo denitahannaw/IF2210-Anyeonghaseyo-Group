@@ -1,5 +1,5 @@
-#ifndef EXIT_H_INCLUDED
-#define EXIT_H_INCLUDED
+#ifndef EXIT_H
+#define EXIT_H
 
 #include "Road.h"
 #include <iostream>
@@ -10,7 +10,7 @@ public :
     Exit();
     ~Exit();
 private :
-    string type_Exit = "exit";
+    const string type_Exit = "exit";
 };
 
-#endif // EXIT_H_INCLUDED
+#endif 
