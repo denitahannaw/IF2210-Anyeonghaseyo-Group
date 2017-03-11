@@ -1,5 +1,5 @@
-#ifndef LANDHABITAT_H_INCLUDED
-#define LANDHABITAT_H_INCLUDED
+#ifndef LANDHABITAT_H
+#define LANDHABITAT_H
 
 #include "Habitat.h"
 #include <iostream>
@@ -10,7 +10,7 @@ public :
     LandHabitat();
     ~LandHabitat();
 private :
-   string type_LandHabitat = "land";
+   const string type_LandHabitat = "land";
 };
 
-#endif // LANDHABITAT_H_INCLUDED
+#endif
