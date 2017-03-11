@@ -1,5 +1,5 @@
-#ifndef FACILITY_H_INCLUDED
-#define FACILITY_H_INCLUDED
+#ifndef FACILITY_H
+#define FACILITY_H
 
 #include "Cell.h"
 #include <iostream>
@@ -10,7 +10,7 @@ public :
     Facility();
     ~Facility();
 private :
-    string type_Facility = "facility";
+    const string type_Facility = "facility";
 };
 
-#endif // FACILITY_H_INCLUDED
+#endif 
