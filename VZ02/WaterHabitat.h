@@ -1,5 +1,5 @@
-#ifndef WATERHABITAT_H_INCLUDED
-#define WATERHABITAT_H_INCLUDED
+#ifndef WATERHABITAT_H
+#define WATERHABITAT_H
 
 #include "Habitat.h"
 #include <iostream>
@@ -10,8 +10,8 @@ public :
     WaterHabitat();
     ~WaterHabitat();
 private :
-    string type_WaterHabitat = "water";
+    const string type_WaterHabitat = "water";
 };
 
 
-#endif // WATERHABITAT_H_INCLUDED
+#endif
