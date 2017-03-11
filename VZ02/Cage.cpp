@@ -1,6 +1,5 @@
 #include "Cage.h"
 
-//Cage::Cage(){}
 /**
 * @brief Constructor
 * Membangun cage
@@ -15,6 +14,7 @@ Cage::Cage(char simbol, string tipeHabitat, int cageArea){
 
 	listOfCagePosition = new Cell*[cageArea];
 	animals = new Animal*[getMaxAnimal()];
+	nAnimal = 0;
 }
 
 /**
@@ -92,56 +92,114 @@ int Cage::maxAnimal(){
 	return 30*cageArea/100;
 }
 
+bool isPositionEmpty(Cell* c){
+	int i=0;
+	bool empty = true;
+	while (i<nAnimal && empty){
+		if (animals[i]->position == c){
+			empty = false;
+		}
+		i++;
+	}
+
+	return empty;
+}
 /**
 * @brief Setter
 * Menambahkan 1 animal secara random berdasarkan tipeHabitat
 */
 void Cage::createAnimal(){
-	if (getTipeHabitat()=="landhabitat"){
-		int nr;
-		for(int i=0; i<maxAnimal(); i++){
-			nr = rand() % 12 + 1;
-			switch(nr){
-				case 1: animals[i] = new Cat();
-				case 2: animals[i] = new Dog();
-				case 3: animals[i] = new Lion();
-				case 4: animals[i] = new Snake();
-				case 5: animals[i] = new Goat();
-				case 6: animals[i] = new Chicken();
-				case 7: animals[i] = new Elephant();
-				case 8: animals[i] = new Cow();
-				case 9: animals[i] = new Hedgehog();
-				case 10: animals[i] = new Rhino();
-				case 11: anilals[i] = new Frog();
-				case 12: animals[i] = new Beetle();
+	if (nAnimal < maxAnimal()){
+		if (getTipeHabitat()=="landhabitat"){
+			//random posisi awal, pastikan masih kosong 
+			//random dari listOfPosisiCage
+			int nr;
+			bool found = false;
+			Cell * pos;
+			while (!found){
+				nr = rand() % cageArea;
+				pos = getCagePosition(nr);
+
+				//cek apa ada hewan yang udah di posisi itu
+				found = isPositionEmpty(pos);
 			}
 			
-		}
-	}else if (getTipeHabitat()=="waterhabitat"){
-		int nr;
-		for(int i=0; i<maxAnimal(); i++){
+			int x = pos->getX();
+			int y = pos->getY();
+
+			//ciptakan hewan
+			nr = rand() % 12 + 1;
+			switch(nr){
+				case 1: animals[i] = new Animal(x,y,"cat");
+				case 2: animals[i] = new Animal(x,y,"dog");
+				case 3: animals[i] = new Animal(x,y,"animal");
+				case 4: animals[i] = new Animal(x,y,"snake");
+				case 5: animals[i] = new Animal(x,y,"goat");
+				case 6: animals[i] = new Animal(x,y,"chicken");
+				case 7: animals[i] = new Animal(x,y,"elephant");
+				case 8: animals[i] = new Animal(x,y,"cow");
+				case 9: animals[i] = new Animal(x,y,"hedgehog");
+				case 10: animals[i] = new Animal(x,y,"rhino");
+				case 11: anilals[i] = new Animal(x,y,"frog");
+				case 12: animals[i] = new Animal(x,y,"beetle");
+			}
+			
+			
+		}else if (getTipeHabitat()=="waterhabitat"){
+			//random posisi awal, pastikan masih kosong
+			//random dari listOfPosisiCage
+			int nr;
+			bool found = false;
+			Cell * pos;
+			while (!found){
+				nr = rand() % cageArea;
+				pos = getCagePosition(nr);
+
+				//cek apa ada hewan yang udah di posisi itu
+				found = isPositionEmpty(pos);
+			}
+			
+			int x = pos->getX();
+			int y = pos->getY();
+
 			nr = rand() % 5 + 1;
 			switch(nr){
-				case 1: animals[i] = new Fish();
-				case 2: animals[i] = new Crocodile();
-				case 3: animals[i] = new Frog();
-				case 4: animals[i] = new Duck();
-				case 5: animals[i] = new FlyingFish();
+				case 1: animals[i] = new Animal(x,y,"fish");
+				case 2: animals[i] = new Animal(x,y,"crocodile");
+				case 3: animals[i] = new Animal(x,y,"frog");
+				case 4: animals[i] = new Animal(x,y,"duck");
+				case 5: animals[i] = new Animal(x,y,"flyingfish");
 			}
-		}
-	}else if (getTipeHabitat()=="airhabitat"){
-		int nr;
-		for(int i=0; i<maxAnimal(); i++){
+		
+		}else if (getTipeHabitat()=="airhabitat"){
+			//random posisi awal, pastikan masih kosong
+			//random dari listOfPosisiCage
+			int nr;
+			bool found = false;
+			Cell * pos;
+			while (!found){
+				nr = rand() % cageArea;
+				pos = getCagePosition(nr);
+
+				//cek apa ada hewan yang udah di posisi itu
+				found = isPositionEmpty(pos);
+			}
+			
+			int x = pos->getX();
+			int y = pos->getY();
+
 			nr = rand() % 7 + 1;
 			switch(nr){
-				case 1: animals[i] = new Beetle();
-				case 2: animals[i] = new Bee();
-				case 3: animals[i] = new Owl();
-				case 4: animals[i] = new Eagle();
-				case 5: animals[i] = new Butterfly();
-				case 6: animals[i] = new Bird();
-				case 7: animals[i] = new FlyingFish();
+				case 1: animals[i] = new Animal(x,y,"beetle");
+				case 2: animals[i] = new Animal(x,y,"bee");
+				case 3: animals[i] = new Animal(x,y,"owl");
+				case 4: animals[i] = new Animal(x,y,"eagle");
+				case 5: animals[i] = new Animal(x,y,"butterfly");
+				case 6: animals[i] = new Animal(x,y,"bird");
+				case 7: animals[i] = new Animal(x,y,"flyingfish");
 			}
-		}
+		
+		}	
 	}
+	
 }
