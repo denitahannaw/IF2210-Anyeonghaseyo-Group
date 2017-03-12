@@ -11,6 +11,6 @@ Restourant :: ~Restourant(){
 
 }
 
-Restourant :: getTipe(char s){
+string Restourant :: getTipe(){
     return tipe;
 }

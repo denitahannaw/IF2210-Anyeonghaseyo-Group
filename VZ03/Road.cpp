@@ -11,6 +11,6 @@ Road :: ~Road(){
 
 }
 
-Road :: getTipe(char s){
+string Road :: getTipe(){
     return tipe;
 }

@@ -11,6 +11,6 @@ Park :: ~Park(){
 
 }
 
-Park :: getTipe(char s){
+string Park :: getTipe(){
     return tipe;
 }

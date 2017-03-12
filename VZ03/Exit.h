@@ -9,7 +9,7 @@ class Exit : public Road {
 public :
     Exit(int,int,char);
     ~Exit();
-    string getTipe(char);
+    string getTipe();
 private :
     string tipe = "exit";
 };

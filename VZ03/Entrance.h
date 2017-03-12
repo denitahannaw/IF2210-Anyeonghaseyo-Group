@@ -9,7 +9,7 @@ class Entrance : public Road {
 public :
     Entrance(int,int,char);
     ~Entrance();
-    string getTipe(char)
+    string getTipe();
 private :
     string tipe = "entrance";
 };

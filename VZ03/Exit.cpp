@@ -11,6 +11,6 @@ Exit :: ~Exit(){
 
 }
 
-Exit :: getTipe(char s){
+string Exit :: getTipe(){
     return tipe;
 }

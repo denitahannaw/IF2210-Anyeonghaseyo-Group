@@ -9,7 +9,7 @@ class Road : public Facility {
 public :
     Road(int,int,char);
     virtual ~Road();
-    virtual string getTipe(char);
+    virtual string getTipe();
 private :
     string tipe = "road";
 };

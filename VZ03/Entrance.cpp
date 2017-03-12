@@ -11,6 +11,6 @@ Entrance :: ~Entrance(){
 
 }
 
-Entrance :: getTipe(char s){
+string Entrance :: getTipe(){
     return tipe;
 }

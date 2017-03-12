@@ -1,7 +1,4 @@
-
-#include <string>
 #include "LandHabitat.h"
-using namespace std;
 
 LandHabitat :: LandHabitat(int x,int y,char s) : Habitat(x,y,s){
 

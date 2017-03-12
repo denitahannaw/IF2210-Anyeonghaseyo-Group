@@ -1,0 +1,35 @@
+16 6
+6 
+# airhabitat
+~ waterhabitat
+@ landhabitat
+- road
+* park
+$ restourant
+###~~@
+###~~@
+#~~~~@
+---~~@
+~-*@@@
+~-*###
+$-*###
+$-*###
+$-*~#~
+$-*~~~
+$--~~~
+$--~~~
+*--$$$
+*-----
+#####@
+@@@@@@
+3 
+w waterhabitat 4
+1 0
+1 1
+1 2
+2 1
+l landhabitat 1
+0 5
+a airhabitat 2
+0 3
+0 4
