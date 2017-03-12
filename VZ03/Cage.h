@@ -3,16 +3,31 @@
 
 #include <string>
 #include "Cell.h"
-#include "Animal.h"
+#include "Cat.h" //1
+#include "Dog.h" //2
+#include "Lion.h" //3
+#include "Snake.h" //4
+#include "Goat.h" //5
+#include "Chicken.h" //6
+#include "Elephant.h" //7
+#include "Cow.h" //8
+#include "Hedgehog.h" //9
+#include "Rhino.h" //10
+#include "Fish.h" //11
+#include "Crocodile.h" //12
+#include "Frog.h" //13
+#include "Duck.h" //14
+#include "Beetle.h" //15
+#include "Bee.h" //16
+#include "Owl.h" //17
+#include "Eagle.h" //18
+#include "Butterfly.h" //19
+#include "Bird.h" //20
+#include "FlyingFish.h" //21
 
 using namespace std;
 
-/**
-* @class Cage
-* Merupakan container dari animal
-*/
-
-class Cage{
+class Cage: public Renderable{
 public:
 	//Cage();
 	/**
