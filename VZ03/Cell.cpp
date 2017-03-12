@@ -47,7 +47,7 @@ Cell :: Cell(int x,int y, char s){
 
 }
 
-virtual string Cell :: getTipe(char s){
+string Cell :: getTipe(char s){
     return tipeCell;
 }
 
