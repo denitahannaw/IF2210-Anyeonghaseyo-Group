@@ -16,68 +16,89 @@ Animal::Animal(int _x, int _y, string tipe): tipeAnimal(tipe){
 		simbol = 'f';
 		tipeHabitat[0] = "land";
 		tipeHabitat[1] = "water";
+		bobot = 5;
 	} else if (tipeAnimal=="flyingfish"){
 		simbol = 'y';
 		tipeHabitat[0] = "air";
 		tipeHabitat[1] = "water";
+		bobot = 10;
 	} else if (tipeAnimal=="bird"){
 		simbol = 'b';
 		tipeHabitat[0] = "land";
 		tipeHabitat[1] = "air";
+		bobot = 7;
 	} else if (tipeAnimal=="cat"){
 		simbol = 'c';
 		tipeHabitat[0] = "land";
+		bobot = 10;
 	} else if (tipeAnimal=="dog"){
 		simbol = 'd';
 		tipeHabitat[0] = "land";
+		bobot = 10;
 	} else if (tipeAnimal=="lion"){
 		simbol = 'l';
 		tipeHabitat[0] = "land";
+		bobot = 20;
 	} else if (tipeAnimal=="snake"){
 		simbol = 's';
 		tipeHabitat[0] = "land";
+		bobot = 15;
 	} else if (tipeAnimal=="goat"){
 		simbol = 'g';
 		tipeHabitat[0] = "land";
+		bobot = 18;
 	} else if (tipeAnimal=="chicken"){
 		simbol = 'n';
 		tipeHabitat[0] = "land";
+		bobot = 7;
 	} else if (tipeAnimal=="elephant"){
 		simbol = 'e';
 		tipeHabitat[0] = "land";
+		bobot = 30;
 	} else if (tipeAnimal=="cow"){
 		simbol = 'w';
 		tipeHabitat[0] = "land";
+		bobot = 25;
 	} else if (tipeAnimal=="hedgehog"){
 		simbol = 'h';
 		tipeHabitat[0] = "land";
+		bobot = 3;
 	} else if (tipeAnimal=="rhino"){
 		simbol = 'r';
 		tipeHabitat[0] = "land";
+		bobot = 20;
 	} else if (tipeAnimal=="fish"){
 		simbol = 'i';
 		tipeHabitat[0] = "water";
+		bobot = 5;
 	} else if (tipeAnimal=="crocodile"){
 		simbol = 'j';
 		tipeHabitat[0] = "water";
+		bobot = 25;
 	} else if (tipeAnimal=="duck"){
 		simbol = 'k';
 		tipeHabitat[0] = "water";
+		bobot = 10;
 	} else if (tipeAnimal=="beetle"){
 		simbol = 'q';
 		tipeHabitat[0] = "air";
+		bobot = 2;
 	} else if (tipeAnimal=="bee"){
 		simbol = 'z';
 		tipeHabitat[0] = "air";
+		bobot = 1;
 	} else if (tipeAnimal=="owl"){
 		simbol = 'o';
 		tipeHabitat[0] = "air";
+		bobot = 7;
 	} else if (tipeAnimal=="eagle"){
 		simbol = 'a';
 		tipeHabitat[0] = "air";
+		bobot = 12;
 	} else if (tipeAnimal=="butterfly"){
 		simbol = 't';
 		tipeHabitat[0] = "air";
+		bobot = 3;
 	}
 }
 
@@ -104,12 +125,20 @@ void Animal::setY(int _y){
 	y = _y;
 }
 
+void Animal::addBobot(){
+	bobot++;
+}
+
 int Animal::getX(){
 	return x;
 }
 
 int Animal::getY(){
 	return y;
+}
+
+int Animal::getBobot(){
+	return bobot;
 }
 
 string Animal::getTipeHabitat(int i){

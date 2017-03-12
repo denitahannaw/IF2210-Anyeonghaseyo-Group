@@ -8,12 +8,14 @@ class Animal{
 public:
 	Animal(int,int,string);
 	Animal(const Animal&);
-	virtual ~Animal();
+	~Animal();
 	
 	void setX(int);
 	void setY(int);
+	void addBobot();
 	int getX();
 	int getY();
+	int getBobot();
 	string getTipeHabitat(int);
 	string getTipeAnimal();
 	char getSimbol();
@@ -22,6 +24,7 @@ public:
 private:
 	int x;
 	int y;
+	int bobot;
 	char simbol;
 	string *tipeHabitat;
 	const string tipeAnimal;
