@@ -2,12 +2,18 @@
 
 Hedgehog::Hedgehog(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 20;
+	musuh[0] = "elephant";
+	musuh[1] = "cow";
 }
 
 Hedgehog::~Hedgehog(){
 
 }
 	
+string Hedgehog::getMusuh(int i){
+	return musuh[i];
+}
+
 void Hedgehog::addBobot(){
 	bobot++;
 }

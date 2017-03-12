@@ -2,12 +2,18 @@
 
 Goat::Goat(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 18;
+	musuh[0] = "snake";
+	musuh[1] = "chicken";
 }
 
 Goat::~Goat(){
 
 }
 	
+string Goat::getMusuh(int i){
+	return musuh[i];
+}
+
 void Goat::addBobot(){
 	bobot++;
 }

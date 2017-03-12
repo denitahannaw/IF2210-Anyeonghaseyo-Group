@@ -2,12 +2,18 @@
 
 Fish::Fish(int _x, int _y): WaterAnimal(_x, _y){
 	bobot = 5;
+	musuh[0] = "duck";
+	musuh[1] = "crocodile";
 }
 
 Fish::~Fish(){
 
 }
 	
+string Fish::getMusuh(int i){
+	return musuh[i];
+}
+
 void Fish::addBobot(){
 	bobot++;
 }

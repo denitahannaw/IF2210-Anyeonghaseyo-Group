@@ -2,12 +2,18 @@
 
 Beetle::Beetle(int _x, int _y): FlyingAnimal(_x, _y){
 	bobot = 2;
+	musuh[0] = "bee";
+	musuh[1] = "owl";
 }
 
 Beetle::~Beetle(){
 
 }
 	
+string Beetle::getMusuh(int i){
+	return musuh[i];
+}
+
 void Beetle::addBobot(){
 	bobot++;
 }

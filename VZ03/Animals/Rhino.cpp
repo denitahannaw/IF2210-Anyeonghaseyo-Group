@@ -2,12 +2,18 @@
 
 Rhino::Rhino(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 20;
+	musuh[0] = "frog";
+	musuh[1] = "flyingfish";
 }
 
 Rhino::~Rhino(){
 
 }
-	
+
+string Hedgehog::getMusuh(int i){
+	return musuh[i];
+}
+
 void Rhino::addBobot(){
 	bobot++;
 }

@@ -2,12 +2,18 @@
 
 Owl::Owl(int _x, int _y): FlyingAnimal(_x, _y){
 	bobot = 7;
+	musuh[0] = "bee";
+	musuh[1] = "beetle";
 }
 
 Owl::~Owl(){
 
 }
 	
+string Owl::getMusuh(int i){
+	return musuh[i];
+}
+
 void Owl::addBobot(){
 	bobot++;
 }

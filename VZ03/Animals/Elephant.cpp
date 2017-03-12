@@ -2,12 +2,18 @@
 
 Elephant::Elephant(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 30;
+	musuh[0] = "cow";
+	musuh[1] = "hedgehog";
 }
 
 Elephant::~Elephant(){
 
 }
-	
+
+string Elephant::getMusuh(int i){
+	return musuh[i];
+}
+
 void Elephant::addBobot(){
 	bobot++;
 }

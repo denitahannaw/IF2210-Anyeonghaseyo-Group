@@ -2,10 +2,16 @@
 
 Dog::Dog(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 10;
+	musuh[0] = "cat";
+	musuh[1] = "lion";
 }
 
 Dog::~Dog(){
 
+}
+
+string Dog::getMusuh(int i){
+	return musuh[i];
 }
 	
 void Dog::addBobot(){

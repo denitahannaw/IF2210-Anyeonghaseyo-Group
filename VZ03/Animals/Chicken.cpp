@@ -2,12 +2,18 @@
 
 Chicken::Chicken(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 7;
+	musuh[0] = "snake";
+	musuh[1] = "goat";
 }
 
 Chicken::~Chicken(){
 
 }
 	
+string Chicken::getMusuh(int i){
+	return musuh[i];
+}
+
 void Chicken::addBobot(){
 	bobot++;
 }
