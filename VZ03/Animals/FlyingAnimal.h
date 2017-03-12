@@ -5,7 +5,7 @@
 
 class FlyingAnimal: public Animal{
 public:
-	FlyingAnimal();
+	FlyingAnimal(int,int);
 	FlyingAnimal(const FlyingAnimal&);
 	virtual ~FlyingAnimal();
 	

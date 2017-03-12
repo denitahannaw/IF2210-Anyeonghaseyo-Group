@@ -5,7 +5,7 @@
 
 class WaterAnimal: public Animal{
 public:
-	WaterAnimal();
+	WaterAnimal(int,int);
 	WaterAnimal(const WaterAnimal&);
 	virtual ~WaterAnimal();
 	
