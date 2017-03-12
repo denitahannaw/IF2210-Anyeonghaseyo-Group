@@ -1,5 +1,5 @@
 #ifndef HABITAT_H
-#define HABITAT_H_
+#define HABITAT_H
 
 #include "Cell.h"
 #include <string>
@@ -9,11 +9,10 @@ class Habitat : public Cell {
 public :
     Habitat(int,int,char);
     virtual ~Habitat();
-    virtual string getTipe(char) = 0;
-private :
-    bool is_cage;
-    string tipe;
-
+    virtual string getTipe()=0;
+// private :
+    // bool is_cage;
+    // string tipe;
 };
 
 #endif

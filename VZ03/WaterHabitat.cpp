@@ -8,6 +8,6 @@ WaterHabitat :: ~WaterHabitat(){
 
 }
 
-string WaterHabitat :: getTipe(char s){
+string WaterHabitat :: getTipe(){
     return tipe;
 }

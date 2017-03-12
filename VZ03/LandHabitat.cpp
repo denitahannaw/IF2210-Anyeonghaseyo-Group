@@ -8,6 +8,6 @@ LandHabitat :: ~LandHabitat(){
 
 }
 
-string LandHabitat :: getTipe(char s){
+string LandHabitat :: getTipe(){
     return tipe;
 }

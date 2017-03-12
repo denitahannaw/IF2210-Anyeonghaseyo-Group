@@ -9,6 +9,6 @@ AirHabitat :: ~AirHabitat(){
 
 }
 
-string AirHabitat :: getTipe(char s){
+string AirHabitat :: getTipe(){
     return tipe;
 }

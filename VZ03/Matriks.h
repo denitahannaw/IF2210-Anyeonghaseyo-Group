@@ -49,7 +49,7 @@ public:
 	* @param i Indeks baris
 	* @param j Indeks kolom
 	*/
-	void setVal(int i, int j, T v);
+	void setVal(T v, int i, int j);
 
 private:
 	const int BRS, KOL;
@@ -135,6 +135,6 @@ T Matriks<T>::getVal(int i, int j){
 * @param j Indeks kolom
 */
 template <class T>
-void Matriks<T>::setVal(int i, int j, T v){
+void Matriks<T>::setVal(T v, int i, int j){
 	val[i][j] = v;
 }

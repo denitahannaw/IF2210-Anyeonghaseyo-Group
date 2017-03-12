@@ -9,8 +9,7 @@ class Facility : public Cell {
 public :
     Facility(int,int,char);
     ~Facility();
-    virtual string getTipe(char) = 0;
-private :
+    virtual string getTipe()=0;
 
 };
 

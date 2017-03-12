@@ -9,7 +9,7 @@ class Park : public Facility {
 public :
     Park(int,int,char);
     virtual ~Park();
-    string getTipe();
+    virtual string getTipe();
 private :
     string tipe = "park";
 };

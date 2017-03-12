@@ -9,7 +9,7 @@ class Restourant : public Facility {
 public :
     Restourant(int,int,char);
     virtual ~Restourant();
-    string getTipe();
+    virtual string getTipe();
 private :
     string tipe = "restourant";
 };

@@ -9,7 +9,7 @@ class AirHabitat : public Habitat {
 public :
     AirHabitat(int,int,char);
     ~AirHabitat();
-    string getTipe(char); // override virtual
+    string getTipe(); // override virtual
 private :
     string tipe = "air";
 };
