@@ -8,7 +8,7 @@ using namespace std;
 class Restourant : public Facility {
 public :
     Restourant(int,int,char);
-    virtual ~Restourant();
+    // virtual ~Restourant();
     virtual string getTipe();
 private :
     string tipe = "restourant";

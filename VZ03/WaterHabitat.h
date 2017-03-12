@@ -7,7 +7,7 @@
 class WaterHabitat : public Habitat {
 public :
     WaterHabitat(int,int,char);
-    ~WaterHabitat();
+    // ~WaterHabitat();
     string getTipe(); // override virtual
 private :
     string tipe = "water";

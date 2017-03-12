@@ -8,7 +8,7 @@ using namespace std;
 class Park : public Facility {
 public :
     Park(int,int,char);
-    virtual ~Park();
+    // virtual ~Park();
     virtual string getTipe();
 private :
     string tipe = "park";

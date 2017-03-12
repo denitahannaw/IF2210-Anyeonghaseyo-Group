@@ -7,9 +7,9 @@ Entrance :: Entrance(int x,int y, char s) : Road(x,y,s){
 
 }
 
-Entrance :: ~Entrance(){
+// Entrance :: ~Entrance(){
 
-}
+// }
 
 string Entrance :: getTipe(){
     return tipe;

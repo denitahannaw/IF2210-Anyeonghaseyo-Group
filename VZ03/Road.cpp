@@ -7,9 +7,9 @@ Road :: Road(int x,int y,char s) : Facility(x,y,s){
 
 }
 
-Road :: ~Road(){
+// Road :: ~Road(){
 
-}
+// }
 
 string Road :: getTipe(){
     return tipe;

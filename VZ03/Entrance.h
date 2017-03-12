@@ -8,7 +8,7 @@ using namespace std;
 class Entrance : public Road {
 public :
     Entrance(int,int,char);
-    ~Entrance();
+    // ~Entrance();
     string getTipe();
 private :
     string tipe = "entrance";

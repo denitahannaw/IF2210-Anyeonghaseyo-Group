@@ -8,7 +8,7 @@ using namespace std;
 class Facility : public Cell {
 public :
     Facility(int,int,char);
-    ~Facility();
+    // ~Facility();
     virtual string getTipe()=0;
 
 };

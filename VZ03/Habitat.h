@@ -8,7 +8,7 @@ using namespace std;
 class Habitat : public Cell {
 public :
     Habitat(int,int,char);
-    virtual ~Habitat();
+    // virtual ~Habitat();
     virtual string getTipe()=0;
 // private :
     // bool is_cage;

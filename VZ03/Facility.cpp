@@ -7,10 +7,10 @@ Facility :: Facility(int x,int y, char s) : Cell(x,y,s){
 
 }
 
-Facility :: ~Facility(){
+// Facility :: ~Facility(){
 
-}
+// }
 
-string Facility :: getTipe(){
+// string Facility :: getTipe(){
     
-}
+// }

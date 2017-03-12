@@ -7,9 +7,9 @@ Restourant :: Restourant(int x,int y, char s) : Facility(x,y,s){
 
 }
 
-Restourant :: ~Restourant(){
+// Restourant :: ~Restourant(){
 
-}
+// }
 
 string Restourant :: getTipe(){
     return tipe;

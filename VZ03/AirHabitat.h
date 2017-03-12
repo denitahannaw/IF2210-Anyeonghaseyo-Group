@@ -8,7 +8,7 @@ using namespace std;
 class AirHabitat : public Habitat {
 public :
     AirHabitat(int,int,char);
-    ~AirHabitat();
+    // ~AirHabitat();
     string getTipe(); // override virtual
 private :
     string tipe = "air";

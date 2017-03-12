@@ -8,7 +8,7 @@
 class LandHabitat : public Habitat {
 public :
     LandHabitat(int,int,char);
-    ~LandHabitat();
+    // ~LandHabitat();
     string getTipe(); //override virtual
 private :
    string tipe = "land";

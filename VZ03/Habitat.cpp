@@ -6,7 +6,7 @@ Habitat :: Habitat(int x, int y, char s) : Cell(x,y,s){
 
 }
 
-Habitat :: ~Habitat(){
+// Habitat :: ~Habitat(){
 
-}
+// }
 
