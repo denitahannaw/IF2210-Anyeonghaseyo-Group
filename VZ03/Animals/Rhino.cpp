@@ -2,6 +2,7 @@
 
 Rhino::Rhino(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 20;
+	musuh = new string[2];
 	musuh[0] = "frog";
 	musuh[1] = "flyingfish";
 }

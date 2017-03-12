@@ -2,6 +2,7 @@
 
 Eagle::Eagle(int _x, int _y): FlyingAnimal(_x, _y){
 	bobot = 12;
+	musuh = new string[2];
 	musuh[0] = "bird";
 	musuh[1] = "butterfly";
 }

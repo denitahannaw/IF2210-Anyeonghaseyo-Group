@@ -1,7 +1,7 @@
 #ifndef LAND_ANIMAL_H
 #define LAND_ANIMAL_H
 
-#include "Animal.h"
+#include "Animal.cpp"
 
 class LandAnimal: public Animal{
 public:

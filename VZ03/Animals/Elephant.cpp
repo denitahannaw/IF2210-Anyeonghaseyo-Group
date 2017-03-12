@@ -2,6 +2,7 @@
 
 Elephant::Elephant(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 30;
+	musuh = new string[2];
 	musuh[0] = "cow";
 	musuh[1] = "hedgehog";
 }

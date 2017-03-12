@@ -1,7 +1,7 @@
 #ifndef FLYING_ANIMAL_H
 #define FLYING_ANIMAL_H
 
-#include "Animal.h"
+#include "Animal.cpp"
 
 class FlyingAnimal: public Animal{
 public:

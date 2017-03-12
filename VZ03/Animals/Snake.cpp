@@ -2,6 +2,7 @@
 
 Snake::Snake(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 15;
+	musuh = new string[2];
 	musuh[0] = "goat";
 	musuh[1] = "chicken";
 }

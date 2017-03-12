@@ -2,6 +2,7 @@
 
 Lion::Lion(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 20;
+	musuh = new string[2];
 	musuh[0] = "cat";
 	musuh[1] = "dog";
 }

@@ -2,6 +2,9 @@
 
 Cow::Cow(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 25;
+	musuh = new string[2];
+	musuh[0] = "elephant";
+	musuh[1] = "hedgehog";
 }
 
 Cow::~Cow(){
@@ -26,4 +29,8 @@ string Cow::interact(){
 
 string Cow::getTipeAnimal(){
 	return tipeAnimal;
+}
+
+string getMusuh(int i){
+	return musuh[i];
 }

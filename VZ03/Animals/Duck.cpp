@@ -2,6 +2,7 @@
 
 Duck::Duck(int _x, int _y): WaterAnimal(_x, _y){
 	bobot = 10;
+	musuh = new string[2];
 	musuh[0] = "fish";
 	musuh[1] = "crocodile";
 }

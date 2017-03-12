@@ -2,6 +2,7 @@
 
 Cat::Cat(int _x, int _y): LandAnimal(_x, _y){
 	bobot = 10;
+	musuh = new string[2];
 	musuh[0] = "dog";
 	musuh[1] = "lion";
 }
