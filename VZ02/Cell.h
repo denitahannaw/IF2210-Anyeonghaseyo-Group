@@ -2,21 +2,23 @@
 #define CELL_H
 
 #include <string>
-#include "Renderable.h"
+using namespace std;
 
-class Cell : public Renderable {
+class Cell {
 
 public :
-    Cell(int x,int y);
-    virtual string getTipe();
+    Cell(int,int,char);
+    string getTipe(char);
     int getX();
     int getY();
-    int setX(int a);
-    int setY(int b);
+    int setX(int);
+    int setY(int);
 
 private :
     int x;
     int y;
+    char symbol;
+    string tipeCell;
 };
 
 #endif
