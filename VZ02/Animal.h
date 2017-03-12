@@ -19,6 +19,7 @@ public:
 	string getTipeHabitat(int);
 	string getTipeAnimal();
 	char getSimbol();
+	string getMusuh(int i);
 		
 	string interact();
 private:
@@ -26,8 +27,10 @@ private:
 	int y;
 	int bobot;
 	char simbol;
-	string *tipeHabitat;
+	string* tipeHabitat;
 	const string tipeAnimal;
 	int nHabitat;
+	string tipeMakanan;
+	string* musuh;
 };
 #endif

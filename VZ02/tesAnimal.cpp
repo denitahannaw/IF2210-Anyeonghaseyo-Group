@@ -16,6 +16,10 @@ int main(){
 	cout << kodok.getTipeHabitat(1) << endl;
 	cout << kodok.getTipeAnimal() << endl;
 	cout << kodok.getSimbol() << endl;
+	
+	
+	cout << kodok.getMusuh(0) << endl;
+	cout << kodok.getMusuh(1) << endl;
 		
 	cout << kodok.interact() << endl;
 	
