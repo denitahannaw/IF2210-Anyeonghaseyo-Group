@@ -48,9 +48,9 @@ Cell :: Cell(int x,int y, char s){
 
 }
 
-string Cell :: getTipe(){
-    return tipeCell;
-}
+// string Cell :: getTipe(){
+//     return tipeCell;
+// }
 
 int Cell :: getX(){
     return x;

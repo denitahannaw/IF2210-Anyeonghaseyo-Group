@@ -10,7 +10,7 @@ class Cell : public Renderable {
 
 public :
     Cell(int,int,char);
-    virtual string getTipe();
+    virtual string getTipe()=0;
     int getX();
     int getY();
     int setX(int);
@@ -21,7 +21,7 @@ private :
     int x;
     int y;
     char symbol;
-    string tipeCell;
+    // string tipeCell;
 };
 
 
