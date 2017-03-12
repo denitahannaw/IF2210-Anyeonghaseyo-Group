@@ -1,9 +1,10 @@
 #ifndef ELEPHANT_H
 #define ELEPHANT_H
 
-#include "LandAnimal.cpp"
+#include "LandAnimal.h"
+#include "Herbivora.h"
 
-class Elephant: public LandAnimal{
+class Elephant: public LandAnimal, public Herbivora{
 public:
 	Elephant(int,int);
 	~Elephant();
@@ -11,6 +12,7 @@ public:
 	void addBobot();
 	int getBobot();
 	char getSimbol();
+	string getMusuh(int);
 	
 	string interact();
 	string getTipeAnimal();
@@ -19,5 +21,6 @@ protected:
 	const string tipeAnimal = "elephant";
 	const char simbol = 'e';
 	int bobot;
+	string* musuh;
 };
 #endif

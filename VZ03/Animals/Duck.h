@@ -1,9 +1,10 @@
 #ifndef DUCK_H
 #define DUCK_H
 
-#include "WaterAnimal.cpp"
+#include "WaterAnimal.h"
+#include "Omnivora.h"
 
-class Duck: public WaterAnimal{
+class Duck: public WaterAnimal, public Omnivora{
 public:
 	Duck(int,int);
 	~Duck();
@@ -11,6 +12,7 @@ public:
 	void addBobot();
 	int getBobot();
 	char getSimbol();
+	string getMusuh(int);
 	
 	string interact();
 	string getTipeAnimal();
@@ -19,5 +21,6 @@ protected:
 	const string tipeAnimal = "duck";
 	const char simbol = 'k';
 	int bobot;
+	string* musuh;
 };
 #endif

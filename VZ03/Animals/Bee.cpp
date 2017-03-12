@@ -2,6 +2,8 @@
 
 Bee::Bee(int _x, int _y): FlyingAnimal(_x, _y){
 	bobot = 1;
+	musuh[0] = "owl";
+	musuh[1] = "beetle";
 }
 
 Bee::~Bee(){
@@ -26,4 +28,8 @@ string Bee::interact(){
 
 string Bee::getTipeAnimal(){
 	return tipeAnimal;
+}
+
+string Bee::getMusuh(int i){
+	return musuh[i];
 }

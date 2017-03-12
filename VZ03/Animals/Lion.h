@@ -1,9 +1,10 @@
 #ifndef LION_H
 #define LION_H
 
-#include "LandAnimal.cpp"
+#include "LandAnimal.h"
+#include "Karnivora.h"
 
-class Lion: public LandAnimal{
+class Lion: public LandAnimal, public Karnivora{
 public:
 	Lion(int,int);
 	~Lion();
@@ -11,6 +12,7 @@ public:
 	void addBobot();
 	int getBobot();
 	char getSimbol();
+	string getMusuh(int);
 	
 	string interact();
 	string getTipeAnimal();
@@ -19,5 +21,6 @@ protected:
 	const string tipeAnimal = "lion";
 	const char simbol = 'l';
 	int bobot;
+	string* musuh;
 };
 #endif

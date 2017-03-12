@@ -1,9 +1,10 @@
 #ifndef FISH_H
 #define FISH_H
 
-#include "WaterAnimal.cpp"
+#include "WaterAnimal.h"
+#include "Omnivora.h"
 
-class Fish: public WaterAnimal{
+class Fish: public WaterAnimal, public Omnivora{
 public:
 	Fish(int,int);
 	~Fish();
@@ -11,6 +12,7 @@ public:
 	void addBobot();
 	int getBobot();
 	char getSimbol();
+	string getMusuh(int);
 	
 	string interact();
 	string getTipeAnimal();
@@ -19,5 +21,6 @@ protected:
 	const string tipeAnimal = "fish";
 	const char simbol = 'i';
 	int bobot;
+	string* musuh;
 };
 #endif

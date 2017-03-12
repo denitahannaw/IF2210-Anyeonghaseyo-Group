@@ -20,7 +20,8 @@ public:
 	virtual char getSimbol()=0;
 	virtual string interact()=0;
 	virtual string getTipeAnimal()=0;
-	virtual string getTipeHabitat()=0;	
+	virtual string getTipeHabitat()=0;
+	virtual string getMusuh(int)=0;	
 	
 protected:
 	int x;

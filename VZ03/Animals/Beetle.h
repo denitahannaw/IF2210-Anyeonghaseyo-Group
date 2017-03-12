@@ -1,9 +1,10 @@
 #ifndef BEETLE_H
 #define BEETLE_H
 
-#include "FlyingAnimal.cpp"
+#include "FlyingAnimal.h"
+#include "Herbivora.h"
 
-class Beetle: public FlyingAnimal{
+class Beetle: public FlyingAnimal, public Herbivora{
 public:
 	Beetle(int,int);
 	~Beetle();
@@ -11,6 +12,7 @@ public:
 	void addBobot();
 	int getBobot();
 	char getSimbol();
+	string getMusuh(int);
 	
 	string interact();
 	string getTipeAnimal();
@@ -19,5 +21,6 @@ protected:
 	const string tipeAnimal = "beetle";
 	const char simbol = 'q';
 	int bobot;
+	string* musuh;
 };
 #endif

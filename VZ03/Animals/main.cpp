@@ -17,6 +17,8 @@ int main(){
 	cout << singa.getTipeAnimal() << endl;
 	cout << singa.getSimbol() << endl;
 	cout << singa.getBobot() << endl;
+	cout << singa.getMusuh(0) << endl;
+	cout << singa.getMusuh(1) << endl;
 		
 	cout << singa.interact() << endl;
 	return 0;
