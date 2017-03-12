@@ -6,7 +6,7 @@ using namespace std;
 
 class Animal{
 public:
-	Animal();
+	Animal(int,int);
 	Animal(const Animal&);
 	virtual ~Animal();
 	
