@@ -1,17 +1,52 @@
 // nama file : Cell.cpp
 
 #include "Cell.h"
-#include <iostream>
 #include <string>
-#include "stdlib.h"
+using namespace std;
 
-Cell :: Cell(int x,int y){
+Cell :: Cell(int x,int y,char s){
     this->x = x;
     this->y = y;
+    // symbol for Cell
+    /*
+    'w' = water
+    'l' = land
+    'a' = air
+    'p' = park
+    'r' = road
+    'n' = entrance
+    'x' = exit
+    't' = restourant
+    */
+    
+    if (s=='w'){
+        tipeCell = "water";
+    }
+    else if (s=='l'){
+        tipeCell = "land";
+    }
+    else if (s=='a'){
+        tipeCell = "air";
+    }
+    else if (s=='p'){
+        tipeCell = "park";
+    }
+    else if (s=='r'){
+        tipeCell = "road";
+    }
+    else if (s=='n'){
+        tipeCell = "entrance";
+    }
+    else if (s=='x'){
+        tipeCell = "exit";
+    }
+    else if (s=='t'){
+        tipeCell = "restourant";
+    }
 }
 
-string Cell :: getTipe(){
-       
+string Cell :: getTipe(char s){
+    return tipeCell;   
 }
 
 int Cell :: getX(){
