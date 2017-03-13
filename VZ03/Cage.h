@@ -52,6 +52,14 @@ public:
 	void addCagePosition(Cell* position, int i);
 
 	/**
+	* @brief Setter
+	* Menambahkan animal dalam cage
+	* @param anim Animal yang akan ditambahkan
+	* @param i Indeks animals ke i
+	*/
+	void addAnimal(Animal* anim, int i);
+	
+	/**
 	* @brief Getter
 	* Mendapatkan cageArea
 	* @return cageArea

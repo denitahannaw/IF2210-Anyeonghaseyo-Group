@@ -1,7 +1,5 @@
 #include "Animal.h"
 
-Animal::Animal(){}
-
 Animal::Animal(int _x, int _y){
 	x = _x;
 	y = _y;

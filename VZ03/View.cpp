@@ -27,26 +27,26 @@ View::View(const View& V) : NBRS(V.NBRS), NKOL(V.NKOL) {
 View::~View() {
 	for (int i=0; i<NBRS; i++) {
 		delete [] val[i];
-	delete [] val;
-}
-
-View& View::operator=(const View& V) : NBRS(V.NBRS), NKOL(V.NKOL) {
-	for (int i=0; i<NBRS; i++) {
-		delete [] val[i];
-	delete [] val;
-	
-	val = new char *[NBRS];
-	for (int i=0; i<NBRS; i++)
-		val[i] = new char [NKOL];
-
-	for (int i=0; i<NBRS; i++) {
-		for (int j=0; j<NKOL; j++)
-			val[i][j] = V.val[i][j];
 	}
+	delete [] val;
 }
+// View& View::operator=(const View& V) : NBRS(V.NBRS), NKOL(V.NKOL) {
+// 	for (int i=0; i<NBRS; i++) {
+// 		delete [] val[i];
+// 	delete [] val;
+	
+// 	val = new char *[NBRS];
+// 	for (int i=0; i<NBRS; i++)
+// 		val[i] = new char [NKOL];
+
+// 	for (int i=0; i<NBRS; i++) {
+// 		for (int j=0; j<NKOL; j++)
+// 			val[i][j] = V.val[i][j];
+// 	}
+// }
 
 char View::getVal(int _x, int _y) {
-	return val[i][j];
+	return val[_x][_y];
 }
 
 void View::setVal(int i, int j, char c) {
@@ -70,6 +70,6 @@ void View::printView() {
 	}	
 }
 
-void View::printView(int _x, int _y) {
-	cout << val[_x][_y] < endl;
-}
+// void View::printView(int _x, int _y) {
+// 	cout << val[_x][_y] < endl;
+// }

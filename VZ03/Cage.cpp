@@ -23,7 +23,7 @@ Cage::Cage(char simbol, string tipeHabitat, int cageArea){
 */
 Cage::~Cage(){
 	for(int i=0; i<cageArea; i++){
-		delete [] *listOfCagePosition;
+		delete [] listOfCagePosition[i];
 	}
 
 	delete [] listOfCagePosition;
@@ -37,6 +37,16 @@ Cage::~Cage(){
 */
 void Cage::addCagePosition(Cell* position, int i){
 	listOfCagePosition[i] = position;
+}
+
+/**
+* @brief Setter
+* Menambahkan animal dalam cage
+* @param anim Animal yang akan ditambahkan
+* @param i Indeks animals ke i
+*/
+void Cage::addAnimal(Animal* anim, int i){
+	animals[i] = anim;
 }
 
 /**
@@ -145,18 +155,18 @@ void Cage::createAnimal(){
 			//ciptakan hewan
 			nr = rand() % 12 + 1;
 			switch(nr){
-				case 1: animals[i] = new Cat(x,y);
-				case 2: animals[i] = new Dog(x,y);
-				case 3: animals[i] = new Lion(x,y);
-				case 4: animals[i] = new Snake(x,y);
-				case 5: animals[i] = new Goat(x,y);
-				case 6: animals[i] = new Chicken(x,y);
-				case 7: animals[i] = new Elephant(x,y);
-				case 8: animals[i] = new Cow(x,y);
-				case 9: animals[i] = new Hedgehog(x,y);
-				case 10: animals[i] = new Rhino(x,y);
-				case 11: animals[i] = new Frog(x,y);
-				case 12: animals[i] = new Beetle(x,y);
+				case 1: addAnimal(new Cat(x,y), i);
+				case 2: addAnimal(new Dog(x,y), i);
+				case 3: addAnimal(new Lion(x,y), i);
+				case 4: addAnimal(new Snake(x,y), i);
+				case 5: addAnimal(new Goat(x,y), i);
+				case 6: addAnimal(new Chicken(x,y), i);
+				case 7: addAnimal(new Elephant(x,y), i);
+				case 8: addAnimal(new Cow(x,y), i);
+				case 9: addAnimal(new Hedgehog(x,y), i);
+				case 10: addAnimal(new Rhino(x,y), i);
+				case 11: addAnimal(new Frog(x,y), i);
+				case 12: addAnimal(new Beetle(x,y), i);
 			}
 			
 			nAnimal++;
@@ -178,17 +188,19 @@ void Cage::createAnimal(){
 				found = isPositionEmpty(pos);
 			}
 			
-			int x = pos->getX();cout<<pos->getX()<<endl;
-			int y = pos->getY();
+			int x = pos->getX();cout<<x<<endl;
+			int y = pos->getY();cout<<y<<endl;
 			int i = nAnimal;
 			nr = rand() % 5 + 1;
-			switch(nr){
-				case 1: animals[i] = new Fish(x,y);
-				case 2: animals[i] = new Crocodile(x,y);
-				case 3: animals[i] = new Frog(x,y);
-				case 4: animals[i] = new Duck(x,y);
-				case 5: animals[i] = new Flyingfish(x,y);
-			}
+			Animal* anim = new Fish(x,y);
+			cout<<anim->getX()<<endl;
+			// switch(nr){
+			// 	case 1: addAnimal(new Fish(x,y), i);
+			// 	case 2: addAnimal(new Crocodile(x,y), i);
+			// 	case 3: addAnimal(new Frog(x,y), i);
+			// 	case 4: addAnimal(new Duck(x,y), i);
+			// 	case 5: addAnimal(new Flyingfish(x,y), i);
+			// }
 			
 			nAnimal++;
 		}else if (getTipeHabitat()=="air"){
@@ -211,13 +223,13 @@ void Cage::createAnimal(){
 			int i = nAnimal;
 			nr = rand() % 7 + 1;
 			switch(nr){
-				case 1: animals[i] = new Beetle(x,y);
-				case 2: animals[i] = new Bee(x,y);
-				case 3: animals[i] = new Owl(x,y);
-				case 4: animals[i] = new Eagle(x,y);
-				case 5: animals[i] = new Butterfly(x,y);
-				case 6: animals[i] = new Bird(x,y);
-				case 7: animals[i] = new Flyingfish(x,y);
+				case 1: addAnimal(new Beetle(x,y), i);
+				case 2: addAnimal(new Bee(x,y), i);
+				case 3: addAnimal(new Owl(x,y), i);
+				case 4: addAnimal(new Eagle(x,y), i);
+				case 5: addAnimal(new Butterfly(x,y), i);
+				case 6: addAnimal(new Bird(x,y), i);
+				case 7: addAnimal(new Flyingfish(x,y), i);
 			}
 			nAnimal++;
 		}

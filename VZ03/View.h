@@ -9,13 +9,13 @@ class View {
 		View(int, int);
 		View(const View&);
 		~View();
-		View& operator=(const View&);
+		// View& operator=(const View&);
 		char getVal(int, int);
 		void setVal(int, int, char);
 		int getNBRS();
 		int getNKOL();
 		void printView();
-		void printView(int, int);
+		// void printView(int, int);
 
 	private :
 		char** val;
