@@ -85,7 +85,7 @@ Matriks<T>::Matriks(int brs,int kol):BRS(brs),KOL(kol){
 * @brief Cctor
 */
 template <class T>
-Matriks<T>::Matriks(const Matriks& m):BRS(m.BRS),KOL(m.KOL){
+Matriks<T>::Matriks(const Matriks<T>& m):BRS(m.BRS),KOL(m.KOL){
 	val = new T*[BRS];
 	for(int i=0; i<BRS; i++){
 		val[i] = new T[KOL];

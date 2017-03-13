@@ -13,13 +13,14 @@
 #include "Entrance.h"
 #include "View.h"
 
+#include "Cage.h"
 using namespace std;
 
 void initiateZoo(Matriks<Cell*>& z);
-// void initiateCage(int nCage, Cage ** cages, Zoo& z);
+void initiateCage(int nCage, Cage ** cages, Matriks<Cell*>& z);
 // void initiateAnimal(int nCage, Cage ** cages);
 void addZooToMaps(View& p, Matriks<Cell*>& z);
-// void addCageToMaps(int nCage, Cage ** c, View& p);
+void addCageToMaps(int nCage, Cage ** c, View& p);
 
 int main(){
 	//1. Ciptakan Zoo
@@ -32,20 +33,26 @@ int main(){
 	initiateZoo(bonbin);
 	
 	//3. Ciptakan kandang
-	// int nCage;
-	// cin>>nCage;
-	// Cage ** cages = new Cage*[nCage];
+	int nCage;
+	cin>>nCage;
+	Cage ** cages = new Cage*[nCage];
 
 	//inisialisasi setiap cage
-	// initiateCage(nCage, cages, bonbin);
+	initiateCage(nCage, cages, bonbin);
 	
 	//4. Ciptakan binatang ditiap kandang
 	// initiateAnimal(nCage, cages);
+	cages[0]->createAnimal();
+	cout<< cages[0]->getAnimal(0)->getX()<<endl;
+	// int x = cages[0]->getAnimal(0)->getX();
+	// int y = cages[0]->getAnimal(0)->getY();
+	// int z = cages[0]->getAnimal(0)->getSimbol();
+	// peta.setView(x,y,z);
 
 	//Pindahin ke peta
 	addZooToMaps(peta,bonbin);
 
-	// addCageToMaps(nCage, cages, peta);
+	addCageToMaps(nCage, cages, peta);
 
 	peta.printView();
 	return 0;
@@ -105,27 +112,27 @@ void initiateZoo(Matriks<Cell*> & z){
 
 }
 
-// void initiateCage(int nCage, Cage ** cages, Zoo& z){
-// 	char simbol; string tipeHabitat; int cageArea;
-// 	for(int i=0; i<nCage; i++){
-// 		cin>>simbol>>tipeHabitat>>cageArea;
-// 		cages[i]= new Cage(simbol, tipeHabitat, cageArea);
+void initiateCage(int nCage, Cage ** cages, Matriks<Cell*>& z){
+	char simbol; string tipeHabitat; int cageArea;
+	for(int i=0; i<nCage; i++){
+		cin>>simbol>>tipeHabitat>>cageArea;
+		cages[i]= new Cage(simbol, tipeHabitat, cageArea);
 
-// 		int x,y;
-// 		int c=0;
-// 		for(int j=0; j<cageArea; j++){
-// 			//posisi pada zoo
-// 			cin>>x>>y;
-// 			//cek apakah cell memiliki tipe yang sesuai
-// 			if(z.getCell(x,y)->getTipe() == cages[i]->getTipeHabitat()){
-// 				cages[i]->addCagePosition(z.getCell(x,y), j-c);
-								
-// 			}else
-// 				c++;
-// 		}
+		int x,y;
+		int c=0;
+		for(int j=0; j<cageArea; j++){
+			//posisi pada zoo
+			cin>>x>>y;
+			//cek apakah cell memiliki tipe yang sesuai
+			if(z.getVal(x,y)->getTipe() == cages[i]->getTipeHabitat()){
+				cages[i]->addCagePosition(z.getVal(x,y), j-c);
+				
+			}else
+				c++;
+		}
 		
-// 	}
-// }
+	}
+}
 
 // void initiateAnimal(int nCage, Cage ** cages){
 
@@ -139,13 +146,14 @@ void addZooToMaps(View& p, Matriks<Cell*>& z){
 	}
 }
 
-// void addCageToMaps(int nCage, Cage ** c, View& p){
-// 	int x,y;
-// 	for(int i=0; i<nCage; i++){
-// 		for(int j=0; j<c[i]->getCageArea();j++){
-// 			x = c[i]->getCagePosition(j)->getX();
-// 			y = c[i]->getCagePosition(j)->getY();
-// 			p.setView(x,y,c[i]->render());
-// 		}
-// 	}
-// }
+void addCageToMaps(int nCage, Cage ** c, View& p){
+	int x,y;
+	for(int i=0; i<nCage; i++){
+		for(int j=0; j<c[i]->getCageArea();j++){
+			
+			x = c[i]->getCagePosition(j)->getX();
+			y = c[i]->getCagePosition(j)->getY();
+			p.setView(x,y,c[i]->render());
+		}
+	}
+}

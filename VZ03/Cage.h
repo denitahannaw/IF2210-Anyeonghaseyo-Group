@@ -23,7 +23,7 @@
 #include "Eagle.h" //18
 #include "Butterfly.h" //19
 #include "Bird.h" //20
-#include "FlyingFish.h" //21
+#include "Flyingfish.h" //21
 
 using namespace std;
 
@@ -73,6 +73,7 @@ public:
 	*/
 	Cell* getCagePosition(int i);
 
+	Animal* getAnimal(int i);
 	/**
 	* @brief Setter
 	* Set cageArea=area

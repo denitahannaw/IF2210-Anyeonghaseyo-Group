@@ -31,6 +31,6 @@ string Cow::getTipeAnimal(){
 	return tipeAnimal;
 }
 
-string getMusuh(int i){
+string Cow::getMusuh(int i){
 	return musuh[i];
 }

@@ -3,7 +3,7 @@
 
 #include "Animal.h"
 
-class FlyingAnimal: public Animal{
+class FlyingAnimal: virtual public Animal{
 public:
 	FlyingAnimal(int,int);
 	FlyingAnimal(const FlyingAnimal&);

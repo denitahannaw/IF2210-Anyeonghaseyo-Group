@@ -11,7 +11,7 @@ Rhino::~Rhino(){
 
 }
 
-string Hedgehog::getMusuh(int i){
+string Rhino::getMusuh(int i){
 	return musuh[i];
 }
 

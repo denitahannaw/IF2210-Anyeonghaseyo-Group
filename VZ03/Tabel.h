@@ -97,7 +97,7 @@ Tabel<T>::Tabel(int size){
 * @brief Cctor
 */
 template <class T>
-Tabel<T>::Tabel(const Tabel& t){
+Tabel<T>::Tabel(const Tabel<T>& t){
 	this->size = t.size;
 	nData = t.nData;
 	data = new T[size];
@@ -119,7 +119,7 @@ Tabel<T>::~Tabel(){
 * @brief Operator=
 */
 template <class T>
-Tabel& Tabel<T>::operator=(const Tabel& t){
+Tabel<T>& Tabel<T>::operator=(const Tabel<T>& t){
 	delete [] data;
 
 	this->size = t.size;

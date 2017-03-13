@@ -14,7 +14,8 @@ Cage::Cage(char simbol, string tipeHabitat, int cageArea){
 	this->cageArea = cageArea;
 
 	listOfCagePosition = new Cell*[cageArea];
-	animals = new Animal*[getMaxAnimal()];
+	animals = new Animal*[maxAnimal()];
+	nAnimal =0;
 }
 
 /**
@@ -65,6 +66,9 @@ Cell* Cage::getCagePosition(int i){
 	return listOfCagePosition[i];
 }
 
+Animal* Cage::getAnimal(int i){
+	return animals[i];
+}
 /**
 * @brief Setter
 * Set cageArea=area
@@ -97,11 +101,11 @@ int Cage::maxAnimal(){
 * @param c Cell
 * @return bool
 */
-bool isPositionEmpty(Cell* c){
+bool Cage::isPositionEmpty(Cell* c){
 	int i=0;
 	bool empty = true;
 	while (i<nAnimal && empty){
-		if (animals[i]->position == c){
+		if (animals[i]->getX() == c->getX() && animals[i]->getY() == c->getY()){
 			empty = false;
 		}
 		i++;
@@ -114,9 +118,12 @@ bool isPositionEmpty(Cell* c){
 * @brief Setter
 * Menambahkan 1 animal secara random berdasarkan tipeHabitat ke animals
 */
+#include <iostream>
+using namespace std;
 void Cage::createAnimal(){
 	if (nAnimal < maxAnimal()){
-		if (getTipeHabitat()=="landhabitat"){
+		
+		if (getTipeHabitat()=="land"){
 			//random posisi awal, pastikan masih kosong 
 			//random dari listOfPosisiCage
 			int nr;
@@ -138,25 +145,26 @@ void Cage::createAnimal(){
 			//ciptakan hewan
 			nr = rand() % 12 + 1;
 			switch(nr){
-				case 1: animals[i] = new Cat();
-				case 2: animals[i] = new Dog();
-				case 3: animals[i] = new Lion();
-				case 4: animals[i] = new Snake();
-				case 5: animals[i] = new Goat();
-				case 6: animals[i] = new Chicken();
-				case 7: animals[i] = new Elephant();
-				case 8: animals[i] = new Cow();
-				case 9: animals[i] = new Hedgehog();
-				case 10: animals[i] = new Rhino();
-				case 11: anilals[i] = new Frog();
-				case 12: animals[i] = new Beetle();
+				case 1: animals[i] = new Cat(x,y);
+				case 2: animals[i] = new Dog(x,y);
+				case 3: animals[i] = new Lion(x,y);
+				case 4: animals[i] = new Snake(x,y);
+				case 5: animals[i] = new Goat(x,y);
+				case 6: animals[i] = new Chicken(x,y);
+				case 7: animals[i] = new Elephant(x,y);
+				case 8: animals[i] = new Cow(x,y);
+				case 9: animals[i] = new Hedgehog(x,y);
+				case 10: animals[i] = new Rhino(x,y);
+				case 11: animals[i] = new Frog(x,y);
+				case 12: animals[i] = new Beetle(x,y);
 			}
 			
 			nAnimal++;
 		}
 		
 		
-		else if (getTipeHabitat()=="waterhabitat"){
+		else if (getTipeHabitat()=="water"){
+			
 			//random posisi awal, pastikan masih kosong
 			//random dari listOfPosisiCage
 			int nr;
@@ -170,20 +178,20 @@ void Cage::createAnimal(){
 				found = isPositionEmpty(pos);
 			}
 			
-			int x = pos->getX();
+			int x = pos->getX();cout<<pos->getX()<<endl;
 			int y = pos->getY();
 			int i = nAnimal;
 			nr = rand() % 5 + 1;
 			switch(nr){
-				case 1: animals[i] = new Fish();
-				case 2: animals[i] = new Crocodile();
-				case 3: animals[i] = new Frog();
-				case 4: animals[i] = new Duck();
-				case 5: animals[i] = new FlyingFish();
+				case 1: animals[i] = new Fish(x,y);
+				case 2: animals[i] = new Crocodile(x,y);
+				case 3: animals[i] = new Frog(x,y);
+				case 4: animals[i] = new Duck(x,y);
+				case 5: animals[i] = new Flyingfish(x,y);
 			}
 			
 			nAnimal++;
-		}else if (getTipeHabitat()=="airhabitat"){
+		}else if (getTipeHabitat()=="air"){
 			//random posisi awal, pastikan masih kosong
 			//random dari listOfPosisiCage
 			int nr;
@@ -203,13 +211,13 @@ void Cage::createAnimal(){
 			int i = nAnimal;
 			nr = rand() % 7 + 1;
 			switch(nr){
-				case 1: animals[i] = new Beetle();
-				case 2: animals[i] = new Bee();
-				case 3: animals[i] = new Owl();
-				case 4: animals[i] = new Eagle();
-				case 5: animals[i] = new Butterfly();
-				case 6: animals[i] = new Bird();
-				case 7: animals[i] = new FlyingFish();
+				case 1: animals[i] = new Beetle(x,y);
+				case 2: animals[i] = new Bee(x,y);
+				case 3: animals[i] = new Owl(x,y);
+				case 4: animals[i] = new Eagle(x,y);
+				case 5: animals[i] = new Butterfly(x,y);
+				case 6: animals[i] = new Bird(x,y);
+				case 7: animals[i] = new Flyingfish(x,y);
 			}
 			nAnimal++;
 		}
