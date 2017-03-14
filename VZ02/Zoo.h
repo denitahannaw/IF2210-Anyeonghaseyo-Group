@@ -5,8 +5,6 @@
 #include <iostream>
 using namespace std;
 
-//#include "cage.h"
-
 class Zoo {
 	public :
 		Zoo(int, int);

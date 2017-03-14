@@ -1,6 +1,7 @@
 #ifndef _VISITOR_H_
 #define _VISITOR_H_
 
+#include "Cell.h"
 #include <iostream>
 using namespace std;
 
