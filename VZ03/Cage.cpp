@@ -13,7 +13,7 @@ Cage::Cage(char simbol, string tipeHabitat){
 	this->tipeHabitat = tipeHabitat;
 
 	listOfCagePosition = new Cell*[cageArea];
-	animals = new Animal*[maxAnimal()];
+	animals = new Animal*[getMaxAnimal()];
 	nAnimal = 0;
 	nArea = 0;
 }
@@ -44,7 +44,7 @@ int Cage::getCageArea(){
 * @return nArea
 */
 int Cage::getNArea(){
-	return cageArea;
+	return nArea;
 }
 
 /**

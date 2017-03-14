@@ -1,8 +1,8 @@
-all: Cell.o LandHabitat.o AirHabitat.o WaterHabitat.o Restourant.o Park.o Road.o Exit.o Entrance.o View.o Cage.o matrix_cell.o
-	g++ -o Driver Driver.cpp *.o -std=c++11
+all: Cell.o LandHabitat.o AirHabitat.o WaterHabitat.o Restourant.o Park.o Road.o Exit.o Entrance.o View.o Cage.o matrix_cell.o Cat.o Dog.o Lion.o Snake.o Goat.o Chicken.o Elephant.o Cow.o Hedgehog.o Rhino.o Fish.o Crocodile.o Frog.o Duck.o Beetle.o Bee.o Owl.o Eagle.o Butterfly.o Bird.o Flyingfish.o
+	g++ -o main main.cpp *.o -std=c++11
 Cell.o: Cell.cpp Cell.h
 	g++ -c Cell.cpp -std=c++11
-Habitat.o: Habitat.cpp Habitat.h Cell.h
+Habitat.o: Habitat.cpp Habitat.h Cell.h Cell.o
 	g++ -c Habitat.cpp -std=c++11
 Facility.o: Facility.cpp Facility.h Cell.h
 	g++ -c Facility.cpp -std=c++11
@@ -24,7 +24,7 @@ Entrance.o: Entrance.cpp Entrance.h Road.h
 	g++ -c Entrance.cpp -std=c++11
 matrix_cell.o: matrix_cell.cpp matrix_cell.h Road.h
 	g++ -c matrix_cell.cpp -std=c++11
-Cage.o: Cage.cpp Cage.h Cell.h Cat.h Dog.h Lion.h Snake.h Goat.h Chicken.h Elephant.h Cow.h Hedgehog.h Rhino.h Fish.h Crocodile.h Frog.h Duck.h Beetle.h Bee.h Owl.h Eagle.h Butterfly.h Bird.h Flyingfish.h
+Cage.o: Cage.cpp Cage.h Cell.o Cat.o Dog.o Lion.o Snake.o Goat.o Chicken.o Elephant.o Cow.o Hedgehog.o Rhino.o Fish.o Crocodile.o Frog.o Duck.o Beetle.o Bee.o Owl.o Eagle.o Butterfly.o Bird.o Flyingfish.o
 	g++ -c Cage.cpp -std=c++11
 
 Animal.o: Animal.cpp Animal.h

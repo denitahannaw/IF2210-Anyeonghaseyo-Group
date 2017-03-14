@@ -22,6 +22,7 @@ private :
     int y;
     char symbol;
     // string tipeCell;
+    
 };
 
 
