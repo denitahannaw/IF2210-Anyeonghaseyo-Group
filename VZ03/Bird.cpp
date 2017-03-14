@@ -1,6 +1,6 @@
 #include "Bird.h"
 
-Bird::Bird(int _x, int _y): LandAnimal(_x, _y), FlyingAnimal(_x, _y){
+Bird::Bird(int _x, int _y): LandAnimal(_x, _y), FlyingAnimal(_x, _y), Animal(_x,_y){
 	bobot = 7;
 	musuh = new string[2];
 	musuh[0] = "butterfly";
@@ -52,3 +52,5 @@ void Bird::setY(int _y){
 	LandAnimal::y = _y;
 	FlyingAnimal::y = _y;
 }
+
+string Bird::getTipeHabitat(){}

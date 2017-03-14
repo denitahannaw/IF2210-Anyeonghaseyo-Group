@@ -1,6 +1,6 @@
 #include "Eagle.h"
 
-Eagle::Eagle(int _x, int _y): FlyingAnimal(_x, _y){
+Eagle::Eagle(int _x, int _y): FlyingAnimal(_x, _y), Animal(_x,_y){
 	bobot = 12;
 	musuh = new string[2];
 	musuh[0] = "bird";

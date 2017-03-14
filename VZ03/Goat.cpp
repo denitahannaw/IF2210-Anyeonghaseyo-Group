@@ -1,6 +1,6 @@
 #include "Goat.h"
 
-Goat::Goat(int _x, int _y): LandAnimal(_x, _y){
+Goat::Goat(int _x, int _y): LandAnimal(_x, _y), Animal(_x,_y){
 	bobot = 18;
 	musuh = new string[2];
 	musuh[0] = "snake";

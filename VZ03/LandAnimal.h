@@ -3,7 +3,7 @@
 
 #include "Animal.h"
 
-class LandAnimal: virtual public Animal{
+class LandAnimal: public virtual Animal{
 public:
 	LandAnimal(int, int);
 	LandAnimal(const LandAnimal&);
@@ -14,7 +14,7 @@ public:
 	//virtual char getSimbol()=0;
 	
 	virtual string interact()=0;
-	string getTipeHabitat();
+	virtual string getTipeHabitat();
 	virtual string getTipeAnimal()=0;
 	
 protected:

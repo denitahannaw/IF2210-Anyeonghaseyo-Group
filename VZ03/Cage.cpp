@@ -58,6 +58,15 @@ int Cage::getCageArea(){
 }
 
 /**
+* @brief Getter nAnimal.
+* Mendapatkan jumlah Animal yang terdapat pada cage
+* @return nAnimal
+*/
+int Cage::getNAnimal(){
+	return nAnimal;
+}
+
+/**
 * @brief Getter
 * Mendapatkan tipeHabitat
 * @return tipeHabitat
@@ -128,8 +137,6 @@ bool Cage::isPositionEmpty(Cell* c){
 * @brief Setter
 * Menambahkan 1 animal secara random berdasarkan tipeHabitat ke animals
 */
-#include <iostream>
-using namespace std;
 void Cage::createAnimal(){
 	if (nAnimal < maxAnimal()){
 		
@@ -188,19 +195,18 @@ void Cage::createAnimal(){
 				found = isPositionEmpty(pos);
 			}
 			
-			int x = pos->getX();cout<<x<<endl;
-			int y = pos->getY();cout<<y<<endl;
+			int x = pos->getX();
+			int y = pos->getY();
 			int i = nAnimal;
 			nr = rand() % 5 + 1;
-			Animal* anim = new Fish(x,y);
-			cout<<anim->getX()<<endl;
-			// switch(nr){
-			// 	case 1: addAnimal(new Fish(x,y), i);
-			// 	case 2: addAnimal(new Crocodile(x,y), i);
-			// 	case 3: addAnimal(new Frog(x,y), i);
-			// 	case 4: addAnimal(new Duck(x,y), i);
-			// 	case 5: addAnimal(new Flyingfish(x,y), i);
-			// }
+			
+			switch(nr){
+				case 1: addAnimal(new Fish(x,y), i);
+				case 2: addAnimal(new Crocodile(x,y), i);
+				case 3: addAnimal(new Frog(x,y), i);
+				case 4: addAnimal(new Duck(x,y), i);
+				case 5: addAnimal(new Flyingfish(x,y), i);
+			}
 			
 			nAnimal++;
 		}else if (getTipeHabitat()=="air"){

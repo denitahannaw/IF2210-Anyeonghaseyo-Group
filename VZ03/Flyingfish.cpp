@@ -1,6 +1,6 @@
 #include "Flyingfish.h"
 
-Flyingfish::Flyingfish(int _x, int _y): WaterAnimal(_x, _y), FlyingAnimal(_x, _y){
+Flyingfish::Flyingfish(int _x, int _y): WaterAnimal(_x, _y), FlyingAnimal(_x, _y), Animal(_x,_y){
 	bobot = 10;
 	musuh = new string[2];
 	musuh[0] = "frog";
@@ -52,3 +52,5 @@ void Flyingfish::setY(int _y){
 	WaterAnimal::y = _y;
 	FlyingAnimal::y = _y;
 }
+
+string Flyingfish::getTipeHabitat(){}

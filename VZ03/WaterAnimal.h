@@ -3,20 +3,19 @@
 
 #include "Animal.h"
 
-class WaterAnimal: public Animal{
+class WaterAnimal: public virtual Animal{
 public:
-	WaterAnimal(int _x, int _y);
+	WaterAnimal(int,int);
 	WaterAnimal(const WaterAnimal&);
 	virtual ~WaterAnimal();
 	
-	virtual void addBobot()=0;
-	virtual int getBobot()=0;
-	virtual char getSimbol()=0;
+	//virtual void addBobot()=0;
+	//virtual int getBobot()=0;
+	//virtual char getSimbol()=0;
 	
 	virtual string interact()=0;
-	string getTipeHabitat();
+	virtual string getTipeHabitat();
 	virtual string getTipeAnimal()=0;
-	virtual string getMusuh(int)=0;
 	
 protected:
 	const string tipeHabitat = "water";

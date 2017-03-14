@@ -20,10 +20,10 @@ using namespace std;
 
 void initiateZoo(MatrixCell& z);
 void initiateCage(int nCage, Cage ** cages, MatrixCell& z);
-// void initiateAnimal(int nCage, Cage ** cages);
+void initiateAnimal(int nCage, Cage ** cages);
 void addZooToMaps(View& p, MatrixCell& z);
 void addCageToMaps(int nCage, Cage ** c, View& p);
-
+void addAnimalToMaps(int nCage, Cage ** c, View& p);
 int main(){
 	//1. Ciptakan Zoo
 	int brs, kol;
@@ -43,20 +43,15 @@ int main(){
 	initiateCage(nCage, cages, bonbin);
 	
 	//4. Ciptakan binatang ditiap kandang
-	// initiateAnimal(nCage, cages);
-	cages[0]->createAnimal();
-	// cout<< cages[0]->getAnimal(0)->getX()<<endl;
-	// int x = cages[0]->getAnimal(0)->getX();
-	// int y = cages[0]->getAnimal(0)->getY();
-	// int z = cages[0]->getAnimal(0)->getSimbol();
-	// peta.setVal(x,y,z);
+	initiateAnimal(nCage, cages);
 
 	// //Pindahin ke peta
 	addZooToMaps(peta,bonbin);
 
 	addCageToMaps(nCage, cages, peta);
-
-	// peta.printView();
+	
+	addAnimalToMaps(nCage, cages, peta);
+	peta.printView();
 	return 0;
 }
 
@@ -136,9 +131,15 @@ void initiateCage(int nCage, Cage ** cages, MatrixCell& z){
 	}
 }
 
-// void initiateAnimal(int nCage, Cage ** cages){
-
-// }
+void initiateAnimal(int nCage, Cage ** cages){
+	int nAnimal;
+	for(int i=0; i< nCage; i++){
+		cin>>nAnimal;
+		for(int j=0; j<nAnimal; j++){
+			cages[i]->createAnimal();
+		}
+	}
+}
 
 void addZooToMaps(View& p, MatrixCell& z){
 	for(int i=0; i<z.getNBRS(); i++){
@@ -156,6 +157,18 @@ void addCageToMaps(int nCage, Cage ** c, View& p){
 			x = c[i]->getCagePosition(j)->getX();
 			y = c[i]->getCagePosition(j)->getY();
 			p.setVal(x,y,c[i]->render());
+		}
+	}
+}
+
+void addAnimalToMaps(int nCage, Cage ** c, View& p){
+	int x,y,z;
+	for(int i=0; i<nCage; i++){
+		for(int j=0; j<c[i]->getNAnimal(); j++){
+			x = c[i]->getAnimal(j)->getX();
+			y = c[i]->getAnimal(j)->getY();
+			z = c[i]->getAnimal(j)->getSimbol();
+			p.setVal(x,y,z);
 		}
 	}
 }

@@ -1,6 +1,6 @@
 #include "Hedgehog.h"
 
-Hedgehog::Hedgehog(int _x, int _y): LandAnimal(_x, _y){
+Hedgehog::Hedgehog(int _x, int _y): LandAnimal(_x, _y), Animal(_x,_y){
 	bobot = 20;
 	musuh = new string[2];
 	musuh[0] = "elephant";

@@ -1,6 +1,6 @@
 #include "Frog.h"
 
-Frog::Frog(int _x, int _y): LandAnimal(_x, _y), WaterAnimal(_x, _y){
+Frog::Frog(int _x, int _y): LandAnimal(_x, _y), WaterAnimal(_x, _y), Animal(_x,_y){
 	bobot = 5;
 	musuh = new string[2];
 	musuh[0] = "rhino";
@@ -52,3 +52,5 @@ void Frog::setY(int _y){
 	LandAnimal::y = _y;
 	WaterAnimal::y = _y;
 }
+
+string  Frog::getTipeHabitat(){}

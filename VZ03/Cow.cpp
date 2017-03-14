@@ -1,6 +1,6 @@
 #include "Cow.h"
 
-Cow::Cow(int _x, int _y): LandAnimal(_x, _y){
+Cow::Cow(int _x, int _y): LandAnimal(_x, _y), Animal(_x,_y){
 	bobot = 25;
 	musuh = new string[2];
 	musuh[0] = "elephant";

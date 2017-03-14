@@ -67,6 +67,12 @@ public:
 	int getCageArea();
 
 	/**
+	* @brief Getter nAnimal.
+	* Mendapatkan jumlah Animal yang terdapat pada cage
+	* @return nAnimal
+	*/
+	int getNAnimal();
+	/**
 	* @brief Getter
 	* Mendapatkan tipeHabitat
 	* @return tipeHabitat

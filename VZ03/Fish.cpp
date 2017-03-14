@@ -1,6 +1,6 @@
 #include "Fish.h"
 
-Fish::Fish(int _x, int _y): WaterAnimal(_x, _y){
+Fish::Fish(int _x, int _y): WaterAnimal(_x, _y),Animal(_x,_y){
 	bobot = 5;
 	musuh = new string[2];
 	musuh[0] = "duck";

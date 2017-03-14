@@ -1,6 +1,6 @@
 #include "Crocodile.h"
 
-Crocodile::Crocodile(int _x, int _y): WaterAnimal(_x, _y){
+Crocodile::Crocodile(int _x, int _y): WaterAnimal(_x, _y), Animal(_x,_y){
 	bobot = 25;
 	musuh = new string[2];
 	musuh[0] = "duck";

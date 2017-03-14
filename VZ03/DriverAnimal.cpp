@@ -1,15 +1,15 @@
-#include "Fish.h"
+#include "Flyingfish.h"
 #include <iostream>
 
 int main(){
 	
-	Fish singa(5, 10);
+	// Flyingfish singa(5, 10);
+	Flyingfish * singa = new Flyingfish(5,10);
+	cout << singa->getX() << endl;
+	cout << singa->getY() << endl;
 	
-	cout << singa.getX() << endl;
-	cout << singa.getY() << endl;
-	
-	// singa.Fish::setX(10);
-	// singa.Fish::setY(5);
+	// singa.Flyingfish::setX(10);
+	// singa.Flyingfish::setY(5);
 	// cout << singa.getX() << endl;
 	// cout << singa.getY() << endl;
 	

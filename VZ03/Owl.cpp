@@ -1,6 +1,6 @@
 #include "Owl.h"
 
-Owl::Owl(int _x, int _y): FlyingAnimal(_x, _y){
+Owl::Owl(int _x, int _y): FlyingAnimal(_x, _y), Animal(_x,_y){
 	bobot = 7;
 	musuh = new string[2];
 	musuh[0] = "bee";

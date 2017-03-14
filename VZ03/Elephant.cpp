@@ -1,6 +1,6 @@
 #include "Elephant.h"
 
-Elephant::Elephant(int _x, int _y): LandAnimal(_x, _y){
+Elephant::Elephant(int _x, int _y): LandAnimal(_x, _y), Animal(_x,_y){
 	bobot = 30;
 	musuh = new string[2];
 	musuh[0] = "cow";

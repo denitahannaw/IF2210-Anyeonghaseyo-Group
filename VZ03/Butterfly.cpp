@@ -1,6 +1,6 @@
 #include "Butterfly.h"
 
-Butterfly::Butterfly(int _x, int _y): FlyingAnimal(_x, _y){
+Butterfly::Butterfly(int _x, int _y): FlyingAnimal(_x, _y), Animal(_x,_y){
 	bobot = 3;
 	musuh = new string[2];
 	musuh[0] = "bird";

@@ -21,6 +21,7 @@ public:
 	
 	string interact();
 	string getTipeAnimal();
+	string getTipeHabitat();
 	
 protected:
 	const string tipeAnimal = "bird";

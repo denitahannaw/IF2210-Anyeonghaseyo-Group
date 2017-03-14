@@ -6,14 +6,14 @@ using namespace std;
 
 class Animal{
 public:
-	Animal(int _x, int _y);
+	Animal(int,int);
 	Animal(const Animal&);
 	virtual ~Animal();
 	
-	void setX(int);
-	void setY(int);
-	int getX();
-	int getY();
+	virtual void setX(int);
+	virtual void setY(int);
+	virtual int getX();
+	virtual int getY();
 	
 	virtual void addBobot()=0;
 	virtual int getBobot()=0;
