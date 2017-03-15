@@ -4,9 +4,11 @@
 #include <string>
 using namespace std;
 
-Cell :: Cell(int x,int y,char s){
+Cell :: Cell(int x,int y, char s){
     this->x = x;
     this->y = y;
+    symbol = s;
+
     // symbol for Cell
     /*
     'w' = water
@@ -18,37 +20,41 @@ Cell :: Cell(int x,int y,char s){
     'x' = exit
     't' = restourant
     */
-    
-    if (s=='w'){
-        tipeCell = "water";
-    }
-    else if (s=='l'){
-        tipeCell = "land";
-    }
-    else if (s=='a'){
-        tipeCell = "air";
-    }
-    else if (s=='p'){
-        tipeCell = "park";
-    }
-    else if (s=='r'){
-        tipeCell = "road";
-    }
-    else if (s=='n'){
-        tipeCell = "entrance";
-    }
-    else if (s=='x'){
-        tipeCell = "exit";
-    }
-    else if (s=='t'){
-        tipeCell = "restourant";
-    }
+
+    // if (s = 'w'){
+    //     tipeCell = "water";
+    // }
+    // else if (s = 'l'){
+    //     tipeCell = "land";
+    // }
+    // else if (s = 'a'){
+    //     tipeCell = "air";
+    // }
+    // else if (s = 'p'){
+    //     tipeCell = "park";
+    // }
+    // else if (s = 'r'){
+    //     tipeCell = "road";
+    // }
+    // else if (s = 'n'){
+    //     tipeCell = "entrance";
+    // }
+    // else if (s = 'x'){
+    //     tipeCell = "exit";
+    // }
+    // else if (s = 't'){
+    //     tipeCell = "restourant";
+    // }
+
 }
 
-string Cell :: getTipe(char s){
-    return tipeCell;   
-}
+// string Cell :: getTipe(){
+//     return tipeCell;
+// }
 
+string Cell::getTipe(){
+	return tipeCell;
+}
 int Cell :: getX(){
     return x;
 }
@@ -64,3 +70,8 @@ int Cell :: setX(int a){
 int Cell :: setY(int b){
     y = b;
 }
+
+char Cell::render(){
+    return symbol;
+}
+

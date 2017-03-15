@@ -10,7 +10,7 @@ class Cell {
 
 public :
     Cell(int,int,char);
-    string getTipe();
+    virtual string getTipe();
     int getX();
     int getY();
     int setX(int);

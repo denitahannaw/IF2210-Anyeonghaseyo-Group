@@ -33,7 +33,7 @@ using namespace std;
 * Merupakan Cage yang terdiri dari beberapa petak Cell
 * pada habitat tertentu.
 */
-class Cage{
+class Cage: public Renderable{
 public:
 	//Cage();
 	/**
