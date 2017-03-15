@@ -91,7 +91,7 @@ Animal* Cage::getAnimal(int i){
 * @return 30%*cageArea;
 */
 int Cage::getMaxAnimal(){
-	return 30*cageArea/100;
+	return 30*nArea/100;
 }
 
 /**
@@ -122,9 +122,11 @@ void Cage::addCagePosition(Cell* position){
 * @param anim Animal yang akan ditambahkan
 */
 void Cage::addAnimal(Animal* anim){
+	// cout << getMaxAnimal() <<" "<< nArea << endl;
 	if (nAnimal < getMaxAnimal()){
 		animals[nAnimal] = anim;
 		nAnimal++;
+		// cout <<"dari add animal: " <<nAnimal<<endl;
 	}
 }
 
@@ -138,10 +140,15 @@ bool Cage::isPositionEmpty(Cell* c){
 	int i=0;
 	bool empty = true;
 	while (i<nAnimal && empty){
-		if (animals[i]->getX() == c->getX() && animals[i]->getY() == c->getY()){
+		if ((animals[i]->getX() == c->getX()) && (animals[i]->getY() == c->getY())){
 			empty = false;
+			
+		} else {
+			i++;	
 		}
-		i++;
+		// cout << animals[i]->getX() <<" "<< c->getX()<<" ";
+		// cout << animals[i]->getY() <<" "<< c->getY()<<" ";
+		// cout << empty << endl;
 	}
 
 	return empty;

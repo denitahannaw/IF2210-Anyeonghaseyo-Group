@@ -1,5 +1,7 @@
-all: Cell.o LandHabitat.o AirHabitat.o WaterHabitat.o Restourant.o Park.o Road.o Exit.o Entrance.o View.o Cage.o matrix_cell.o Cat.o Dog.o Lion.o Snake.o Goat.o Chicken.o Elephant.o Cow.o Hedgehog.o Rhino.o Fish.o Crocodile.o Frog.o Duck.o Beetle.o Bee.o Owl.o Eagle.o Butterfly.o Bird.o Flyingfish.o file_reader.o
+all: virtual_zoo.o
 	g++ -o main main.cpp *.o -std=c++11
+virtual_zoo.o: virtual_zoo.cpp virtual_zoo.h Cell.o LandHabitat.o AirHabitat.o WaterHabitat.o Restourant.o Park.o Road.o Exit.o Entrance.o View.o Cage.o matrix_cell.o Cat.o Dog.o Lion.o Snake.o Goat.o Chicken.o Elephant.o Cow.o Hedgehog.o Rhino.o Fish.o Crocodile.o Frog.o Duck.o Beetle.o Bee.o Owl.o Eagle.o Butterfly.o Bird.o Flyingfish.o file_reader.o
+	g++ -c virtual_zoo.cpp -std=c++11
 Cell.o: Cell.cpp Cell.h
 	g++ -c Cell.cpp -std=c++11
 Habitat.o: Habitat.cpp Habitat.h Cell.h Cell.o

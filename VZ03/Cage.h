@@ -1,6 +1,6 @@
 #ifndef CAGE_H
 #define CAGE_H
-
+#include <iostream>
 #include <string>
 #include "Cell.h"
 #include "Animal.h"
