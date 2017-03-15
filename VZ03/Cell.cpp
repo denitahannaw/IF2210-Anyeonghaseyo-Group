@@ -71,3 +71,4 @@ int Cell :: setY(int b){
 char Cell::render(){
     return symbol;
 }
+

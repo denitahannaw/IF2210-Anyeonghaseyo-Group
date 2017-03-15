@@ -8,6 +8,14 @@ VirtualZoo::VirtualZoo(string input_file) {
 	matriks_cell = new MatrixCell(data.GetNBrs(), data.GetNKol());
 	// cout << matriks_cell->getNBRS() << " ";
 	// cout << matriks_cell->getNKOL() << endl;
+	
+	int max = (matriks_cell->getNBRS() + matriks_cell->getNKOL())*2;
+	list_entrance = new Cell*[max];
+	n_entrance = 0;
+	list_exit = new Cell*[max];
+	n_exit = 0;
+	n_road;
+	
 	char c;
 	for(int i=0; i<matriks_cell->getNBRS(); i++){
 		for(int j=0; j<matriks_cell->getNKOL(); j++){
@@ -22,6 +30,7 @@ VirtualZoo::VirtualZoo(string input_file) {
 					k++;
 			}
 
+
 			//inisialisasi
 			if (data.GetCellType(k)=="airhabitat"){
 				matriks_cell->setCell(new AirHabitat(i,j, c), i, j);
@@ -31,14 +40,21 @@ VirtualZoo::VirtualZoo(string input_file) {
 				matriks_cell->setCell(new LandHabitat(i,j, c), i, j);
 			}else if (data.GetCellType(k)=="road"){
 				matriks_cell->setCell(new Road(i,j, c), i, j);
+				n_road++;
 			}else if(data.GetCellType(k)=="park"){
 				matriks_cell->setCell(new Park(i,j, c), i, j);
 			}else if(data.GetCellType(k)=="restourant"){
 				matriks_cell->setCell(new Restourant(i,j, c), i, j);
 			}else if(data.GetCellType(k)=="entrance"){
-				matriks_cell->setCell(new Restourant(i,j, c), i, j);
+				matriks_cell->setCell(new Entrance(i,j, c), i, j);
+				list_entrance[n_entrance] = new Entrance(i,j, c);
+				n_entrance++;
+				n_road++;
 			}else if(data.GetCellType(k)=="exit"){
-				matriks_cell->setCell(new Restourant(i,j, c), i, j);
+				matriks_cell->setCell(new Exit(i,j, c), i, j);
+				list_exit[n_exit] = new Exit(i,j, c);
+				n_exit++;
+				n_road++;
 			}
 			
 			// cout << matriks_cell->getCell(i,j)->render();
@@ -196,6 +212,14 @@ VirtualZoo::VirtualZoo(string input_file) {
 
 
 	maps = new View(matriks_cell->getNBRS(),matriks_cell->getNKOL());
+
+	int x = GetEntrance()->getX();
+	int y = GetEntrance()->getY();
+
+	person = new Visitor(x,y);
+	list_visited = new Cell*[n_road];
+	n_visited = 0;
+	current_visited = -1;
 }
 
 VirtualZoo::~VirtualZoo() {
@@ -239,15 +263,163 @@ void VirtualZoo::AddAnimalToMaps() {
 	}
 }
 
+void VirtualZoo::AddVisitorToMaps() {
+	int x = person->getX();
+	int y = person->getY();
+	int z = person->getSimbol();
+	maps->setVal(x,y,z);
+}
+
 void VirtualZoo::PrintVirtualZoo() {
 	AddZooToMaps();
 	AddCageToMaps();
 	AddAnimalToMaps();
+	AddVisitorToMaps();
 	maps->printView();
 }
 
 void VirtualZoo::MoveAnimal() {
 	for(int i = 0; i < n_cage; i++) {
-		
+		for(int j = 0; j < cages[i]->getNAnimal(); j++) {
+			//random posisi
+			int nr;
+			bool found = false;
+			Cell * pos;
+			while (!found){
+				nr = rand() % cages[i]->getNArea();
+				pos = cages[i]->getCagePosition(nr);
+
+				//cek apa ada hewan yang udah di posisi itu
+				found = cages[i]->isPositionEmpty(pos);
+			}
+
+			int x = pos->getX();
+			int y = pos->getY();
+
+			cages[i]->getAnimal(j)->setX(x);
+			cages[i]->getAnimal(j)->setY(y);
+		}
 	}
+}
+
+int VirtualZoo::GetTotalMakanan() {
+	int total_makanan;
+	for(int i = 0; i < n_cage; i++) {
+		for(int j = 0; j < cages[i]->getNAnimal(); j++) {
+			total_makanan = total_makanan + cages[i]->getAnimal(j)->getBobot();
+		}
+	}
+
+	return total_makanan;
+}
+
+Cell* VirtualZoo::GetEntrance() {
+	int rn = rand() % n_entrance;
+	return list_entrance[rn];
+}
+
+void VirtualZoo::MoveVisitor() {
+	int x_now = person->getX();
+	int y_now = person->getY();
+
+	int x_max = matriks_cell->getNBRS()-1;
+	int y_max = matriks_cell->getNKOL()-1;
+
+	Cell** cell_available = new Cell*[4];
+	int n_available = 0;
+
+	int x,y;
+
+	//kanan
+	x = x_now + 1;
+	y = y_now;
+
+	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
+		if (matriks_cell->getCell(x,y)->getTipe() == "road") {
+			if (!IsVisited(matriks_cell->getCell(x,y))) {
+				cell_available[n_available] = matriks_cell->getCell(x,y);
+				n_available++;
+			}
+		}
+	}
+
+	//atas
+	x = x_now;
+	y = y_now + 1;
+
+	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
+		if (matriks_cell->getCell(x,y)->getTipe() == "road" || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
+			if (!IsVisited(matriks_cell->getCell(x,y))) {
+				cell_available[n_available] = matriks_cell->getCell(x,y);
+				n_available++;
+			}
+		}
+	}
+
+	//kiri
+	x = x_now - 1;
+	y = y_now;
+
+	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
+		if (matriks_cell->getCell(x,y)->getTipe() == "road"  || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
+			if (!IsVisited(matriks_cell->getCell(x,y))) {
+				cell_available[n_available] = matriks_cell->getCell(x,y);
+				n_available++;
+			}
+		}
+	}
+
+	//bawah
+	x = x_now;
+	y = y_now - 1;
+
+	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
+		if (matriks_cell->getCell(x,y)->getTipe() == "road"  || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
+			if (!IsVisited(matriks_cell->getCell(x,y))) {
+				cell_available[n_available] = matriks_cell->getCell(x,y);
+				n_available++;
+			}
+		}
+	}
+
+
+	if (n_available == 0) {
+		current_visited--;
+		int x_next = list_visited[current_visited]->getX();
+		int y_next = list_visited[current_visited]->getY();
+		person->setPosition(x_next, y_next);
+	} else {
+		int rn = rand() % n_available;
+		int x_next = cell_available[rn]->getX();
+		int y_next = cell_available[rn]->getY();
+		list_visited[n_visited] = cell_available[rn];
+		n_visited++;
+		current_visited++;
+		person->setPosition(x_next, y_next);
+	}
+
+
+}
+
+bool VirtualZoo::IsVisited(Cell* cel) {
+	bool visited = false;
+	int i =0;
+	while (i < n_visited && !visited) {
+		if (list_visited[i]->getX() == cel->getX() && list_visited[i]->getY() == cel->getY()) {
+			visited = true;
+		}
+		i++;
+	}
+
+	return visited;
+}
+
+bool VirtualZoo::IsEndOfTour() {
+	int x = person->getX();
+	int y = person->getY();
+	bool end_of_tour = false;
+	if (matriks_cell->getCell(x,y)->getTipe() == "exit") {
+		end_of_tour = true;
+	}
+	return end_of_tour;
 }

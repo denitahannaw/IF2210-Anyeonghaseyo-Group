@@ -1,34 +1,36 @@
 #include "Visitor.h"
 
-Visitor::Visitor() {
-	position = new Cell;
-	position.SIMBOL = 'X';
-	position.x = 50; // harusnya di gate
-	position.y = 50;
-}
+// Visitor::Visitor() {
+// 	position = new Cell;
+// 	position.SIMBOL = 'X';
+// 	position.x = 50; // harusnya di gate
+// 	position.y = 50;
+// }
 
-Visitor::Visitor(int x, int y) {
-	position = new Cell;
-	position.SIMBOL = 'X';
-	position.x = x;
-	position.y = y;
+Visitor::Visitor(int x, int y){
+	
+	this->x = x;
+	this->y = y;
 }
 
 Visitor::~Visitor() {
-	delete position;
+	// delete position;
 }
 
 void Visitor::setPosition(int _x, int _y) {
-	x = _x;
-	y = _y;
+	this->x = _x;
+	this->y = _y;
 }
 
-int Visitor::getPosX() {
+int Visitor::getX() {
 	return x;
 }
 
-int Visitor::getPosY() {
+int Visitor::getY() {
 	return y;
 }
 
-//Cell Visitor::getPosition() { return }
+char Visitor::getSimbol() {
+	return simbol;
+}
+// Cell Visitor::getPosition() { return position;}

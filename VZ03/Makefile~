@@ -1,7 +1,16 @@
 all: virtual_zoo.o
 	g++ -o main main.cpp *.o -std=c++11
-virtual_zoo.o: Cell.o LandHabitat.o AirHabitat.o WaterHabitat.o Restourant.o Park.o Road.o Exit.o Entrance.o View.o Cage.o matrix_cell.o Cat.o Dog.o Lion.o Snake.o Goat.o Chicken.o Elephant.o Cow.o Hedgehog.o Rhino.o Fish.o Crocodile.o Frog.o Duck.o Beetle.o Bee.o Owl.o Eagle.o Butterfly.o Bird.o Flyingfish.o file_reader.o
+virtual_zoo.o: virtual_zoo.cpp virtual_zoo.h Cell.o LandHabitat.o AirHabitat.o WaterHabitat.o Restourant.o Park.o Road.o Exit.o Entrance.o Cage.o matrix_cell.o Cat.o Dog.o Lion.o Snake.o Goat.o Chicken.o Elephant.o Cow.o Hedgehog.o Rhino.o Fish.o Crocodile.o Frog.o Duck.o Beetle.o Bee.o Owl.o Eagle.o Butterfly.o Bird.o Flyingfish.o matrix_cell.o file_reader.o View.o Visitor.o
 	g++ -c virtual_zoo.cpp -std=c++11
+matrix_cell.o: matrix_cell.cpp matrix_cell.h Road.h
+	g++ -c matrix_cell.cpp -std=c++11
+file_reader.o: file_reader.cpp file_reader.h
+	g++ -c file_reader.cpp -std=c++11
+View.o: View.cpp View.h
+	g++ -c View.cpp -std=c++11
+Visitor.o: Visitor.cpp Visitor.h
+	g++ -c Visitor.cpp -std=c++11
+
 Cell.o: Cell.cpp Cell.h
 	g++ -c Cell.cpp -std=c++11
 Habitat.o: Habitat.cpp Habitat.h Cell.h Cell.o
@@ -24,8 +33,7 @@ Exit.o: Exit.cpp Exit.h Road.h
 	g++ -c Exit.cpp -std=c++11
 Entrance.o: Entrance.cpp Entrance.h Road.h
 	g++ -c Entrance.cpp -std=c++11
-matrix_cell.o: matrix_cell.cpp matrix_cell.h Road.h
-	g++ -c matrix_cell.cpp -std=c++11
+
 Cage.o: Cage.cpp Cage.h Cell.o Cat.o Dog.o Lion.o Snake.o Goat.o Chicken.o Elephant.o Cow.o Hedgehog.o Rhino.o Fish.o Crocodile.o Frog.o Duck.o Beetle.o Bee.o Owl.o Eagle.o Butterfly.o Bird.o Flyingfish.o
 	g++ -c Cage.cpp -std=c++11
 
@@ -79,5 +87,4 @@ Lion.o: Lion.cpp Lion.h LandAnimal.h Karnivora.h
 	g++ -c Lion.cpp -std=c++11
 Flyingfish.o: Flyingfish.cpp Flyingfish.h FlyingAnimal.h WaterAnimal.h Karnivora.h
 	g++ -c Flyingfish.cpp -std=c++11
-file_reader.o: file_reader.cpp file_reader.h
-	g++ -c file_reader.cpp -std=c++11
+

@@ -38,7 +38,7 @@
 // #include "Flyingfish.h" //21
 
 #include "virtual_zoo.h"
-
+#include <unistd.h>
 // void InitiateVirtualZoo(MatrixCell& zoo, FileReader& data);
 // void InitiateCage(int nCage, Cage** cages, MatrixCell& zoo, FileReader& data);
 // void InitiateAnimal(int nCage, Cage** cages, FileReader& data);
@@ -74,8 +74,18 @@ int main(){
 	// maps.printView();
 
 	VirtualZoo* virtual_zoo = new VirtualZoo("input.txt");
-	virtual_zoo->PrintVirtualZoo();
+	// virtual_zoo->PrintVirtualZoo();
 	
+
+	while (!virtual_zoo->IsEndOfTour()) {
+		virtual_zoo->PrintVirtualZoo();
+		cout << endl;
+		virtual_zoo->MoveAnimal();
+		virtual_zoo->MoveVisitor();
+		sleep(1);
+	}
+
+	cout <<"Total makanan : "<< virtual_zoo->GetTotalMakanan() << endl;
 	return 0;
 }
 

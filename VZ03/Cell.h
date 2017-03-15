@@ -17,6 +17,7 @@ public :
     int setY(int);
     char render();
 
+
 private :
     int x;
     int y;

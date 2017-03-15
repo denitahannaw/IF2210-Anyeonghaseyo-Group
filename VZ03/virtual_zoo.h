@@ -38,6 +38,7 @@
 #include "Bird.h" //20
 #include "Flyingfish.h" //21
 
+#include "Visitor.h"
 #include <iostream>
 using namespace std;
 
@@ -48,15 +49,37 @@ public:
 	void AddZooToMaps();
 	void AddCageToMaps();
 	void AddAnimalToMaps();
+	void AddVisitorToMaps();
 
 	void PrintVirtualZoo();
 
 	void MoveAnimal();
+	int GetTotalMakanan();
+
+	Cell* GetEntrance();
+
+	void MoveVisitor();
+	bool IsVisited(Cell* cel);
+	bool IsEndOfTour();
+
 private:
-	// FileReader* data;
+
 	MatrixCell* matriks_cell;
+		
+	int n_entrance;
+	Cell** list_entrance;
+	int n_exit;
+	Cell** list_exit;
+
 	int n_cage;
 	Cage** cages;
 	View* maps;	
+
+	Visitor* person;
+
+	int n_road; //termasuk entrance n exit
+	Cell** list_visited;
+	int current_visited;
+	int n_visited;
 };
 #endif

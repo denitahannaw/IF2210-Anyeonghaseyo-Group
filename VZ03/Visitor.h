@@ -2,21 +2,21 @@
 #define _VISITOR_H_
 
 #include <iostream>
+
 using namespace std;
 
-//#include "cage.h"
-
-class visitor {
+class Visitor {
 	public :
-		Visitor();
+		// Visitor();
 		Visitor(int, int);
 		~Visitor();
 		void setPosition(int, int);
-		int getPosX();
-		int getPosY();
-		Cell getPosition();
+		int getX();
+		int getY();
+		char getSimbol();
 
 	private :
-		Cell position;
+		int x, y;
+		char simbol = 'V';
 };
 #endif
