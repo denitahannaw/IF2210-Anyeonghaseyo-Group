@@ -13,9 +13,6 @@ Visitor::Visitor(int x, int y){
 	this->y = y;
 }
 
-Visitor::~Visitor() {
-	// delete position;
-}
 
 void Visitor::setPosition(int _x, int _y) {
 	this->x = _x;

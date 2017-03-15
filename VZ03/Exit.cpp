@@ -7,10 +7,6 @@ Exit :: Exit(int x,int y,char s) : Road(x,y,s){
 
 }
 
-Exit :: ~Exit(){
-
-}
-
 string Exit :: getTipe(){
     return tipe;
 }

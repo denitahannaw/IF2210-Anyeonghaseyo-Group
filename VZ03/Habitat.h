@@ -4,15 +4,25 @@
 #include "Cell.h"
 #include <string>
 using namespace std;
-
+/**
+* @class Habitat
+* Kelas Habitat adalah kelas turunan dari Cell
+*/
 class Habitat : public Cell {
 public :
-    Habitat(int,int,char);
-    // virtual ~Habitat();
+	/**
+    * @brief Constructor
+    * @param x Indeks baris
+    * @param y Indeks kolom
+    * @param s Simbol
+    */
+    Habitat(int x,int y,char z);
+    /**
+    * @brief Mendapatkan tipe  Cell
+    * @return tipe
+    */
     virtual string getTipe()=0;
-// private :
-    // bool is_cage;
-    // string tipe;
+
 };
 
 #endif

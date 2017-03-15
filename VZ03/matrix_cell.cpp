@@ -23,14 +23,6 @@ MatrixCell::~MatrixCell() {
 	delete [] (matrix);
 }
 
-// MatrixCell& MatrixCell::operator=(const MatrixCell& Z) {
-// 	for (int i=0; i<brs; i++) {
-// 		delete [] (matrix)[i];
-// 	}
-// 	delete [] (matrix);
-
-// }
-
 Cell* MatrixCell::getCell(int i, int j) {
 	return matrix[i][j];
 }

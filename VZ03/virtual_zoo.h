@@ -45,30 +45,114 @@ using namespace std;
 
 class VirtualZoo {
 public:
+	
+	/**
+	* @brief Constructor
+	* @param input_file Nama file input yang berisi konfigurasi Zoo
+	*/
 	VirtualZoo(string input_file);
+	/**
+	* @brief Destructor
+	*/
 	~VirtualZoo();
+	/**
+	* @brief Menambahkan simbol2 dari lingkungan Zoo ke Maps
+	*/
 	void AddZooToMaps();
+	/**
+	* @brief Menambahkan simbol2 dari Cage ke Maps
+	*/
 	void AddCageToMaps();
+	/**
+	* @brief Menambahkan simbol2 dari Animal ke Maps
+	*/
 	void AddAnimalToMaps();
+	/**
+	* @brief Menambahkan simbol dari Visitor ke Maps
+	*/
 	void AddVisitorToMaps();
+	/**
+	* @brief Menentukan apakah suatu area masih dalam 
+	* jangkauan area Virtual Zoo 
+	* @param kiri Indeks batas kiri Virtual Zoo
+	* @param atas Indeks batas atas Virtual Zoo
+	* @param kanan Indeks batas kanan Virtual Zoo
+	* @param bawah Indeks batas bawah Virtual Zoo
+	* @return true jika masih dalam jangkauan,
+			  false jika diluar jangkauan
+	*/
+	bool IsInRage(int kiri,int atas,int kanan,int bawah);
+	/**
+	* @brief Menentukan apakah suatu titik masih di dalam 
+	*  area Virtual Zoo 
+	* @param x 
+	* @param y
+	* @return true jika masih dalam jangkauan,
+	*		  false jika diluar jangkauan
+	*/
+	bool IsInRage(int x,int y);
 
-	bool IsInRage(int,int,int,int);
-	bool IsInRage(int,int);
-
+	/**
+	* @brief Mencetak seluruh peta dan komponen Virtual Zoo
+	*/
 	void PrintVirtualZoo();
-	void PrintVirtualZoo(int,int,int,int);
-
+	/**
+	* @brief Mencetak peta dan komponen Virtual Zoo pada
+	* area tertentu
+	* @param kiri Indeks batas kiri Virtual Zoo
+	* @param atas Indeks batas atas Virtual Zoo
+	* @param kanan Indeks batas kanan Virtual Zoo
+	* @param bawah Indeks batas bawah Virtual Zoo
+	*/
+	void PrintVirtualZoo(int kiri,int atas,int kanan,int bawah);
+	/**
+	* @brief Memindahkan posisi Animal pada Virtual Zoo
+	*/
 	void MoveAnimal();
+	/**
+	* @brief Mencetak seluruh interaksi yang dialami visitor
+	*/
 	void Interact();
+	/**
+	* @brief Mencetak interaksi yang dialami visitor oleh Cage
+	* yang berada di koordinat (x,y)
+	* @param x Posisi x dari Cage
+	* @param y Posisi y dari Cage
+	*/
 	void PrintInteraction(int x, int y);
+	/**
+	* @brief mendapatkan total makanan yang diperlukan Virtual Zoo
+	* @return total_makanan
+	*/
 	int GetTotalMakanan();
-
+	/**
+	* @brief Mendapatkan cell yang merupakan entrance random dari seluruh
+	* entrance yang ada
+	*/
 	Cell* GetEntrance();
-
+	/**
+	* @brief Memindahkan posisi visitor ke road terdekat
+	*/
 	void MoveVisitor();
+	/**
+	* @brief Menentukan suatu cell apakah sudah pernah dikunjungi
+	* atau belum
+	* @param cel Cell yang dites
+	* @return true Jika cel pernah dikunjungi,
+	*		  false Jika cel belum pernah dikunjungi
+	*/
 	bool IsVisited(Cell* cel);
+	/**
+	* @brief Menentukan apakah posisi visitor berada pada
+	* cell exit
+	* @return true Jika posisi visitor berada pada cell exit,
+	*		  false Jika posisi visitor tidak berada pada cell exit
+	*/
 	bool IsEndOfTour();
-
+	/**
+	* @brief Melakukan tour zoo. Menggerakkan visitor dari entrance
+	* sampai ke exit
+	*/
 	void Tour();
 
 private:

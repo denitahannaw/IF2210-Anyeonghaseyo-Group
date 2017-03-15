@@ -60,11 +60,11 @@ int Cell :: getY(){
     return y;
 }
 
-int Cell :: setX(int a){
+void Cell :: setX(int a){
     x = a;
 }
 
-int Cell :: setY(int b){
+void Cell :: setY(int b){
     y = b;
 }
 

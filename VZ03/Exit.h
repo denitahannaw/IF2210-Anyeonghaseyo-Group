@@ -4,11 +4,23 @@
 #include "Road.h"
 #include <string>
 using namespace std;
-
+/**
+* @class Exit
+* Kelas Exit adalah kelas turunan dari Road
+*/
 class Exit : public Road {
 public :
-    Exit(int,int,char);
-    ~Exit();
+	/**
+    * @brief Constructor
+    * @param x Indeks baris
+    * @param y Indeks kolom
+    * @param s Simbol
+    */
+    Exit(int x,int y,char z);
+    /**
+    * @brief Mendapatkan tipe  Cell
+    * @return tipe
+    */
     string getTipe();
 private :
     string tipe = "exit";

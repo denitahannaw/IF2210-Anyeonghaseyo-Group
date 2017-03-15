@@ -212,9 +212,9 @@ VirtualZoo::VirtualZoo(string input_file) {
 
 
 	maps = new View(matriks_cell->getNBRS(),matriks_cell->getNKOL());
-
-	int x = GetEntrance()->getX();
-	int y = GetEntrance()->getY();
+	Cell* entrance = GetEntrance();
+	int x = entrance->getX();
+	int y = entrance->getY();
 
 	person = new Visitor(x,y);
 	list_visited = new Cell*[n_road];
@@ -256,9 +256,7 @@ void VirtualZoo::AddAnimalToMaps() {
 			x = cages[i]->getAnimal(j)->getX();
 			y = cages[i]->getAnimal(j)->getY();
 			z = cages[i]->getAnimal(j)->getSimbol();
-			// cout << cages[i]->getAnimal(j)->getSimbol() << endl;
 			maps->setVal(x,y,z);
-			// cout <<x <<" "<<y << endl;
 		}
 	}
 }
@@ -511,12 +509,14 @@ bool VirtualZoo::IsEndOfTour() {
 }
 
 void VirtualZoo::Tour() {
-	while (!IsEndOfTour()) {
-		PrintVirtualZoo();
-		Interact();
-		cout << endl;
+	system("clear");
+	PrintVirtualZoo();
+	do {
+		sleep(1);
+		system("clear");
 		MoveAnimal();
 		MoveVisitor();
-		sleep(1);
-	}
+		PrintVirtualZoo();
+		Interact();
+	}while (!IsEndOfTour());
 }
