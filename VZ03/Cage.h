@@ -101,6 +101,7 @@ public:
 	*/
 	int getMaxAnimal();
 
+	int getTotalMakanan();
 	/**
 	* @brief Setter 
 	* Set cageArea=area

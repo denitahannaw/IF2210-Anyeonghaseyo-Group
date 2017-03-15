@@ -94,6 +94,14 @@ int Cage::getMaxAnimal(){
 	return 30*nArea/100;
 }
 
+int Cage::getTotalMakanan() {
+	int total_makanan = 0;
+	for(int i = 0; i < nAnimal; i++) {
+		total_makanan = total_makanan + animals[i]->getBobot();
+	}
+	return total_makanan;
+}
+
 /**
 * @brief Setter
 * Set cageArea=area

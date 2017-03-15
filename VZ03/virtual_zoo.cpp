@@ -391,9 +391,9 @@ void VirtualZoo::PrintInteraction(int x, int y) {
 int VirtualZoo::GetTotalMakanan() {
 	int total_makanan;
 	for(int i = 0; i < n_cage; i++) {
-		for(int j = 0; j < cages[i]->getNAnimal(); j++) {
-			total_makanan = total_makanan + cages[i]->getAnimal(j)->getBobot();
-		}
+		
+		total_makanan = total_makanan + cages[i]->getTotalMakanan();
+		
 	}
 
 	return total_makanan;
