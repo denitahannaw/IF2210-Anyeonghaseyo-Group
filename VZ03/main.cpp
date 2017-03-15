@@ -38,7 +38,7 @@
 // #include "Flyingfish.h" //21
 
 #include "virtual_zoo.h"
-#include <unistd.h>
+
 // void InitiateVirtualZoo(MatrixCell& zoo, FileReader& data);
 // void InitiateCage(int nCage, Cage** cages, MatrixCell& zoo, FileReader& data);
 // void InitiateAnimal(int nCage, Cage** cages, FileReader& data);
@@ -75,17 +75,40 @@ int main(){
 
 	VirtualZoo* virtual_zoo = new VirtualZoo("input.txt");
 	// virtual_zoo->PrintVirtualZoo();
+	int n;
+	do {
+		cout << "1. Display Virtual Zoo All" << endl;
+		cout << "2. Display Virtual Zoo " << endl;
+		cout << "3. Tour Virtual Zoo" << endl;
+		cout << "4. Count Total Animal Feeds" <<endl;
+		cout << "0. Exit" << endl;
+		cin >> n;
+		if (n == 1) {
+			virtual_zoo->PrintVirtualZoo();
+		} else if (n == 2) {
+			int kiri,atas,kanan,bawah;
+
+			cout << "Batas kiri: "; cin >> kiri;
+			cout << "Batas atas: "; cin >> atas;
+			cout << "Batas kanan: "; cin >> kanan;
+			cout << "Batas bawah: "; cin >> bawah;
+			if (virtual_zoo->IsInRage(kiri,atas,kanan,bawah)) {
+				virtual_zoo->PrintVirtualZoo(kiri,atas,kanan,bawah);
+			} else {
+				cout << "Out of rage " << endl;
+			}
+			
+		} else if (n == 3) {
+			virtual_zoo->Tour();
+		} else if (n == 4) {
+			cout <<"Total makanan : "<< virtual_zoo->GetTotalMakanan() << endl;
+		}
+
+	} while (n!=0);
+	
 	
 
-	while (!virtual_zoo->IsEndOfTour()) {
-		virtual_zoo->PrintVirtualZoo();
-		cout << endl;
-		virtual_zoo->MoveAnimal();
-		virtual_zoo->MoveVisitor();
-		sleep(1);
-	}
-
-	cout <<"Total makanan : "<< virtual_zoo->GetTotalMakanan() << endl;
+	
 	return 0;
 }
 

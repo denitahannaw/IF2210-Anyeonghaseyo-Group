@@ -70,6 +70,11 @@ void View::printView() {
 	}	
 }
 
-// void View::printView(int _x, int _y) {
-// 	cout << val[_x][_y] < endl;
-// }
+void View::printView(int kiri,int atas,int kanan,int bawah) {
+	for (int i=atas; i<bawah; i++) {
+		for (int j=kiri; j<kanan; j++) {
+			cout << val[i][j];
+		}
+		cout << endl;
+	}	
+}

@@ -154,6 +154,18 @@ bool Cage::isPositionEmpty(Cell* c){
 	return empty;
 }
 
+bool Cage::isPositionInCage(int x, int y) {
+	int i = 0;
+	bool found = false;
+	while (i < nArea && !found) {
+		if (listOfCagePosition[i]->getX() == x && listOfCagePosition[i]->getY() == y) {
+			found = true;
+		}
+		i++;
+	}
+	return found;
+}
+
 /**
 * @brief getter SIMBOL
 * Mengembalikan nilai SIMBOL

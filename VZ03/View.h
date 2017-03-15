@@ -15,7 +15,7 @@ class View {
 		int getNBRS();
 		int getNKOL();
 		void printView();
-		// void printView(int, int);
+		void printView(int,int,int,int);
 
 	private :
 		char** val;

@@ -131,6 +131,7 @@ public:
 	*/
 	bool isPositionEmpty(Cell* c);
 	
+	bool isPositionInCage(int x, int y);
 	/**
 	* @brief getter SIMBOL
 	* Mengembalikan nilai SIMBOL

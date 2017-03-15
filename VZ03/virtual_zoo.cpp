@@ -270,12 +270,39 @@ void VirtualZoo::AddVisitorToMaps() {
 	maps->setVal(x,y,z);
 }
 
+bool VirtualZoo::IsInRage(int kiri,int atas,int kanan,int bawah) {
+	int x_max = matriks_cell->getNBRS();
+	int y_max = matriks_cell->getNKOL();
+	if (atas>=0 && kiri>=0 && bawah<=x_max && kanan<=y_max) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+bool VirtualZoo::IsInRage(int x, int y) {
+	int x_max = matriks_cell->getNBRS();
+	int y_max = matriks_cell->getNKOL();
+	if (x>=0 && y>=0 && x<x_max && y<y_max) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 void VirtualZoo::PrintVirtualZoo() {
 	AddZooToMaps();
 	AddCageToMaps();
 	AddAnimalToMaps();
 	AddVisitorToMaps();
 	maps->printView();
+}
+void VirtualZoo::PrintVirtualZoo(int kiri,int atas,int kanan,int bawah) {
+	AddZooToMaps();
+	AddCageToMaps();
+	AddAnimalToMaps();
+	AddVisitorToMaps();
+	maps->printView(kiri,atas,kanan,bawah);
 }
 
 void VirtualZoo::MoveAnimal() {
@@ -300,6 +327,65 @@ void VirtualZoo::MoveAnimal() {
 			cages[i]->getAnimal(j)->setY(y);
 		}
 	}
+}
+
+void VirtualZoo::Interact() {
+	int x_now = person->getX();
+	int y_now = person->getY();
+
+	int x_max = matriks_cell->getNBRS()-1;
+	int y_max = matriks_cell->getNKOL()-1;
+
+	Cell** cell_available = new Cell*[4];
+	int n_available = 0;
+
+	int x,y;
+
+	//kanan
+	x = x_now + 1;
+	y = y_now;
+	if (IsInRage(x,y)) {
+		PrintInteraction(x,y);
+	}
+	
+	//atas
+	x = x_now;
+	y = y_now + 1;
+	if (IsInRage(x,y)) {
+		PrintInteraction(x,y);
+	}
+
+	//kiri
+	x = x_now - 1;
+	y = y_now;
+	if (IsInRage(x,y)) {
+		PrintInteraction(x,y);
+	}
+	
+	//bawah
+	x = x_now;
+	y = y_now - 1;
+	if (IsInRage(x,y)) {
+		PrintInteraction(x,y);
+	}
+	
+}
+
+void VirtualZoo::PrintInteraction(int x, int y) {
+	int i = 0;
+	bool found = false;
+	while (i < n_cage && !found) {
+		if (cages[i]->isPositionInCage(x, y)) {
+			found = true;
+
+			for(int j=0; j<cages[i]->getNAnimal(); j++) {
+				cout << cages[i]->getAnimal(j)->interact() << " ";
+			}
+			cout <<endl;
+		}
+		i++;
+	}
+
 }
 
 int VirtualZoo::GetTotalMakanan() {
@@ -422,4 +508,15 @@ bool VirtualZoo::IsEndOfTour() {
 		end_of_tour = true;
 	}
 	return end_of_tour;
+}
+
+void VirtualZoo::Tour() {
+	while (!IsEndOfTour()) {
+		PrintVirtualZoo();
+		Interact();
+		cout << endl;
+		MoveAnimal();
+		MoveVisitor();
+		sleep(1);
+	}
 }

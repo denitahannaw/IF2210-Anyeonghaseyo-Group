@@ -40,6 +40,7 @@
 
 #include "Visitor.h"
 #include <iostream>
+#include <unistd.h>
 using namespace std;
 
 class VirtualZoo {
@@ -51,9 +52,15 @@ public:
 	void AddAnimalToMaps();
 	void AddVisitorToMaps();
 
+	bool IsInRage(int,int,int,int);
+	bool IsInRage(int,int);
+
 	void PrintVirtualZoo();
+	void PrintVirtualZoo(int,int,int,int);
 
 	void MoveAnimal();
+	void Interact();
+	void PrintInteraction(int x, int y);
 	int GetTotalMakanan();
 
 	Cell* GetEntrance();
@@ -61,6 +68,8 @@ public:
 	void MoveVisitor();
 	bool IsVisited(Cell* cel);
 	bool IsEndOfTour();
+
+	void Tour();
 
 private:
 
