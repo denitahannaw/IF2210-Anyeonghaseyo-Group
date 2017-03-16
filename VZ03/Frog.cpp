@@ -53,4 +53,4 @@ string Frog::getTipeAnimal(){
 // 	WaterAnimal::y = _y;
 // }
 
-// string  Frog::getTipeHabitat(){}
+string  Frog::getTipeHabitat(){}

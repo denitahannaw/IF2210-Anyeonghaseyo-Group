@@ -53,4 +53,4 @@ string Bird::getTipeAnimal(){
 // 	FlyingAnimal::y = _y;
 // }
 
-// string Bird::getTipeHabitat(){}
+string Bird::getTipeHabitat(){}

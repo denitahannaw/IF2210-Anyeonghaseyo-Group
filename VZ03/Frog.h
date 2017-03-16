@@ -57,7 +57,7 @@ public:
 	* @return tipeAnimal
 	*/
 	string getTipeAnimal();
-	// string getTipeHabitat();
+	string getTipeHabitat();
 	
 protected:
 	const string tipeAnimal = "frog";

@@ -53,4 +53,4 @@ string Flyingfish::getTipeAnimal(){
 // 	FlyingAnimal::y = _y;
 // }
 
-// string Flyingfish::getTipeHabitat(){}
+string Flyingfish::getTipeHabitat(){}

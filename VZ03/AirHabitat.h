@@ -1,14 +1,14 @@
-#ifndef WaterHabitat_H
-#define WaterHabitat_H
+#ifndef AirHabitat_H
+#define AirHabitat_H
 
 #include "Habitat.h"
 #include <string>
 using namespace std;
 /**
-* @class WaterHabitat
-* Kelas WaterHabitat adalah kelas turunan dari Habitat
+* @class AirHabitat
+* Kelas AirHabitat adalah kelas turunan dari Habitat
 */
-class WaterHabitat : public Habitat {
+class AirHabitat : public Habitat {
 public :
 	/**
     * @brief Constructor
@@ -16,7 +16,7 @@ public :
     * @param y Indeks kolom
     * @param s Simbol
     */
-    WaterHabitat(int x,int y,char s);
+    AirHabitat(int x,int y,char s);
     /**
     * @brief Mendapatkan tipe  Cell
     * @return tipe
