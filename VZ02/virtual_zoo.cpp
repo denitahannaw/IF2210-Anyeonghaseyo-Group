@@ -80,13 +80,13 @@ VirtualZoo::VirtualZoo(string input_file) {
 			x = data.GetPosX(j);
 			y = data.GetPosY(j);
 			// cout << x <<" "<< y <<endl;
-			//cek apakah cell memiliki tipe yang sesuai
+			// cek apakah cell memiliki tipe yang sesuai
 			// cout<<matriks_cell->getCell(x,y)->getTipe() <<" ";
 			// cout<< cages[i]->getTipeHabitat()<<endl;
 			if(matriks_cell->getCell(x,y)->getTipe() == cages[i]->getTipeHabitat()){
 				cages[i]->addCagePosition(matriks_cell->getCell(x,y));
-				cout << cages[i]->getCagePosition(cages[i]->getNArea()-1)->getX()<<" ";
-				cout << cages[i]->getCagePosition(cages[i]->getNArea()-1)->getY()<<endl;
+				// cout << cages[i]->getCagePosition(cages[i]->getNArea()-1)->getX()<<" ";
+				// cout << cages[i]->getCagePosition(cages[i]->getNArea()-1)->getY()<<endl;
 			}
 		}
 		// cout << endl;
@@ -424,7 +424,7 @@ void VirtualZoo::MoveVisitor() {
 
 		if (matriks_cell->getCell(x,y)->getTipe() == "road" || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
 
-		cout << "masuk kanan" << endl;
+		// cout << "masuk kanan" << endl;
 		
 			if (!IsVisited(matriks_cell->getCell(x,y))) {
 				cell_available[n_available] = matriks_cell->getCell(x,y);
@@ -438,7 +438,7 @@ void VirtualZoo::MoveVisitor() {
 	y = y_now + 1;
 
 	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
-		cout << "masuk atas" << endl;
+		// cout << "masuk atas" << endl;
 		if (matriks_cell->getCell(x,y)->getTipe() == "road" || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
 			if (!IsVisited(matriks_cell->getCell(x,y))) {
 				cell_available[n_available] = matriks_cell->getCell(x,y);
@@ -452,7 +452,7 @@ void VirtualZoo::MoveVisitor() {
 	y = y_now;
 
 	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
-		cout << "masuk kiri" << endl;
+		// cout << "masuk kiri" << endl;
 		if (matriks_cell->getCell(x,y)->getTipe() == "road"  || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
 			if (!IsVisited(matriks_cell->getCell(x,y))) {
 				cell_available[n_available] = matriks_cell->getCell(x,y);
@@ -466,7 +466,7 @@ void VirtualZoo::MoveVisitor() {
 	y = y_now - 1;
 
 	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
-		cout << "masuk bawah" << endl;
+		// cout << "masuk bawah" << endl;
 		if (matriks_cell->getCell(x,y)->getTipe() == "road"  || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
 			if (!IsVisited(matriks_cell->getCell(x,y))) {
 				cell_available[n_available] = matriks_cell->getCell(x,y);
@@ -477,13 +477,13 @@ void VirtualZoo::MoveVisitor() {
 
 
 	if (n_available == 0) {
-		cout << "tidak ada jalan" << endl;
+		// cout << "tidak ada jalan" << endl;
 		current_visited--;
 		int x_next = list_visited[current_visited]->getX();
 		int y_next = list_visited[current_visited]->getY();
 		person->setPosition(x_next, y_next);
 	} else {
-		cout << "ada jalan " << n_available << endl;
+		// cout << "ada jalan " << n_available << endl;
 		int rn = rand() % n_available;
 		int x_next = cell_available[rn]->getX();
 		int y_next = cell_available[rn]->getY();

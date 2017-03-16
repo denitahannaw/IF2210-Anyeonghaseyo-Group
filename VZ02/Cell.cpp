@@ -2,6 +2,7 @@
 
 #include "Cell.h"
 #include <string>
+#include <iostream>
 using namespace std;
 
 Cell :: Cell(int x,int y, char s){
@@ -20,31 +21,31 @@ Cell :: Cell(int x,int y, char s){
     / exit
     */
 
-    if (s = '~'){
+    if (s == '~'){
         tipeCell = "water";
     }
-    else if (s = '@'){
+    else if (s == '@'){
         tipeCell = "land";
     }
-    else if (s = '#'){
+    else if (s == '#'){
         tipeCell = "air";
     }
-    else if (s = '*'){
+    else if (s == '*'){
         tipeCell = "park";
     }
-    else if (s = '-'){
+    else if (s == '-'){
         tipeCell = "road";
     }
-    else if (s = '\\'){
+    else if (s == '\\'){
         tipeCell = "entrance";
     }
-    else if (s = '/'){
+    else if (s == '/'){
         tipeCell = "exit";
     }
-    else if (s = '$'){
+    else if (s == '$'){
         tipeCell = "restourant";
     }
-
+    // cout << symbol<<endl;
 }
 
 string Cell::getTipe(){
