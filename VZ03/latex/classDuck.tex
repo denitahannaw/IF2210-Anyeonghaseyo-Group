@@ -1,0 +1,173 @@
+\hypertarget{classDuck}{\section{Duck Class Reference}
+\label{classDuck}\index{Duck@{Duck}}
+}
+
+
+{\ttfamily \#include $<$Duck.\-h$>$}
+
+Inheritance diagram for Duck\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classDuck}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDuck_a1322bd1a93555cd105e2496ba2de2a30}{Duck} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classDuck_a702222da0aa85e48b6ef945e9c53e68d}{\hyperlink{classDuck_a702222da0aa85e48b6ef945e9c53e68d}{$\sim$\-Duck} ()}\label{classDuck_a702222da0aa85e48b6ef945e9c53e68d}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classDuck_ad0f24d52e0643275dfa7ab85838a174f}{void \hyperlink{classDuck_ad0f24d52e0643275dfa7ab85838a174f}{add\-Bobot} ()}\label{classDuck_ad0f24d52e0643275dfa7ab85838a174f}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classDuck_a21b1a913746b22e7cc50f00821605cf2}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classDuck}{Duck}. \end{DoxyCompactList}\item 
+char \hyperlink{classDuck_a96b13b494232f7d4bffbce7eec321d87}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classDuck}{Duck}. \end{DoxyCompactList}\item 
+string \hyperlink{classDuck_a2b3f2c06edc5558de242bb3df9564525}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classDuck}{Duck} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classDuck}{Duck}. \end{DoxyCompactList}\item 
+string \hyperlink{classDuck_a2a8991eb931ec90eef13b9e4ead8f219}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classDuck}{Duck} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classDuck_a9677d398bea572e67d908a0fe32bde9a}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDuck_a0c747e97b8a811278efa65ede9b109bf}{const string {\bfseries tipe\-Animal} = \char`\"{}duck\char`\"{}}\label{classDuck_a0c747e97b8a811278efa65ede9b109bf}
+
+\item 
+\hypertarget{classDuck_a521348676043da1fa5b4c4ec63428913}{const char {\bfseries simbol} = 'k'}\label{classDuck_a521348676043da1fa5b4c4ec63428913}
+
+\item 
+\hypertarget{classDuck_a5e195f611176415ad510a20d9fa2a91c}{int {\bfseries bobot}}\label{classDuck_a5e195f611176415ad510a20d9fa2a91c}
+
+\item 
+\hypertarget{classDuck_a56988b05f48c2c1efadc04d4bcb41ed9}{string $\ast$ {\bfseries musuh}}\label{classDuck_a56988b05f48c2c1efadc04d4bcb41ed9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di air dan merupakan \hyperlink{classOmnivora}{Omnivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDuck_a1322bd1a93555cd105e2496ba2de2a30}{\index{Duck@{Duck}!Duck@{Duck}}
+\index{Duck@{Duck}!Duck@{Duck}}
+\subsubsection[{Duck}]{\setlength{\rightskip}{0pt plus 5cm}Duck\-::\-Duck (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classDuck_a1322bd1a93555cd105e2496ba2de2a30}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classDuck}{Duck} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classDuck}{Duck} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDuck_a21b1a913746b22e7cc50f00821605cf2}{\index{Duck@{Duck}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Duck@{Duck}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Duck\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDuck_a21b1a913746b22e7cc50f00821605cf2}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classDuck}{Duck}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classDuck_a2b3f2c06edc5558de242bb3df9564525}{\index{Duck@{Duck}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Duck@{Duck}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Duck\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDuck_a2b3f2c06edc5558de242bb3df9564525}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classDuck}{Duck} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classDuck}{Duck}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classDuck_a96b13b494232f7d4bffbce7eec321d87}{\index{Duck@{Duck}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Duck@{Duck}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Duck\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDuck_a96b13b494232f7d4bffbce7eec321d87}
+
+
+Mendapatkan simbol dari \hyperlink{classDuck}{Duck}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classDuck_a9677d398bea572e67d908a0fe32bde9a}{\index{Duck@{Duck}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Duck@{Duck}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Duck\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDuck_a9677d398bea572e67d908a0fe32bde9a}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classWaterAnimal}{Water\-Animal}.
+
+\hypertarget{classDuck_a2a8991eb931ec90eef13b9e4ead8f219}{\index{Duck@{Duck}!interact@{interact}}
+\index{interact@{interact}!Duck@{Duck}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Duck\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDuck_a2a8991eb931ec90eef13b9e4ead8f219}
+
+
+Mendapatkan reaksi \hyperlink{classDuck}{Duck} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}kwekwek\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classWaterAnimal}{Water\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Duck.\-h\item 
+Duck.\-cpp\end{DoxyCompactItemize}

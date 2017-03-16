@@ -1,0 +1,308 @@
+\hypertarget{classFileReader}{\section{File\-Reader Class Reference}
+\label{classFileReader}\index{File\-Reader@{File\-Reader}}
+}
+
+
+{\ttfamily \#include $<$file\-\_\-reader.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFileReader_a241d583987200240c86d267b80ef3f0a}{File\-Reader} (string namafile)
+\begin{DoxyCompactList}\small\item\em Constructor \hyperlink{classFileReader}{File\-Reader}. \end{DoxyCompactList}\item 
+\hypertarget{classFileReader_a1382969e8f1468f3b04ad4b44ab39dee}{\hyperlink{classFileReader_a1382969e8f1468f3b04ad4b44ab39dee}{$\sim$\-File\-Reader} ()}\label{classFileReader_a1382969e8f1468f3b04ad4b44ab39dee}
+
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+\hypertarget{classFileReader_ac4a834d4f54c0ef1ce9a992f510eea41}{void \hyperlink{classFileReader_ac4a834d4f54c0ef1ce9a992f510eea41}{Read} ()}\label{classFileReader_ac4a834d4f54c0ef1ce9a992f510eea41}
+
+\begin{DoxyCompactList}\small\item\em Membaca seluruh file. \end{DoxyCompactList}\item 
+\hypertarget{classFileReader_a7d5f714729c507013c9a15ff300b9c26}{int \hyperlink{classFileReader_a7d5f714729c507013c9a15ff300b9c26}{Get\-Sum\-Cage\-Area} ()}\label{classFileReader_a7d5f714729c507013c9a15ff300b9c26}
+
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan total nilai cage\-Area. \end{DoxyCompactList}\item 
+int \hyperlink{classFileReader_a546d60999827827b4cdccc8f943b813a}{Get\-N\-Brs} ()
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan nilai baris area Zoo. \end{DoxyCompactList}\item 
+int \hyperlink{classFileReader_a5ac9938fe0188936d018da3be5f50376}{Get\-N\-Kol} ()
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan nilai kolom area Zoo. \end{DoxyCompactList}\item 
+int \hyperlink{classFileReader_a20720a0ebdbbdbf78cfdfd204f513378}{Get\-N\-Cell\-Type} ()
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan jumlah tipe \hyperlink{classCell}{Cell} yang ada. \end{DoxyCompactList}\item 
+int \hyperlink{classFileReader_acf0f6592e2d70ae0c30ecfd31b9542d8}{Get\-N\-Cage} ()
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan jumlah \hyperlink{classCage}{Cage} yang akan dibuat. \end{DoxyCompactList}\item 
+string \hyperlink{classFileReader_a682b3ed91b920ba7fc0f6bf02ee2b7cb}{Get\-Cell\-Type} (int i)
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan tipe \hyperlink{classCell}{Cell} ke i. \end{DoxyCompactList}\item 
+char \hyperlink{classFileReader_a658827df1193174f59ea615aee98e56b}{Get\-Cell\-Simbol} (int i)
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan simbol \hyperlink{classCell}{Cell} ke i. \end{DoxyCompactList}\item 
+char \hyperlink{classFileReader_a1158227a3ca70debdec0b5a6d19a33af}{Get\-Maps} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan simbol \hyperlink{classCell}{Cell} pada maps\mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. \end{DoxyCompactList}\item 
+string \hyperlink{classFileReader_ab554f5ac48f82074f2718734bb8bcd82}{Get\-Cage\-Type} (int i)
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan tipe \hyperlink{classCage}{Cage} ke i. \end{DoxyCompactList}\item 
+char \hyperlink{classFileReader_a085e4b6522e3a234a96891a74710e774}{Get\-Cage\-Simbol} (int i)
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan simbol \hyperlink{classCage}{Cage} ke i. \end{DoxyCompactList}\item 
+int \hyperlink{classFileReader_a0e021e7e89ab6a788573791c409ae63e}{Get\-N\-Cage\-Area} (int i)
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan area \hyperlink{classCage}{Cage} ke i. \end{DoxyCompactList}\item 
+int \hyperlink{classFileReader_a28187c28f4713125f55a928cbd7a9ce5}{Get\-N\-Animal} (int i)
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan jumlah \hyperlink{classAnimal}{Animal} ke i. \end{DoxyCompactList}\item 
+int \hyperlink{classFileReader_a6739708d4e85ef4c8b9436178518f287}{Get\-Pos\-X} (int i)
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan posisi X \hyperlink{classCell}{Cell} \hyperlink{classCage}{Cage} ke i. \end{DoxyCompactList}\item 
+int \hyperlink{classFileReader_a76fdd51b22001d088f55d1722668b455}{Get\-Pos\-Y} (int i)
+\begin{DoxyCompactList}\small\item\em Getter. Mendapatkan posisi Y \hyperlink{classCell}{Cell} \hyperlink{classCage}{Cage} ke i. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kelas \hyperlink{classFileReader}{File\-Reader} adalah kelas untuk membaca konfigurasi Zoo dari file teks 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFileReader_a241d583987200240c86d267b80ef3f0a}{\index{File\-Reader@{File\-Reader}!File\-Reader@{File\-Reader}}
+\index{File\-Reader@{File\-Reader}!FileReader@{File\-Reader}}
+\subsubsection[{File\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}File\-Reader\-::\-File\-Reader (
+\begin{DoxyParamCaption}
+\item[{string}]{namafile}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a241d583987200240c86d267b80ef3f0a}
+
+
+Constructor \hyperlink{classFileReader}{File\-Reader}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em namafile} & Namafile yang akan dibaca \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFileReader_a085e4b6522e3a234a96891a74710e774}{\index{File\-Reader@{File\-Reader}!Get\-Cage\-Simbol@{Get\-Cage\-Simbol}}
+\index{Get\-Cage\-Simbol@{Get\-Cage\-Simbol}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-Cage\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char File\-Reader\-::\-Get\-Cage\-Simbol (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a085e4b6522e3a234a96891a74710e774}
+
+
+Getter. Mendapatkan simbol \hyperlink{classCage}{Cage} ke i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index simbol \hyperlink{classCage}{Cage} yang akan dikembalikan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\-Cage\-Simbol\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classFileReader_ab554f5ac48f82074f2718734bb8bcd82}{\index{File\-Reader@{File\-Reader}!Get\-Cage\-Type@{Get\-Cage\-Type}}
+\index{Get\-Cage\-Type@{Get\-Cage\-Type}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-Cage\-Type}]{\setlength{\rightskip}{0pt plus 5cm}string File\-Reader\-::\-Get\-Cage\-Type (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_ab554f5ac48f82074f2718734bb8bcd82}
+
+
+Getter. Mendapatkan tipe \hyperlink{classCage}{Cage} ke i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index tipe \hyperlink{classCage}{Cage} yang akan dikembalikan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\-Cage\-Type\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classFileReader_a658827df1193174f59ea615aee98e56b}{\index{File\-Reader@{File\-Reader}!Get\-Cell\-Simbol@{Get\-Cell\-Simbol}}
+\index{Get\-Cell\-Simbol@{Get\-Cell\-Simbol}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-Cell\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char File\-Reader\-::\-Get\-Cell\-Simbol (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a658827df1193174f59ea615aee98e56b}
+
+
+Getter. Mendapatkan simbol \hyperlink{classCell}{Cell} ke i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index simbol \hyperlink{classCell}{Cell} yang akan dikembalikan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\-Cell\-Simbol\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classFileReader_a682b3ed91b920ba7fc0f6bf02ee2b7cb}{\index{File\-Reader@{File\-Reader}!Get\-Cell\-Type@{Get\-Cell\-Type}}
+\index{Get\-Cell\-Type@{Get\-Cell\-Type}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-Cell\-Type}]{\setlength{\rightskip}{0pt plus 5cm}string File\-Reader\-::\-Get\-Cell\-Type (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a682b3ed91b920ba7fc0f6bf02ee2b7cb}
+
+
+Getter. Mendapatkan tipe \hyperlink{classCell}{Cell} ke i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index tipe \hyperlink{classCell}{Cell} yang akan dikembalikan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\-Cell\-Type\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classFileReader_a1158227a3ca70debdec0b5a6d19a33af}{\index{File\-Reader@{File\-Reader}!Get\-Maps@{Get\-Maps}}
+\index{Get\-Maps@{Get\-Maps}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-Maps}]{\setlength{\rightskip}{0pt plus 5cm}char File\-Reader\-::\-Get\-Maps (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a1158227a3ca70debdec0b5a6d19a33af}
+
+
+Getter. Mendapatkan simbol \hyperlink{classCell}{Cell} pada maps\mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index baris maps \\
+\hline
+{\em j} & Indeks kolom maps \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+maps\mbox{[}i\mbox{]}\mbox{[}j\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classFileReader_a28187c28f4713125f55a928cbd7a9ce5}{\index{File\-Reader@{File\-Reader}!Get\-N\-Animal@{Get\-N\-Animal}}
+\index{Get\-N\-Animal@{Get\-N\-Animal}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-N\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}int File\-Reader\-::\-Get\-N\-Animal (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a28187c28f4713125f55a928cbd7a9ce5}
+
+
+Getter. Mendapatkan jumlah \hyperlink{classAnimal}{Animal} ke i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index jumlah \hyperlink{classAnimal}{Animal} yang akan dikembalikan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\-N\-Animal\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classFileReader_a546d60999827827b4cdccc8f943b813a}{\index{File\-Reader@{File\-Reader}!Get\-N\-Brs@{Get\-N\-Brs}}
+\index{Get\-N\-Brs@{Get\-N\-Brs}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-N\-Brs}]{\setlength{\rightskip}{0pt plus 5cm}int File\-Reader\-::\-Get\-N\-Brs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a546d60999827827b4cdccc8f943b813a}
+
+
+Getter. Mendapatkan nilai baris area Zoo. 
+
+\begin{DoxyReturn}{Returns}
+nbrs 
+\end{DoxyReturn}
+\hypertarget{classFileReader_acf0f6592e2d70ae0c30ecfd31b9542d8}{\index{File\-Reader@{File\-Reader}!Get\-N\-Cage@{Get\-N\-Cage}}
+\index{Get\-N\-Cage@{Get\-N\-Cage}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-N\-Cage}]{\setlength{\rightskip}{0pt plus 5cm}int File\-Reader\-::\-Get\-N\-Cage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_acf0f6592e2d70ae0c30ecfd31b9542d8}
+
+
+Getter. Mendapatkan jumlah \hyperlink{classCage}{Cage} yang akan dibuat. 
+
+\begin{DoxyReturn}{Returns}
+n\-Cage 
+\end{DoxyReturn}
+\hypertarget{classFileReader_a0e021e7e89ab6a788573791c409ae63e}{\index{File\-Reader@{File\-Reader}!Get\-N\-Cage\-Area@{Get\-N\-Cage\-Area}}
+\index{Get\-N\-Cage\-Area@{Get\-N\-Cage\-Area}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-N\-Cage\-Area}]{\setlength{\rightskip}{0pt plus 5cm}int File\-Reader\-::\-Get\-N\-Cage\-Area (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a0e021e7e89ab6a788573791c409ae63e}
+
+
+Getter. Mendapatkan area \hyperlink{classCage}{Cage} ke i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index area \hyperlink{classCage}{Cage} yang akan dikembalikan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\-N\-Cage\-Area\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classFileReader_a20720a0ebdbbdbf78cfdfd204f513378}{\index{File\-Reader@{File\-Reader}!Get\-N\-Cell\-Type@{Get\-N\-Cell\-Type}}
+\index{Get\-N\-Cell\-Type@{Get\-N\-Cell\-Type}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-N\-Cell\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int File\-Reader\-::\-Get\-N\-Cell\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a20720a0ebdbbdbf78cfdfd204f513378}
+
+
+Getter. Mendapatkan jumlah tipe \hyperlink{classCell}{Cell} yang ada. 
+
+\begin{DoxyReturn}{Returns}
+n\-Cell\-Type 
+\end{DoxyReturn}
+\hypertarget{classFileReader_a5ac9938fe0188936d018da3be5f50376}{\index{File\-Reader@{File\-Reader}!Get\-N\-Kol@{Get\-N\-Kol}}
+\index{Get\-N\-Kol@{Get\-N\-Kol}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-N\-Kol}]{\setlength{\rightskip}{0pt plus 5cm}int File\-Reader\-::\-Get\-N\-Kol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a5ac9938fe0188936d018da3be5f50376}
+
+
+Getter. Mendapatkan nilai kolom area Zoo. 
+
+\begin{DoxyReturn}{Returns}
+nkol 
+\end{DoxyReturn}
+\hypertarget{classFileReader_a6739708d4e85ef4c8b9436178518f287}{\index{File\-Reader@{File\-Reader}!Get\-Pos\-X@{Get\-Pos\-X}}
+\index{Get\-Pos\-X@{Get\-Pos\-X}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-Pos\-X}]{\setlength{\rightskip}{0pt plus 5cm}int File\-Reader\-::\-Get\-Pos\-X (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a6739708d4e85ef4c8b9436178518f287}
+
+
+Getter. Mendapatkan posisi X \hyperlink{classCell}{Cell} \hyperlink{classCage}{Cage} ke i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index posisi X \hyperlink{classCell}{Cell} \hyperlink{classCage}{Cage} yang akan dikembalikan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\-Pos\mbox{[}i\mbox{]}\mbox{[}0\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classFileReader_a76fdd51b22001d088f55d1722668b455}{\index{File\-Reader@{File\-Reader}!Get\-Pos\-Y@{Get\-Pos\-Y}}
+\index{Get\-Pos\-Y@{Get\-Pos\-Y}!FileReader@{File\-Reader}}
+\subsubsection[{Get\-Pos\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int File\-Reader\-::\-Get\-Pos\-Y (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classFileReader_a76fdd51b22001d088f55d1722668b455}
+
+
+Getter. Mendapatkan posisi Y \hyperlink{classCell}{Cell} \hyperlink{classCage}{Cage} ke i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index posisi Y \hyperlink{classCell}{Cell} \hyperlink{classCage}{Cage} yang akan dikembalikan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\-Pos\mbox{[}i\mbox{]}\mbox{[}1\mbox{]} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+file\-\_\-reader.\-h\item 
+file\-\_\-reader.\-cpp\end{DoxyCompactItemize}

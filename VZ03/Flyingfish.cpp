@@ -35,22 +35,22 @@ string Flyingfish::getTipeAnimal(){
 	return tipeAnimal;
 }
 
-int Flyingfish::getX(){
-	return WaterAnimal::x;
-}
+// int Flyingfish::getX(){
+// 	return WaterAnimal::x;
+// }
 
-int Flyingfish::getY(){
-	return WaterAnimal::y;
-}
+// int Flyingfish::getY(){
+// 	return WaterAnimal::y;
+// }
 
-void Flyingfish::setX(int _x){
-	WaterAnimal::x = _x;
-	FlyingAnimal::x = _x;
-}
+// void Flyingfish::setX(int _x){
+// 	WaterAnimal::x = _x;
+// 	FlyingAnimal::x = _x;
+// }
 
-void Flyingfish::setY(int _y){
-	WaterAnimal::y = _y;
-	FlyingAnimal::y = _y;
-}
+// void Flyingfish::setY(int _y){
+// 	WaterAnimal::y = _y;
+// 	FlyingAnimal::y = _y;
+// }
 
-string Flyingfish::getTipeHabitat(){}
+// string Flyingfish::getTipeHabitat(){}

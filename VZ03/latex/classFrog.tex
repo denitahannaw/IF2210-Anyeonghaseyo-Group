@@ -1,0 +1,173 @@
+\hypertarget{classFrog}{\section{Frog Class Reference}
+\label{classFrog}\index{Frog@{Frog}}
+}
+
+
+{\ttfamily \#include $<$Frog.\-h$>$}
+
+Inheritance diagram for Frog\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classFrog}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFrog_a03e51490a1a0256508fb10031a8c9c4a}{Frog} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classFrog_a03c9cd2a028e2466a3bfe5e9af1c12e7}{\hyperlink{classFrog_a03c9cd2a028e2466a3bfe5e9af1c12e7}{$\sim$\-Frog} ()}\label{classFrog_a03c9cd2a028e2466a3bfe5e9af1c12e7}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classFrog_adc65110eaafac9cf99e47b52f04a4050}{void \hyperlink{classFrog_adc65110eaafac9cf99e47b52f04a4050}{add\-Bobot} ()}\label{classFrog_adc65110eaafac9cf99e47b52f04a4050}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classFrog_af663e567deb96dc9ef3ff0a2a7f4b298}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classFrog}{Frog}. \end{DoxyCompactList}\item 
+char \hyperlink{classFrog_a38e820c4f3510791ae7b8d40c9bd6b5a}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classFrog}{Frog}. \end{DoxyCompactList}\item 
+string \hyperlink{classFrog_a3968410026d8b2966b402ff5fdf87b59}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classFrog}{Frog} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classFrog}{Frog}. \end{DoxyCompactList}\item 
+string \hyperlink{classFrog_a7bf87b3cb6dfbee7b8de58a97796cadb}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classFrog}{Frog} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classFrog_a9989ed2655d4f2bfeac06a82ef683f49}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFrog_a6add26d4bad17f506b263ca4b7ced01f}{const string {\bfseries tipe\-Animal} = \char`\"{}frog\char`\"{}}\label{classFrog_a6add26d4bad17f506b263ca4b7ced01f}
+
+\item 
+\hypertarget{classFrog_ac55b1dea99cd17daad20a801c26038b7}{const char {\bfseries simbol} = 'f'}\label{classFrog_ac55b1dea99cd17daad20a801c26038b7}
+
+\item 
+\hypertarget{classFrog_a442f9184b199d89f2b2f8208a8690688}{int {\bfseries bobot}}\label{classFrog_a442f9184b199d89f2b2f8208a8690688}
+
+\item 
+\hypertarget{classFrog_a621fcbd10e5b068689374e82b0e37359}{string $\ast$ {\bfseries musuh}}\label{classFrog_a621fcbd10e5b068689374e82b0e37359}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di darat dan air dan merupakan \hyperlink{classKarnivora}{Karnivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFrog_a03e51490a1a0256508fb10031a8c9c4a}{\index{Frog@{Frog}!Frog@{Frog}}
+\index{Frog@{Frog}!Frog@{Frog}}
+\subsubsection[{Frog}]{\setlength{\rightskip}{0pt plus 5cm}Frog\-::\-Frog (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classFrog_a03e51490a1a0256508fb10031a8c9c4a}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classFrog}{Frog} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classFrog}{Frog} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFrog_af663e567deb96dc9ef3ff0a2a7f4b298}{\index{Frog@{Frog}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Frog@{Frog}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Frog\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFrog_af663e567deb96dc9ef3ff0a2a7f4b298}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classFrog}{Frog}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classFrog_a3968410026d8b2966b402ff5fdf87b59}{\index{Frog@{Frog}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Frog@{Frog}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Frog\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFrog_a3968410026d8b2966b402ff5fdf87b59}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classFrog}{Frog} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classFrog}{Frog}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classFrog_a38e820c4f3510791ae7b8d40c9bd6b5a}{\index{Frog@{Frog}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Frog@{Frog}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Frog\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFrog_a38e820c4f3510791ae7b8d40c9bd6b5a}
+
+
+Mendapatkan simbol dari \hyperlink{classFrog}{Frog}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classFrog_a9989ed2655d4f2bfeac06a82ef683f49}{\index{Frog@{Frog}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Frog@{Frog}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Frog\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFrog_a9989ed2655d4f2bfeac06a82ef683f49}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+\hypertarget{classFrog_a7bf87b3cb6dfbee7b8de58a97796cadb}{\index{Frog@{Frog}!interact@{interact}}
+\index{interact@{interact}!Frog@{Frog}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Frog\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFrog_a7bf87b3cb6dfbee7b8de58a97796cadb}
+
+
+Mendapatkan reaksi \hyperlink{classFrog}{Frog} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}ribbit\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Frog.\-h\item 
+Frog.\-cpp\end{DoxyCompactItemize}

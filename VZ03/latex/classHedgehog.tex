@@ -1,0 +1,173 @@
+\hypertarget{classHedgehog}{\section{Hedgehog Class Reference}
+\label{classHedgehog}\index{Hedgehog@{Hedgehog}}
+}
+
+
+{\ttfamily \#include $<$Hedgehog.\-h$>$}
+
+Inheritance diagram for Hedgehog\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classHedgehog}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHedgehog_a0b832eb1f52c1c32a236706b5b560c3a}{Hedgehog} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classHedgehog_abc3df9705fd702c76bc3269b2ce9956b}{\hyperlink{classHedgehog_abc3df9705fd702c76bc3269b2ce9956b}{$\sim$\-Hedgehog} ()}\label{classHedgehog_abc3df9705fd702c76bc3269b2ce9956b}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classHedgehog_ab8bbcff5c339a144eba0e6810d380512}{void \hyperlink{classHedgehog_ab8bbcff5c339a144eba0e6810d380512}{add\-Bobot} ()}\label{classHedgehog_ab8bbcff5c339a144eba0e6810d380512}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classHedgehog_a4756f496e554eb53fe9fe42af5d4c359}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classHedgehog}{Hedgehog}. \end{DoxyCompactList}\item 
+char \hyperlink{classHedgehog_aa6dd18c288110a508502abb7c180fd7c}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classHedgehog}{Hedgehog}. \end{DoxyCompactList}\item 
+string \hyperlink{classHedgehog_a36e1421838e26fc245649161b2dc97d3}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classHedgehog}{Hedgehog} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classHedgehog}{Hedgehog}. \end{DoxyCompactList}\item 
+string \hyperlink{classHedgehog_aa3d9dacd74c2150b6254b8edff36fb3a}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classHedgehog}{Hedgehog} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classHedgehog_a1b17920e9c635183e72264f234f1485a}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHedgehog_aa5f07f95b0736a6cfe31746faa11e37b}{const string {\bfseries tipe\-Animal} = \char`\"{}hedgehog\char`\"{}}\label{classHedgehog_aa5f07f95b0736a6cfe31746faa11e37b}
+
+\item 
+\hypertarget{classHedgehog_add639a985cb123669869f7af7045f707}{const char {\bfseries simbol} = 'h'}\label{classHedgehog_add639a985cb123669869f7af7045f707}
+
+\item 
+\hypertarget{classHedgehog_a69457c4b580174ab0ea23735cd0303a0}{int {\bfseries bobot}}\label{classHedgehog_a69457c4b580174ab0ea23735cd0303a0}
+
+\item 
+\hypertarget{classHedgehog_a5ab460e899132b14c4dbcd3555a163b5}{string $\ast$ {\bfseries musuh}}\label{classHedgehog_a5ab460e899132b14c4dbcd3555a163b5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di darat dan merupakan \hyperlink{classHerbivora}{Herbivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHedgehog_a0b832eb1f52c1c32a236706b5b560c3a}{\index{Hedgehog@{Hedgehog}!Hedgehog@{Hedgehog}}
+\index{Hedgehog@{Hedgehog}!Hedgehog@{Hedgehog}}
+\subsubsection[{Hedgehog}]{\setlength{\rightskip}{0pt plus 5cm}Hedgehog\-::\-Hedgehog (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classHedgehog_a0b832eb1f52c1c32a236706b5b560c3a}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classHedgehog}{Hedgehog} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classHedgehog}{Hedgehog} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHedgehog_a4756f496e554eb53fe9fe42af5d4c359}{\index{Hedgehog@{Hedgehog}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Hedgehog@{Hedgehog}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Hedgehog\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classHedgehog_a4756f496e554eb53fe9fe42af5d4c359}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classHedgehog}{Hedgehog}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classHedgehog_a36e1421838e26fc245649161b2dc97d3}{\index{Hedgehog@{Hedgehog}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Hedgehog@{Hedgehog}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Hedgehog\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classHedgehog_a36e1421838e26fc245649161b2dc97d3}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classHedgehog}{Hedgehog} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classHedgehog}{Hedgehog}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classHedgehog_aa6dd18c288110a508502abb7c180fd7c}{\index{Hedgehog@{Hedgehog}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Hedgehog@{Hedgehog}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Hedgehog\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classHedgehog_aa6dd18c288110a508502abb7c180fd7c}
+
+
+Mendapatkan simbol dari \hyperlink{classHedgehog}{Hedgehog}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classHedgehog_a1b17920e9c635183e72264f234f1485a}{\index{Hedgehog@{Hedgehog}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Hedgehog@{Hedgehog}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Hedgehog\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classHedgehog_a1b17920e9c635183e72264f234f1485a}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+\hypertarget{classHedgehog_aa3d9dacd74c2150b6254b8edff36fb3a}{\index{Hedgehog@{Hedgehog}!interact@{interact}}
+\index{interact@{interact}!Hedgehog@{Hedgehog}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Hedgehog\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classHedgehog_aa3d9dacd74c2150b6254b8edff36fb3a}
+
+
+Mendapatkan reaksi \hyperlink{classHedgehog}{Hedgehog} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}duriduri\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Hedgehog.\-h\item 
+Hedgehog.\-cpp\end{DoxyCompactItemize}

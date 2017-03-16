@@ -35,22 +35,22 @@ string Bird::getTipeAnimal(){
 	return tipeAnimal;
 }
 
-int Bird::getX(){
-	return LandAnimal::x;
-}
+// int Bird::getX(){
+// 	return LandAnimal::x;
+// }
 
-int Bird::getY(){
-	return LandAnimal::y;
-}
+// int Bird::getY(){
+// 	return LandAnimal::y;
+// }
 
-void Bird::setX(int _x){
-	LandAnimal::x = _x;
-	FlyingAnimal::x = _x;
-}
+// void Bird::setX(int _x){
+// 	LandAnimal::x = _x;
+// 	FlyingAnimal::x = _x;
+// }
 
-void Bird::setY(int _y){
-	LandAnimal::y = _y;
-	FlyingAnimal::y = _y;
-}
+// void Bird::setY(int _y){
+// 	LandAnimal::y = _y;
+// 	FlyingAnimal::y = _y;
+// }
 
-string Bird::getTipeHabitat(){}
+// string Bird::getTipeHabitat(){}

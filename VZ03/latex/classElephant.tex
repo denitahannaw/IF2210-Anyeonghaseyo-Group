@@ -1,0 +1,166 @@
+\hypertarget{classElephant}{\section{Elephant Class Reference}
+\label{classElephant}\index{Elephant@{Elephant}}
+}
+Inheritance diagram for Elephant\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classElephant}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classElephant_a581d01caaa767f869ebb68c1d9e6017b}{Elephant} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classElephant_a8f290b4b7acfed8f2f23bab9326ece3f}{\hyperlink{classElephant_a8f290b4b7acfed8f2f23bab9326ece3f}{$\sim$\-Elephant} ()}\label{classElephant_a8f290b4b7acfed8f2f23bab9326ece3f}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classElephant_afafffb9d73c45d0100e15ec9c6c914a9}{void \hyperlink{classElephant_afafffb9d73c45d0100e15ec9c6c914a9}{add\-Bobot} ()}\label{classElephant_afafffb9d73c45d0100e15ec9c6c914a9}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classElephant_a662842931e97fa17fc67a37af92f88b8}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classSnake}{Snake}. \end{DoxyCompactList}\item 
+char \hyperlink{classElephant_afb716b804efc9b33578f06aa875cdd4c}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classSnake}{Snake}. \end{DoxyCompactList}\item 
+string \hyperlink{classElephant_a6b033833b5b37942d965580ab901e735}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classSnake}{Snake} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classSnake}{Snake}. \end{DoxyCompactList}\item 
+string \hyperlink{classElephant_a321f653cd862265373e9c8985d683b3c}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classSnake}{Snake} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classElephant_ae8964770f0b50674428e8b7f1041b86e}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classElephant_aa80dde45853d4b749672e33c9978d235}{const string {\bfseries tipe\-Animal} = \char`\"{}elephant\char`\"{}}\label{classElephant_aa80dde45853d4b749672e33c9978d235}
+
+\item 
+\hypertarget{classElephant_adbb0e7e3cbf8321a9a74bc039163f1f3}{const char {\bfseries simbol} = 'e'}\label{classElephant_adbb0e7e3cbf8321a9a74bc039163f1f3}
+
+\item 
+\hypertarget{classElephant_ad6e7e6be15ba76d55eb990d98ff9f338}{int {\bfseries bobot}}\label{classElephant_ad6e7e6be15ba76d55eb990d98ff9f338}
+
+\item 
+\hypertarget{classElephant_acf18c4e3c369af5d606f3f82dca7fe4f}{string $\ast$ {\bfseries musuh}}\label{classElephant_acf18c4e3c369af5d606f3f82dca7fe4f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classElephant_a581d01caaa767f869ebb68c1d9e6017b}{\index{Elephant@{Elephant}!Elephant@{Elephant}}
+\index{Elephant@{Elephant}!Elephant@{Elephant}}
+\subsubsection[{Elephant}]{\setlength{\rightskip}{0pt plus 5cm}Elephant\-::\-Elephant (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classElephant_a581d01caaa767f869ebb68c1d9e6017b}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classSnake}{Snake} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classSnake}{Snake} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classElephant_a662842931e97fa17fc67a37af92f88b8}{\index{Elephant@{Elephant}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Elephant@{Elephant}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Elephant\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classElephant_a662842931e97fa17fc67a37af92f88b8}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classSnake}{Snake}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classElephant_a6b033833b5b37942d965580ab901e735}{\index{Elephant@{Elephant}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Elephant@{Elephant}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Elephant\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classElephant_a6b033833b5b37942d965580ab901e735}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classSnake}{Snake} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classSnake}{Snake}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classElephant_afb716b804efc9b33578f06aa875cdd4c}{\index{Elephant@{Elephant}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Elephant@{Elephant}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Elephant\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classElephant_afb716b804efc9b33578f06aa875cdd4c}
+
+
+Mendapatkan simbol dari \hyperlink{classSnake}{Snake}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classElephant_ae8964770f0b50674428e8b7f1041b86e}{\index{Elephant@{Elephant}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Elephant@{Elephant}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Elephant\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classElephant_ae8964770f0b50674428e8b7f1041b86e}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+\hypertarget{classElephant_a321f653cd862265373e9c8985d683b3c}{\index{Elephant@{Elephant}!interact@{interact}}
+\index{interact@{interact}!Elephant@{Elephant}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Elephant\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classElephant_a321f653cd862265373e9c8985d683b3c}
+
+
+Mendapatkan reaksi \hyperlink{classSnake}{Snake} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}belalaihuee\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Elephant.\-h\item 
+Elephant.\-cpp\end{DoxyCompactItemize}

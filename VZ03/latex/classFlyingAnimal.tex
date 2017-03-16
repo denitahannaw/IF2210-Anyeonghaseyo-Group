@@ -1,0 +1,111 @@
+\hypertarget{classFlyingAnimal}{\section{Flying\-Animal Class Reference}
+\label{classFlyingAnimal}\index{Flying\-Animal@{Flying\-Animal}}
+}
+
+
+{\ttfamily \#include $<$Flying\-Animal.\-h$>$}
+
+Inheritance diagram for Flying\-Animal\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.580645cm]{classFlyingAnimal}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFlyingAnimal_abce03fb40df688bc103f6a9e5d185fd1}{Flying\-Animal} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classFlyingAnimal_ab2209a5b0286a65e2908a2fb7565e600}{\hyperlink{classFlyingAnimal_ab2209a5b0286a65e2908a2fb7565e600}{Flying\-Animal} (const \hyperlink{classFlyingAnimal}{Flying\-Animal} \&)}\label{classFlyingAnimal_ab2209a5b0286a65e2908a2fb7565e600}
+
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classFlyingAnimal_a50a93cfcb6d0f216032279f463347544}{virtual \hyperlink{classFlyingAnimal_a50a93cfcb6d0f216032279f463347544}{$\sim$\-Flying\-Animal} ()}\label{classFlyingAnimal_a50a93cfcb6d0f216032279f463347544}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classFlyingAnimal_ac0eee625fa2235eee8cbdc0a010ae430}{virtual string \hyperlink{classFlyingAnimal_ac0eee625fa2235eee8cbdc0a010ae430}{interact} ()=0}\label{classFlyingAnimal_ac0eee625fa2235eee8cbdc0a010ae430}
+
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+virtual string \hyperlink{classFlyingAnimal_abc4d78229fe8a38ea786c519b4551e6e}{get\-Tipe\-Habitat} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe habitat. \end{DoxyCompactList}\item 
+virtual string \hyperlink{classFlyingAnimal_a1523973b9a6a47e9064825c2134fd65d}{get\-Tipe\-Animal} ()=0
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFlyingAnimal_a51653e2a708b6b85ee96fc2c4ee278c4}{const string {\bfseries tipe\-Habitat} = \char`\"{}air\char`\"{}}\label{classFlyingAnimal_a51653e2a708b6b85ee96fc2c4ee278c4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di udara 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFlyingAnimal_abce03fb40df688bc103f6a9e5d185fd1}{\index{Flying\-Animal@{Flying\-Animal}!Flying\-Animal@{Flying\-Animal}}
+\index{Flying\-Animal@{Flying\-Animal}!FlyingAnimal@{Flying\-Animal}}
+\subsubsection[{Flying\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}Flying\-Animal\-::\-Flying\-Animal (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classFlyingAnimal_abce03fb40df688bc103f6a9e5d185fd1}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classSnake}{Snake} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classSnake}{Snake} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFlyingAnimal_a1523973b9a6a47e9064825c2134fd65d}{\index{Flying\-Animal@{Flying\-Animal}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!FlyingAnimal@{Flying\-Animal}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Flying\-Animal\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classFlyingAnimal_a1523973b9a6a47e9064825c2134fd65d}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+
+
+Implemented in \hyperlink{classBird_a334d9a9e90114f5c74d2ad327120b2be}{Bird}, \hyperlink{classFlyingfish_a8e4bdebd6174a385ae894061b53b7cb1}{Flyingfish}, \hyperlink{classBee_a0341cf55086556e10104c7744f9fc833}{Bee}, \hyperlink{classBeetle_a30b538bbf1bf63ca615585bdc512ce33}{Beetle}, \hyperlink{classButterfly_a7a11185ad98c664b3d3f052336afec0e}{Butterfly}, \hyperlink{classEagle_af9d6c21fd2e046487b3490bb12ad3d6e}{Eagle}, and \hyperlink{classOwl_afbea38ace5450a7bde8caa813adbcfcd}{Owl}.
+
+\hypertarget{classFlyingAnimal_abc4d78229fe8a38ea786c519b4551e6e}{\index{Flying\-Animal@{Flying\-Animal}!get\-Tipe\-Habitat@{get\-Tipe\-Habitat}}
+\index{get\-Tipe\-Habitat@{get\-Tipe\-Habitat}!FlyingAnimal@{Flying\-Animal}}
+\subsubsection[{get\-Tipe\-Habitat}]{\setlength{\rightskip}{0pt plus 5cm}string Flying\-Animal\-::get\-Tipe\-Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFlyingAnimal_abc4d78229fe8a38ea786c519b4551e6e}
+
+
+Mendapatkan tipe habitat. 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Habitat 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Flying\-Animal.\-h\item 
+Flying\-Animal.\-cpp\end{DoxyCompactItemize}

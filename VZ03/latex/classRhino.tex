@@ -1,0 +1,166 @@
+\hypertarget{classRhino}{\section{Rhino Class Reference}
+\label{classRhino}\index{Rhino@{Rhino}}
+}
+Inheritance diagram for Rhino\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRhino}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRhino_a58522b211956561033d02c692f8efbf0}{Rhino} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classRhino_a6a11f0f8dcd6ed20ef99d8d698b06f28}{\hyperlink{classRhino_a6a11f0f8dcd6ed20ef99d8d698b06f28}{$\sim$\-Rhino} ()}\label{classRhino_a6a11f0f8dcd6ed20ef99d8d698b06f28}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classRhino_a83ba6ae8becb9c7aa8f7e17b9783085b}{void \hyperlink{classRhino_a83ba6ae8becb9c7aa8f7e17b9783085b}{add\-Bobot} ()}\label{classRhino_a83ba6ae8becb9c7aa8f7e17b9783085b}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classRhino_a624cabcc67d0be3ccdb21c8bf63a3ccd}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classSnake}{Snake}. \end{DoxyCompactList}\item 
+char \hyperlink{classRhino_ad686dce9238ac3e5baaaa205cc07ddb9}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classSnake}{Snake}. \end{DoxyCompactList}\item 
+string \hyperlink{classRhino_a52916d0a7fd7a97ae11571e2c9511d5f}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classSnake}{Snake} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classSnake}{Snake}. \end{DoxyCompactList}\item 
+string \hyperlink{classRhino_ab58c391c33619b17b06f39f919b4737c}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classSnake}{Snake} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classRhino_ab1a961793213c332a9a23180c7700bc7}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRhino_aaf8af4721ce0a164afb6328ee61d4bb1}{const string {\bfseries tipe\-Animal} = \char`\"{}rhino\char`\"{}}\label{classRhino_aaf8af4721ce0a164afb6328ee61d4bb1}
+
+\item 
+\hypertarget{classRhino_aa4a322a2e0e81ecc6a3048bdb262b22c}{const char {\bfseries simbol} = 'r'}\label{classRhino_aa4a322a2e0e81ecc6a3048bdb262b22c}
+
+\item 
+\hypertarget{classRhino_a61bfc712bed65dea8effae1d330c98a3}{int {\bfseries bobot}}\label{classRhino_a61bfc712bed65dea8effae1d330c98a3}
+
+\item 
+\hypertarget{classRhino_aa3af85ef27fed2d5ebce1a2113366ecd}{string $\ast$ {\bfseries musuh}}\label{classRhino_aa3af85ef27fed2d5ebce1a2113366ecd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRhino_a58522b211956561033d02c692f8efbf0}{\index{Rhino@{Rhino}!Rhino@{Rhino}}
+\index{Rhino@{Rhino}!Rhino@{Rhino}}
+\subsubsection[{Rhino}]{\setlength{\rightskip}{0pt plus 5cm}Rhino\-::\-Rhino (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classRhino_a58522b211956561033d02c692f8efbf0}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classSnake}{Snake} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classSnake}{Snake} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRhino_a624cabcc67d0be3ccdb21c8bf63a3ccd}{\index{Rhino@{Rhino}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Rhino@{Rhino}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Rhino\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRhino_a624cabcc67d0be3ccdb21c8bf63a3ccd}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classSnake}{Snake}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classRhino_a52916d0a7fd7a97ae11571e2c9511d5f}{\index{Rhino@{Rhino}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Rhino@{Rhino}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Rhino\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRhino_a52916d0a7fd7a97ae11571e2c9511d5f}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classSnake}{Snake} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classSnake}{Snake}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classRhino_ad686dce9238ac3e5baaaa205cc07ddb9}{\index{Rhino@{Rhino}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Rhino@{Rhino}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Rhino\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRhino_ad686dce9238ac3e5baaaa205cc07ddb9}
+
+
+Mendapatkan simbol dari \hyperlink{classSnake}{Snake}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classRhino_ab1a961793213c332a9a23180c7700bc7}{\index{Rhino@{Rhino}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Rhino@{Rhino}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Rhino\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRhino_ab1a961793213c332a9a23180c7700bc7}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+\hypertarget{classRhino_ab58c391c33619b17b06f39f919b4737c}{\index{Rhino@{Rhino}!interact@{interact}}
+\index{interact@{interact}!Rhino@{Rhino}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Rhino\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRhino_ab58c391c33619b17b06f39f919b4737c}
+
+
+Mendapatkan reaksi \hyperlink{classSnake}{Snake} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}culacula\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Rhino.\-h\item 
+Rhino.\-cpp\end{DoxyCompactItemize}

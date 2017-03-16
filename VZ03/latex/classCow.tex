@@ -1,0 +1,173 @@
+\hypertarget{classCow}{\section{Cow Class Reference}
+\label{classCow}\index{Cow@{Cow}}
+}
+
+
+{\ttfamily \#include $<$Cow.\-h$>$}
+
+Inheritance diagram for Cow\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCow}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCow_a8d004e3d53acceb83ac4321f972fc78b}{Cow} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classCow_ab6e5749431c51b7d1cda263fcd48393a}{\hyperlink{classCow_ab6e5749431c51b7d1cda263fcd48393a}{$\sim$\-Cow} ()}\label{classCow_ab6e5749431c51b7d1cda263fcd48393a}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classCow_a33b115281c154d17f259c18fff1f4d3a}{void \hyperlink{classCow_a33b115281c154d17f259c18fff1f4d3a}{add\-Bobot} ()}\label{classCow_a33b115281c154d17f259c18fff1f4d3a}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classCow_a64435a687437ce3db8cf38be1984737c}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classCow}{Cow}. \end{DoxyCompactList}\item 
+char \hyperlink{classCow_a2f52ce339a0ee1d19e32ff2010a8ea68}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classCow}{Cow}. \end{DoxyCompactList}\item 
+string \hyperlink{classCow_a006b5864bd414238ae9337dfa8ca193a}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classCow}{Cow} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classCow}{Cow}. \end{DoxyCompactList}\item 
+string \hyperlink{classCow_a1299050bf0fa6e933d22d7027428d885}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classCow}{Cow} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classCow_aff355d86a92e62f6c3be421173064f3b}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCow_a3fe80551fc501157fe95d242fed693e7}{const string {\bfseries tipe\-Animal} = \char`\"{}cow\char`\"{}}\label{classCow_a3fe80551fc501157fe95d242fed693e7}
+
+\item 
+\hypertarget{classCow_a3e20a16a31cccbf3a4ed72df5d4245c0}{const char {\bfseries simbol} = 'w'}\label{classCow_a3e20a16a31cccbf3a4ed72df5d4245c0}
+
+\item 
+\hypertarget{classCow_a980a21c5e2127566fa263968aa82a881}{int {\bfseries bobot}}\label{classCow_a980a21c5e2127566fa263968aa82a881}
+
+\item 
+\hypertarget{classCow_a25e958ccec81f7b71fd68919ec0ff967}{string $\ast$ {\bfseries musuh}}\label{classCow_a25e958ccec81f7b71fd68919ec0ff967}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di darat dan merupakan \hyperlink{classHerbivora}{Herbivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCow_a8d004e3d53acceb83ac4321f972fc78b}{\index{Cow@{Cow}!Cow@{Cow}}
+\index{Cow@{Cow}!Cow@{Cow}}
+\subsubsection[{Cow}]{\setlength{\rightskip}{0pt plus 5cm}Cow\-::\-Cow (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classCow_a8d004e3d53acceb83ac4321f972fc78b}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classCow}{Cow} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classCow}{Cow} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCow_a64435a687437ce3db8cf38be1984737c}{\index{Cow@{Cow}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Cow@{Cow}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Cow\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCow_a64435a687437ce3db8cf38be1984737c}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classCow}{Cow}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classCow_a006b5864bd414238ae9337dfa8ca193a}{\index{Cow@{Cow}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Cow@{Cow}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Cow\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCow_a006b5864bd414238ae9337dfa8ca193a}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classCow}{Cow} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classCow}{Cow}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classCow_a2f52ce339a0ee1d19e32ff2010a8ea68}{\index{Cow@{Cow}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Cow@{Cow}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Cow\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCow_a2f52ce339a0ee1d19e32ff2010a8ea68}
+
+
+Mendapatkan simbol dari \hyperlink{classCow}{Cow}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classCow_aff355d86a92e62f6c3be421173064f3b}{\index{Cow@{Cow}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Cow@{Cow}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Cow\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCow_aff355d86a92e62f6c3be421173064f3b}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+\hypertarget{classCow_a1299050bf0fa6e933d22d7027428d885}{\index{Cow@{Cow}!interact@{interact}}
+\index{interact@{interact}!Cow@{Cow}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Cow\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCow_a1299050bf0fa6e933d22d7027428d885}
+
+
+Mendapatkan reaksi \hyperlink{classCow}{Cow} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}mooow\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cow.\-h\item 
+Cow.\-cpp\end{DoxyCompactItemize}

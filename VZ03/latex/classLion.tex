@@ -1,0 +1,173 @@
+\hypertarget{classLion}{\section{Lion Class Reference}
+\label{classLion}\index{Lion@{Lion}}
+}
+
+
+{\ttfamily \#include $<$Lion.\-h$>$}
+
+Inheritance diagram for Lion\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classLion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLion_aff2734ad945e35069dab03493aa34e51}{Lion} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classLion_add3b70c968c9382d00f25f5d148e590f}{\hyperlink{classLion_add3b70c968c9382d00f25f5d148e590f}{$\sim$\-Lion} ()}\label{classLion_add3b70c968c9382d00f25f5d148e590f}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classLion_aff4d22a6a78a3d029c612c92bd878e7a}{void \hyperlink{classLion_aff4d22a6a78a3d029c612c92bd878e7a}{add\-Bobot} ()}\label{classLion_aff4d22a6a78a3d029c612c92bd878e7a}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classLion_a039685367875d1cdf4779dce5232edec}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classLion}{Lion}. \end{DoxyCompactList}\item 
+char \hyperlink{classLion_a91396289e60961249390e04bddca1f33}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classLion}{Lion}. \end{DoxyCompactList}\item 
+string \hyperlink{classLion_a6afed6b04ba30683547b43d12db22602}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classLion}{Lion} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classLion}{Lion}. \end{DoxyCompactList}\item 
+string \hyperlink{classLion_a5ec3e7aa8b23aabab1c83fdf9e7d0edc}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classLion}{Lion} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classLion_ab84e7ce8adc60b918947a03274574274}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classLion_adcc07efde3d3b032c3c46b152fbdbff0}{const string {\bfseries tipe\-Animal} = \char`\"{}lion\char`\"{}}\label{classLion_adcc07efde3d3b032c3c46b152fbdbff0}
+
+\item 
+\hypertarget{classLion_ad68fc66ed2526913a48204c498b15640}{const char {\bfseries simbol} = 'l'}\label{classLion_ad68fc66ed2526913a48204c498b15640}
+
+\item 
+\hypertarget{classLion_a8b06cc2870dd127c43a91a618cc2a14c}{int {\bfseries bobot}}\label{classLion_a8b06cc2870dd127c43a91a618cc2a14c}
+
+\item 
+\hypertarget{classLion_ad44a83ee9b4e2f2b47b2bb2d85f9d648}{string $\ast$ {\bfseries musuh}}\label{classLion_ad44a83ee9b4e2f2b47b2bb2d85f9d648}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di darat dan merupakan \hyperlink{classKarnivora}{Karnivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLion_aff2734ad945e35069dab03493aa34e51}{\index{Lion@{Lion}!Lion@{Lion}}
+\index{Lion@{Lion}!Lion@{Lion}}
+\subsubsection[{Lion}]{\setlength{\rightskip}{0pt plus 5cm}Lion\-::\-Lion (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classLion_aff2734ad945e35069dab03493aa34e51}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classLion}{Lion} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classLion}{Lion} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLion_a039685367875d1cdf4779dce5232edec}{\index{Lion@{Lion}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Lion@{Lion}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Lion\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classLion_a039685367875d1cdf4779dce5232edec}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classLion}{Lion}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classLion_a6afed6b04ba30683547b43d12db22602}{\index{Lion@{Lion}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Lion@{Lion}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Lion\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classLion_a6afed6b04ba30683547b43d12db22602}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classLion}{Lion} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classLion}{Lion}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classLion_a91396289e60961249390e04bddca1f33}{\index{Lion@{Lion}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Lion@{Lion}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Lion\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classLion_a91396289e60961249390e04bddca1f33}
+
+
+Mendapatkan simbol dari \hyperlink{classLion}{Lion}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classLion_ab84e7ce8adc60b918947a03274574274}{\index{Lion@{Lion}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Lion@{Lion}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Lion\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classLion_ab84e7ce8adc60b918947a03274574274}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+\hypertarget{classLion_a5ec3e7aa8b23aabab1c83fdf9e7d0edc}{\index{Lion@{Lion}!interact@{interact}}
+\index{interact@{interact}!Lion@{Lion}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Lion\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classLion_a5ec3e7aa8b23aabab1c83fdf9e7d0edc}
+
+
+Mendapatkan reaksi \hyperlink{classLion}{Lion} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}auuum\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Lion.\-h\item 
+Lion.\-cpp\end{DoxyCompactItemize}

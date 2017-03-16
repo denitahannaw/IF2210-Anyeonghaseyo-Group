@@ -76,12 +76,6 @@ public:
 	*/
 	int getTotalMakanan();
 	/**
-	* @brief Setter 
-	* Set cageArea=area
-	* @param area cageArea baru
-	*/
-	void setCageArea(int area);
-	/**
 	* @brief Setter listOfCagePosition.
 	* Menambahkan posisi cell tempat didirikannya cage
 	* @param position Posisi cage

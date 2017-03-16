@@ -1,0 +1,296 @@
+\hypertarget{classCage}{\section{Cage Class Reference}
+\label{classCage}\index{Cage@{Cage}}
+}
+
+
+{\ttfamily \#include $<$Cage.\-h$>$}
+
+Inheritance diagram for Cage\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCage_adf3c087a1f7526422db7ce5e37469c91}{Cage} (char simbol, string tipe\-Habitat)
+\begin{DoxyCompactList}\small\item\em Constructor Membangun cage. \end{DoxyCompactList}\item 
+\hypertarget{classCage_a657259499dfc23c63fc65aeaf8abbb17}{\hyperlink{classCage_a657259499dfc23c63fc65aeaf8abbb17}{$\sim$\-Cage} ()}\label{classCage_a657259499dfc23c63fc65aeaf8abbb17}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classCage_a095e180cfe3c617f14ba102cb1c99f07}{get\-Cage\-Area} ()
+\begin{DoxyCompactList}\small\item\em Getter cage\-Area. Mendapatkan banyak petak maksimal yang dapat dibangun. \end{DoxyCompactList}\item 
+int \hyperlink{classCage_a782080ce97d84f0ddfdc46f4c11e1cdf}{get\-N\-Area} ()
+\begin{DoxyCompactList}\small\item\em Getter n\-Area. Mendapatkan jumlah petak yang telah dibangun. \end{DoxyCompactList}\item 
+int \hyperlink{classCage_af67deefc75632b3d13007cb5f06109b8}{get\-N\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Getter n\-Animal. Mendapatkan jumlah \hyperlink{classAnimal}{Animal} yang terdapat pada cage. \end{DoxyCompactList}\item 
+string \hyperlink{classCage_a762b5f166b260fadf7b6fd21e231c02b}{get\-Tipe\-Habitat} ()
+\begin{DoxyCompactList}\small\item\em Getter tipe\-Habitat Mendapatkan tipe habitat \hyperlink{classCage}{Cage}. \end{DoxyCompactList}\item 
+\hyperlink{classCell}{Cell} $\ast$ \hyperlink{classCage_a501c11daaeee7968a477412ec00c140e}{get\-Cage\-Position} (int i)
+\begin{DoxyCompactList}\small\item\em Getter \hyperlink{classCage}{Cage} Position Mendapatkan list\-Of\-Cage\-Position\mbox{[}i\mbox{]}. \end{DoxyCompactList}\item 
+\hyperlink{classAnimal}{Animal} $\ast$ \hyperlink{classCage_aa3e42c058261cdc8da4479afe1342dc7}{get\-Animal} (int i)
+\begin{DoxyCompactList}\small\item\em Getter \hyperlink{classAnimal}{Animal} Mendapatkan \hyperlink{classAnimal}{Animal} pada indeks i (animals\mbox{[}i\mbox{]}) \end{DoxyCompactList}\item 
+int \hyperlink{classCage_ade3f9a83cbceecbc2f8b2d239d00ac7a}{get\-Max\-Animal} ()
+\begin{DoxyCompactList}\small\item\em max animal Maksimal animal dalam cage = 30\% dari cage\-Area \end{DoxyCompactList}\item 
+int \hyperlink{classCage_a5e5df3e1f60eb1e0577e11f12e73a659}{get\-Total\-Makanan} ()
+\begin{DoxyCompactList}\small\item\em Mengembalikan total makanan yang diperlukan \hyperlink{classAnimal}{Animal} dalam satu \hyperlink{classCage}{Cage}. \end{DoxyCompactList}\item 
+void \hyperlink{classCage_a45bf1594e9f1c25a7f85f08a2cab162f}{add\-Cage\-Position} (\hyperlink{classCell}{Cell} $\ast$position)
+\begin{DoxyCompactList}\small\item\em Setter list\-Of\-Cage\-Position. Menambahkan posisi cell tempat didirikannya cage. \end{DoxyCompactList}\item 
+void \hyperlink{classCage_ab2be8c3b1027d620ee0dbedbb9e5637d}{add\-Animal} (\hyperlink{classAnimal}{Animal} $\ast$anim)
+\begin{DoxyCompactList}\small\item\em Setter animals. Menambahkan \hyperlink{classAnimal}{Animal} dalam cage jika masih bisa ditambahkan. Harus dipastikan jumlah \hyperlink{classAnimal}{Animal} tidak melebihi kapasitasnya. \end{DoxyCompactList}\item 
+bool \hyperlink{classCage_adf86b9bd1da9aa59bf403320060bd455}{is\-Position\-Empty} (\hyperlink{classCell}{Cell} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Menentukan apakah suatu cell cage telah ditempati animal atau belum. \end{DoxyCompactList}\item 
+bool \hyperlink{classCage_a72166ea7b4a83b59f54131b354272154}{is\-Position\-In\-Cage} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Menentukan apakah posisi (x,y) terdapat di salah satu posisi cage dibangun. \end{DoxyCompactList}\item 
+char \hyperlink{classCage_aab864d541ada79ac83619b139bef5507}{render} ()
+\begin{DoxyCompactList}\small\item\em getter S\-I\-M\-B\-O\-L Mengembalikan nilai S\-I\-M\-B\-O\-L \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classCage}{Cage} yang terdiri dari beberapa petak \hyperlink{classCell}{Cell} pada habitat tertentu. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCage_adf3c087a1f7526422db7ce5e37469c91}{\index{Cage@{Cage}!Cage@{Cage}}
+\index{Cage@{Cage}!Cage@{Cage}}
+\subsubsection[{Cage}]{\setlength{\rightskip}{0pt plus 5cm}Cage\-::\-Cage (
+\begin{DoxyParamCaption}
+\item[{char}]{simbol, }
+\item[{string}]{tipe\-Habitat}
+\end{DoxyParamCaption}
+)}}\label{classCage_adf3c087a1f7526422db7ce5e37469c91}
+
+
+Constructor Membangun cage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em simbol} & Simbol dari cage \\
+\hline
+{\em tipehabitat} & Tipe habitat cage \\
+\hline
+{\em cage\-Area} & Luas cage / jumlah cell \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCage_ab2be8c3b1027d620ee0dbedbb9e5637d}{\index{Cage@{Cage}!add\-Animal@{add\-Animal}}
+\index{add\-Animal@{add\-Animal}!Cage@{Cage}}
+\subsubsection[{add\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}void Cage\-::add\-Animal (
+\begin{DoxyParamCaption}
+\item[{{\bf Animal} $\ast$}]{anim}
+\end{DoxyParamCaption}
+)}}\label{classCage_ab2be8c3b1027d620ee0dbedbb9e5637d}
+
+
+Setter animals. Menambahkan \hyperlink{classAnimal}{Animal} dalam cage jika masih bisa ditambahkan. Harus dipastikan jumlah \hyperlink{classAnimal}{Animal} tidak melebihi kapasitasnya. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim} & \hyperlink{classAnimal}{Animal} yang akan ditambahkan \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCage_a45bf1594e9f1c25a7f85f08a2cab162f}{\index{Cage@{Cage}!add\-Cage\-Position@{add\-Cage\-Position}}
+\index{add\-Cage\-Position@{add\-Cage\-Position}!Cage@{Cage}}
+\subsubsection[{add\-Cage\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Cage\-::add\-Cage\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell} $\ast$}]{position}
+\end{DoxyParamCaption}
+)}}\label{classCage_a45bf1594e9f1c25a7f85f08a2cab162f}
+
+
+Setter list\-Of\-Cage\-Position. Menambahkan posisi cell tempat didirikannya cage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Posisi cage \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCage_aa3e42c058261cdc8da4479afe1342dc7}{\index{Cage@{Cage}!get\-Animal@{get\-Animal}}
+\index{get\-Animal@{get\-Animal}!Cage@{Cage}}
+\subsubsection[{get\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animal} $\ast$ Cage\-::get\-Animal (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classCage_aa3e42c058261cdc8da4479afe1342dc7}
+
+
+Getter \hyperlink{classAnimal}{Animal} Mendapatkan \hyperlink{classAnimal}{Animal} pada indeks i (animals\mbox{[}i\mbox{]}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index \hyperlink{classAnimal}{Animal} yang akan diambil \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+animals\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classCage_a095e180cfe3c617f14ba102cb1c99f07}{\index{Cage@{Cage}!get\-Cage\-Area@{get\-Cage\-Area}}
+\index{get\-Cage\-Area@{get\-Cage\-Area}!Cage@{Cage}}
+\subsubsection[{get\-Cage\-Area}]{\setlength{\rightskip}{0pt plus 5cm}int Cage\-::get\-Cage\-Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCage_a095e180cfe3c617f14ba102cb1c99f07}
+
+
+Getter cage\-Area. Mendapatkan banyak petak maksimal yang dapat dibangun. 
+
+\begin{DoxyReturn}{Returns}
+cage\-Area 
+\end{DoxyReturn}
+\hypertarget{classCage_a501c11daaeee7968a477412ec00c140e}{\index{Cage@{Cage}!get\-Cage\-Position@{get\-Cage\-Position}}
+\index{get\-Cage\-Position@{get\-Cage\-Position}!Cage@{Cage}}
+\subsubsection[{get\-Cage\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell} $\ast$ Cage\-::get\-Cage\-Position (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classCage_a501c11daaeee7968a477412ec00c140e}
+
+
+Getter \hyperlink{classCage}{Cage} Position Mendapatkan list\-Of\-Cage\-Position\mbox{[}i\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & index list\-Of\-Cage\-Position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\-Of\-Cage\-Position\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classCage_ade3f9a83cbceecbc2f8b2d239d00ac7a}{\index{Cage@{Cage}!get\-Max\-Animal@{get\-Max\-Animal}}
+\index{get\-Max\-Animal@{get\-Max\-Animal}!Cage@{Cage}}
+\subsubsection[{get\-Max\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}int Cage\-::get\-Max\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCage_ade3f9a83cbceecbc2f8b2d239d00ac7a}
+
+
+max animal Maksimal animal dalam cage = 30\% dari cage\-Area 
+
+\begin{DoxyReturn}{Returns}
+30\%$\ast$cage\-Area; 
+\end{DoxyReturn}
+\hypertarget{classCage_af67deefc75632b3d13007cb5f06109b8}{\index{Cage@{Cage}!get\-N\-Animal@{get\-N\-Animal}}
+\index{get\-N\-Animal@{get\-N\-Animal}!Cage@{Cage}}
+\subsubsection[{get\-N\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}int Cage\-::get\-N\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCage_af67deefc75632b3d13007cb5f06109b8}
+
+
+Getter n\-Animal. Mendapatkan jumlah \hyperlink{classAnimal}{Animal} yang terdapat pada cage. 
+
+\begin{DoxyReturn}{Returns}
+n\-Animal 
+\end{DoxyReturn}
+\hypertarget{classCage_a782080ce97d84f0ddfdc46f4c11e1cdf}{\index{Cage@{Cage}!get\-N\-Area@{get\-N\-Area}}
+\index{get\-N\-Area@{get\-N\-Area}!Cage@{Cage}}
+\subsubsection[{get\-N\-Area}]{\setlength{\rightskip}{0pt plus 5cm}int Cage\-::get\-N\-Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCage_a782080ce97d84f0ddfdc46f4c11e1cdf}
+
+
+Getter n\-Area. Mendapatkan jumlah petak yang telah dibangun. 
+
+\begin{DoxyReturn}{Returns}
+n\-Area 
+\end{DoxyReturn}
+\hypertarget{classCage_a762b5f166b260fadf7b6fd21e231c02b}{\index{Cage@{Cage}!get\-Tipe\-Habitat@{get\-Tipe\-Habitat}}
+\index{get\-Tipe\-Habitat@{get\-Tipe\-Habitat}!Cage@{Cage}}
+\subsubsection[{get\-Tipe\-Habitat}]{\setlength{\rightskip}{0pt plus 5cm}string Cage\-::get\-Tipe\-Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCage_a762b5f166b260fadf7b6fd21e231c02b}
+
+
+Getter tipe\-Habitat Mendapatkan tipe habitat \hyperlink{classCage}{Cage}. 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Habitat 
+\end{DoxyReturn}
+\hypertarget{classCage_a5e5df3e1f60eb1e0577e11f12e73a659}{\index{Cage@{Cage}!get\-Total\-Makanan@{get\-Total\-Makanan}}
+\index{get\-Total\-Makanan@{get\-Total\-Makanan}!Cage@{Cage}}
+\subsubsection[{get\-Total\-Makanan}]{\setlength{\rightskip}{0pt plus 5cm}int Cage\-::get\-Total\-Makanan (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCage_a5e5df3e1f60eb1e0577e11f12e73a659}
+
+
+Mengembalikan total makanan yang diperlukan \hyperlink{classAnimal}{Animal} dalam satu \hyperlink{classCage}{Cage}. 
+
+\begin{DoxyReturn}{Returns}
+total makanan 
+\end{DoxyReturn}
+\hypertarget{classCage_adf86b9bd1da9aa59bf403320060bd455}{\index{Cage@{Cage}!is\-Position\-Empty@{is\-Position\-Empty}}
+\index{is\-Position\-Empty@{is\-Position\-Empty}!Cage@{Cage}}
+\subsubsection[{is\-Position\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Cage\-::is\-Position\-Empty (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classCage_adf86b9bd1da9aa59bf403320060bd455}
+
+
+Menentukan apakah suatu cell cage telah ditempati animal atau belum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \hyperlink{classCell}{Cell} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jika posisi c belum ditempati animal, false jika sebaliknya 
+\end{DoxyReturn}
+\hypertarget{classCage_a72166ea7b4a83b59f54131b354272154}{\index{Cage@{Cage}!is\-Position\-In\-Cage@{is\-Position\-In\-Cage}}
+\index{is\-Position\-In\-Cage@{is\-Position\-In\-Cage}!Cage@{Cage}}
+\subsubsection[{is\-Position\-In\-Cage}]{\setlength{\rightskip}{0pt plus 5cm}bool Cage\-::is\-Position\-In\-Cage (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classCage_a72166ea7b4a83b59f54131b354272154}
+
+
+Menentukan apakah posisi (x,y) terdapat di salah satu posisi cage dibangun. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & posisi x \\
+\hline
+{\em y} & posisi y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Jika posisi ada dalam \hyperlink{classCage}{Cage}, false Jika posisi tidak ada dalam \hyperlink{classCage}{Cage} 
+\end{DoxyReturn}
+\hypertarget{classCage_aab864d541ada79ac83619b139bef5507}{\index{Cage@{Cage}!render@{render}}
+\index{render@{render}!Cage@{Cage}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}char Cage\-::render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCage_aab864d541ada79ac83619b139bef5507}
+
+
+getter S\-I\-M\-B\-O\-L Mengembalikan nilai S\-I\-M\-B\-O\-L 
+
+\begin{DoxyReturn}{Returns}
+S\-I\-M\-B\-O\-L 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRenderable_aafa9280e6dcfa557b3cd675221fd97b4}{Renderable}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cage.\-h\item 
+Cage.\-cpp\end{DoxyCompactItemize}

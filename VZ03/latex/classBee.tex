@@ -1,0 +1,173 @@
+\hypertarget{classBee}{\section{Bee Class Reference}
+\label{classBee}\index{Bee@{Bee}}
+}
+
+
+{\ttfamily \#include $<$Bee.\-h$>$}
+
+Inheritance diagram for Bee\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classBee}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBee_ae8ca9eb389ca41c76bab7058f731abc9}{Bee} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classBee_a769176476ccc499cf45889c3e03baaa2}{\hyperlink{classBee_a769176476ccc499cf45889c3e03baaa2}{$\sim$\-Bee} ()}\label{classBee_a769176476ccc499cf45889c3e03baaa2}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classBee_ac13663a9bc08b75dc1120f9e84acc819}{void \hyperlink{classBee_ac13663a9bc08b75dc1120f9e84acc819}{add\-Bobot} ()}\label{classBee_ac13663a9bc08b75dc1120f9e84acc819}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classBee_a1040d681b2771258e6bcf12c1d4ad19c}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classBee}{Bee}. \end{DoxyCompactList}\item 
+char \hyperlink{classBee_a6e28b4ca1253f48a761f8281a676ed92}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classBee}{Bee}. \end{DoxyCompactList}\item 
+string \hyperlink{classBee_a626c396ba011656c082f7623935c89c9}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classBee}{Bee} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classBee}{Bee}. \end{DoxyCompactList}\item 
+string \hyperlink{classBee_ad14bd3aae6bea32bb0a3aaa87d227dc4}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classBee}{Bee} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classBee_a0341cf55086556e10104c7744f9fc833}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBee_a4b8430bfd71879bf6b80e111bffa396d}{const string {\bfseries tipe\-Animal} = \char`\"{}bee\char`\"{}}\label{classBee_a4b8430bfd71879bf6b80e111bffa396d}
+
+\item 
+\hypertarget{classBee_af1c0a138e8e135e49f5ec684fa0d8560}{const char {\bfseries simbol} = 'z'}\label{classBee_af1c0a138e8e135e49f5ec684fa0d8560}
+
+\item 
+\hypertarget{classBee_aca646c272b0831555ced51d9d450b2ef}{int {\bfseries bobot}}\label{classBee_aca646c272b0831555ced51d9d450b2ef}
+
+\item 
+\hypertarget{classBee_ad03be63a8114e6074f49c3df8dcdf0d3}{string $\ast$ {\bfseries musuh}}\label{classBee_ad03be63a8114e6074f49c3df8dcdf0d3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di udara dan merupakan \hyperlink{classHerbivora}{Herbivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBee_ae8ca9eb389ca41c76bab7058f731abc9}{\index{Bee@{Bee}!Bee@{Bee}}
+\index{Bee@{Bee}!Bee@{Bee}}
+\subsubsection[{Bee}]{\setlength{\rightskip}{0pt plus 5cm}Bee\-::\-Bee (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classBee_ae8ca9eb389ca41c76bab7058f731abc9}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classBee}{Bee} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classBee}{Bee} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBee_a1040d681b2771258e6bcf12c1d4ad19c}{\index{Bee@{Bee}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Bee@{Bee}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Bee\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBee_a1040d681b2771258e6bcf12c1d4ad19c}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classBee}{Bee}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classBee_a626c396ba011656c082f7623935c89c9}{\index{Bee@{Bee}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Bee@{Bee}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Bee\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBee_a626c396ba011656c082f7623935c89c9}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classBee}{Bee} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classBee}{Bee}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classBee_a6e28b4ca1253f48a761f8281a676ed92}{\index{Bee@{Bee}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Bee@{Bee}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Bee\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBee_a6e28b4ca1253f48a761f8281a676ed92}
+
+
+Mendapatkan simbol dari \hyperlink{classBee}{Bee}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classBee_a0341cf55086556e10104c7744f9fc833}{\index{Bee@{Bee}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Bee@{Bee}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Bee\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBee_a0341cf55086556e10104c7744f9fc833}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFlyingAnimal_a1523973b9a6a47e9064825c2134fd65d}{Flying\-Animal}.
+
+\hypertarget{classBee_ad14bd3aae6bea32bb0a3aaa87d227dc4}{\index{Bee@{Bee}!interact@{interact}}
+\index{interact@{interact}!Bee@{Bee}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Bee\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBee_ad14bd3aae6bea32bb0a3aaa87d227dc4}
+
+
+Mendapatkan reaksi \hyperlink{classBee}{Bee} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}ngggnggg\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFlyingAnimal_ac0eee625fa2235eee8cbdc0a010ae430}{Flying\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Bee.\-h\item 
+Bee.\-cpp\end{DoxyCompactItemize}

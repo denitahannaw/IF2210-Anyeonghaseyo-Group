@@ -1,0 +1,173 @@
+\hypertarget{classChicken}{\section{Chicken Class Reference}
+\label{classChicken}\index{Chicken@{Chicken}}
+}
+
+
+{\ttfamily \#include $<$Chicken.\-h$>$}
+
+Inheritance diagram for Chicken\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classChicken}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classChicken_a4ca0ca08ac03410d9551564b7bf77c8d}{Chicken} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classChicken_a467a41f21fa2b076f6f2d398c8e1ada8}{\hyperlink{classChicken_a467a41f21fa2b076f6f2d398c8e1ada8}{$\sim$\-Chicken} ()}\label{classChicken_a467a41f21fa2b076f6f2d398c8e1ada8}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classChicken_acbcd8ace889db2287c8494dbd7c8a38b}{void \hyperlink{classChicken_acbcd8ace889db2287c8494dbd7c8a38b}{add\-Bobot} ()}\label{classChicken_acbcd8ace889db2287c8494dbd7c8a38b}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classChicken_a3412b91656f7fbc582e61347d041fc26}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classChicken}{Chicken}. \end{DoxyCompactList}\item 
+char \hyperlink{classChicken_a76ccfbab33c1e7e8586594d5a187f24f}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classChicken}{Chicken}. \end{DoxyCompactList}\item 
+string \hyperlink{classChicken_a3104bf975190b71c598c8a9190cc8e82}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classChicken}{Chicken} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classChicken}{Chicken}. \end{DoxyCompactList}\item 
+string \hyperlink{classChicken_a4b257cd1beddc7998245e1a276be9538}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classChicken}{Chicken} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classChicken_aed9dc3fbf2e9a352d27109ba331db37d}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classChicken_a2ab48bb09746cb546a0dd2d295f2d2da}{const string {\bfseries tipe\-Animal} = \char`\"{}chicken\char`\"{}}\label{classChicken_a2ab48bb09746cb546a0dd2d295f2d2da}
+
+\item 
+\hypertarget{classChicken_a543298297ce0ffa9441a11f8298ac5fa}{const char {\bfseries simbol} = 'n'}\label{classChicken_a543298297ce0ffa9441a11f8298ac5fa}
+
+\item 
+\hypertarget{classChicken_a9ec3ad294e2af757b8a467294c420ebb}{int {\bfseries bobot}}\label{classChicken_a9ec3ad294e2af757b8a467294c420ebb}
+
+\item 
+\hypertarget{classChicken_ad06a7254bedeb9b76d7f0598f552a4d3}{string $\ast$ {\bfseries musuh}}\label{classChicken_ad06a7254bedeb9b76d7f0598f552a4d3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di darat dan merupakan \hyperlink{classOmnivora}{Omnivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classChicken_a4ca0ca08ac03410d9551564b7bf77c8d}{\index{Chicken@{Chicken}!Chicken@{Chicken}}
+\index{Chicken@{Chicken}!Chicken@{Chicken}}
+\subsubsection[{Chicken}]{\setlength{\rightskip}{0pt plus 5cm}Chicken\-::\-Chicken (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classChicken_a4ca0ca08ac03410d9551564b7bf77c8d}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classChicken}{Chicken} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classChicken}{Chicken} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classChicken_a3412b91656f7fbc582e61347d041fc26}{\index{Chicken@{Chicken}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Chicken@{Chicken}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Chicken\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classChicken_a3412b91656f7fbc582e61347d041fc26}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classChicken}{Chicken}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classChicken_a3104bf975190b71c598c8a9190cc8e82}{\index{Chicken@{Chicken}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Chicken@{Chicken}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Chicken\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classChicken_a3104bf975190b71c598c8a9190cc8e82}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classChicken}{Chicken} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classChicken}{Chicken}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classChicken_a76ccfbab33c1e7e8586594d5a187f24f}{\index{Chicken@{Chicken}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Chicken@{Chicken}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Chicken\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classChicken_a76ccfbab33c1e7e8586594d5a187f24f}
+
+
+Mendapatkan simbol dari \hyperlink{classChicken}{Chicken}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classChicken_aed9dc3fbf2e9a352d27109ba331db37d}{\index{Chicken@{Chicken}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Chicken@{Chicken}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Chicken\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classChicken_aed9dc3fbf2e9a352d27109ba331db37d}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+\hypertarget{classChicken_a4b257cd1beddc7998245e1a276be9538}{\index{Chicken@{Chicken}!interact@{interact}}
+\index{interact@{interact}!Chicken@{Chicken}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Chicken\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classChicken_a4b257cd1beddc7998245e1a276be9538}
+
+
+Mendapatkan reaksi \hyperlink{classChicken}{Chicken} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}chipchip\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Chicken.\-h\item 
+Chicken.\-cpp\end{DoxyCompactItemize}

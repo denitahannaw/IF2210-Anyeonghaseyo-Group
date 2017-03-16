@@ -1,0 +1,173 @@
+\hypertarget{classBird}{\section{Bird Class Reference}
+\label{classBird}\index{Bird@{Bird}}
+}
+
+
+{\ttfamily \#include $<$Bird.\-h$>$}
+
+Inheritance diagram for Bird\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classBird}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBird_a802e609916df32347f8b2d535647c232}{Bird} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classBird_a7d10693b91a2736611c37f1ef205b911}{\hyperlink{classBird_a7d10693b91a2736611c37f1ef205b911}{$\sim$\-Bird} ()}\label{classBird_a7d10693b91a2736611c37f1ef205b911}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classBird_a43377def001a07e9a94f15559f82abd3}{void \hyperlink{classBird_a43377def001a07e9a94f15559f82abd3}{add\-Bobot} ()}\label{classBird_a43377def001a07e9a94f15559f82abd3}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classBird_a72a377b7d210dc3cabd57d61538eeeac}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classBird}{Bird}. \end{DoxyCompactList}\item 
+char \hyperlink{classBird_a842d9c5760dd027cc293b869b7a5c9f7}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classBird}{Bird}. \end{DoxyCompactList}\item 
+string \hyperlink{classBird_a957350fef42a0a16446abfd9a14a8f07}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classBird}{Bird} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classBird}{Bird}. \end{DoxyCompactList}\item 
+string \hyperlink{classBird_ae1e5a507154e6aeb2ba9f3c8447c75d4}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classBird}{Bird} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classBird_a334d9a9e90114f5c74d2ad327120b2be}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBird_a38f99d6857557f22110704917b8a9164}{const string {\bfseries tipe\-Animal} = \char`\"{}bird\char`\"{}}\label{classBird_a38f99d6857557f22110704917b8a9164}
+
+\item 
+\hypertarget{classBird_a70b1f7bc29b88c9f23082179a1aa3ab4}{const char {\bfseries simbol} = 'b'}\label{classBird_a70b1f7bc29b88c9f23082179a1aa3ab4}
+
+\item 
+\hypertarget{classBird_adb9c2c0a72dec783172ebc73ca6a8a0a}{int {\bfseries bobot}}\label{classBird_adb9c2c0a72dec783172ebc73ca6a8a0a}
+
+\item 
+\hypertarget{classBird_a21567839a88ed9e9d9124e16ced21a5d}{string $\ast$ {\bfseries musuh}}\label{classBird_a21567839a88ed9e9d9124e16ced21a5d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di darat dan merupakan \hyperlink{classKarnivora}{Karnivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBird_a802e609916df32347f8b2d535647c232}{\index{Bird@{Bird}!Bird@{Bird}}
+\index{Bird@{Bird}!Bird@{Bird}}
+\subsubsection[{Bird}]{\setlength{\rightskip}{0pt plus 5cm}Bird\-::\-Bird (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classBird_a802e609916df32347f8b2d535647c232}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classBird}{Bird} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classBird}{Bird} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBird_a72a377b7d210dc3cabd57d61538eeeac}{\index{Bird@{Bird}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Bird@{Bird}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Bird\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBird_a72a377b7d210dc3cabd57d61538eeeac}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classBird}{Bird}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classBird_a957350fef42a0a16446abfd9a14a8f07}{\index{Bird@{Bird}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Bird@{Bird}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Bird\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBird_a957350fef42a0a16446abfd9a14a8f07}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classBird}{Bird} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classBird}{Bird}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classBird_a842d9c5760dd027cc293b869b7a5c9f7}{\index{Bird@{Bird}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Bird@{Bird}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Bird\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBird_a842d9c5760dd027cc293b869b7a5c9f7}
+
+
+Mendapatkan simbol dari \hyperlink{classBird}{Bird}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classBird_a334d9a9e90114f5c74d2ad327120b2be}{\index{Bird@{Bird}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Bird@{Bird}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Bird\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBird_a334d9a9e90114f5c74d2ad327120b2be}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFlyingAnimal_a1523973b9a6a47e9064825c2134fd65d}{Flying\-Animal}.
+
+\hypertarget{classBird_ae1e5a507154e6aeb2ba9f3c8447c75d4}{\index{Bird@{Bird}!interact@{interact}}
+\index{interact@{interact}!Bird@{Bird}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Bird\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBird_ae1e5a507154e6aeb2ba9f3c8447c75d4}
+
+
+Mendapatkan reaksi \hyperlink{classBird}{Bird} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}cuitcuit\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFlyingAnimal_ac0eee625fa2235eee8cbdc0a010ae430}{Flying\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Bird.\-h\item 
+Bird.\-cpp\end{DoxyCompactItemize}

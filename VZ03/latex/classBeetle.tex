@@ -1,0 +1,173 @@
+\hypertarget{classBeetle}{\section{Beetle Class Reference}
+\label{classBeetle}\index{Beetle@{Beetle}}
+}
+
+
+{\ttfamily \#include $<$Beetle.\-h$>$}
+
+Inheritance diagram for Beetle\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classBeetle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBeetle_a44270f6428b6fb3f6fceacce01ecc175}{Beetle} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classBeetle_a49832af20ae5029f08492b5fa1f1f242}{\hyperlink{classBeetle_a49832af20ae5029f08492b5fa1f1f242}{$\sim$\-Beetle} ()}\label{classBeetle_a49832af20ae5029f08492b5fa1f1f242}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classBeetle_a1df2c2e5feb89b3619068270d1fbd344}{void \hyperlink{classBeetle_a1df2c2e5feb89b3619068270d1fbd344}{add\-Bobot} ()}\label{classBeetle_a1df2c2e5feb89b3619068270d1fbd344}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classBeetle_a6c93c4f719178726a355298335923437}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classBeetle}{Beetle}. \end{DoxyCompactList}\item 
+char \hyperlink{classBeetle_a4e47a5dfad4c198a1cc7d4248ca03a35}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classBeetle}{Beetle}. \end{DoxyCompactList}\item 
+string \hyperlink{classBeetle_a3ab31fa3ba09ffdddec91c917bc4779f}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classBeetle}{Beetle} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classBeetle}{Beetle}. \end{DoxyCompactList}\item 
+string \hyperlink{classBeetle_a23d1ea3cb62d644a184583f32e6cf102}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classBeetle}{Beetle} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classBeetle_a30b538bbf1bf63ca615585bdc512ce33}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBeetle_a62b17ee94a6cc5a7188bbd7907d496be}{const string {\bfseries tipe\-Animal} = \char`\"{}beetle\char`\"{}}\label{classBeetle_a62b17ee94a6cc5a7188bbd7907d496be}
+
+\item 
+\hypertarget{classBeetle_a25697743a775dcee0c39b6dcf69d87ae}{const char {\bfseries simbol} = 'q'}\label{classBeetle_a25697743a775dcee0c39b6dcf69d87ae}
+
+\item 
+\hypertarget{classBeetle_a7541f9cb68d36ec0d694bffd034dffdb}{int {\bfseries bobot}}\label{classBeetle_a7541f9cb68d36ec0d694bffd034dffdb}
+
+\item 
+\hypertarget{classBeetle_a2234270060cbd0518c6ccb6df8c7fc33}{string $\ast$ {\bfseries musuh}}\label{classBeetle_a2234270060cbd0518c6ccb6df8c7fc33}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di udara dan merupakan \hyperlink{classHerbivora}{Herbivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBeetle_a44270f6428b6fb3f6fceacce01ecc175}{\index{Beetle@{Beetle}!Beetle@{Beetle}}
+\index{Beetle@{Beetle}!Beetle@{Beetle}}
+\subsubsection[{Beetle}]{\setlength{\rightskip}{0pt plus 5cm}Beetle\-::\-Beetle (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classBeetle_a44270f6428b6fb3f6fceacce01ecc175}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classBeetle}{Beetle} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classBeetle}{Beetle} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBeetle_a6c93c4f719178726a355298335923437}{\index{Beetle@{Beetle}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Beetle@{Beetle}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Beetle\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBeetle_a6c93c4f719178726a355298335923437}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classBeetle}{Beetle}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classBeetle_a3ab31fa3ba09ffdddec91c917bc4779f}{\index{Beetle@{Beetle}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Beetle@{Beetle}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Beetle\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBeetle_a3ab31fa3ba09ffdddec91c917bc4779f}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classBeetle}{Beetle} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classBeetle}{Beetle}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classBeetle_a4e47a5dfad4c198a1cc7d4248ca03a35}{\index{Beetle@{Beetle}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Beetle@{Beetle}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Beetle\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBeetle_a4e47a5dfad4c198a1cc7d4248ca03a35}
+
+
+Mendapatkan simbol dari \hyperlink{classBeetle}{Beetle}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classBeetle_a30b538bbf1bf63ca615585bdc512ce33}{\index{Beetle@{Beetle}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Beetle@{Beetle}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Beetle\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBeetle_a30b538bbf1bf63ca615585bdc512ce33}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFlyingAnimal_a1523973b9a6a47e9064825c2134fd65d}{Flying\-Animal}.
+
+\hypertarget{classBeetle_a23d1ea3cb62d644a184583f32e6cf102}{\index{Beetle@{Beetle}!interact@{interact}}
+\index{interact@{interact}!Beetle@{Beetle}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Beetle\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBeetle_a23d1ea3cb62d644a184583f32e6cf102}
+
+
+Mendapatkan reaksi \hyperlink{classBeetle}{Beetle} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}kepakkepak\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFlyingAnimal_ac0eee625fa2235eee8cbdc0a010ae430}{Flying\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Beetle.\-h\item 
+Beetle.\-cpp\end{DoxyCompactItemize}

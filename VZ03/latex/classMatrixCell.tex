@@ -1,0 +1,130 @@
+\hypertarget{classMatrixCell}{\section{Matrix\-Cell Class Reference}
+\label{classMatrixCell}\index{Matrix\-Cell@{Matrix\-Cell}}
+}
+
+
+{\ttfamily \#include $<$matrix\-\_\-cell.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrixCell_aa3193302e7060271c18d5200e9b02bfd}{Matrix\-Cell} (int brs, int kol)
+\begin{DoxyCompactList}\small\item\em Constructor Menciptakan \hyperlink{classMatrixCell}{Matrix\-Cell} sebesar brs dan kol. \end{DoxyCompactList}\item 
+\hypertarget{classMatrixCell_acd03a072415e3c564107f745139f364b}{\hyperlink{classMatrixCell_acd03a072415e3c564107f745139f364b}{Matrix\-Cell} (const \hyperlink{classMatrixCell}{Matrix\-Cell} \&)}\label{classMatrixCell_acd03a072415e3c564107f745139f364b}
+
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classMatrixCell_a6bc3fd3a444ad530d2122a21d24c1687}{\hyperlink{classMatrixCell_a6bc3fd3a444ad530d2122a21d24c1687}{$\sim$\-Matrix\-Cell} ()}\label{classMatrixCell_a6bc3fd3a444ad530d2122a21d24c1687}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classCell}{Cell} $\ast$ \hyperlink{classMatrixCell_a46e18471d0a80aead96c0623ba77e747}{get\-Cell} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Mendapatkan \hyperlink{classCell}{Cell} dari matrix pada titik (i,j) \end{DoxyCompactList}\item 
+void \hyperlink{classMatrixCell_a382b426e2fe00131482678e8f6cea5fb}{set\-Cell} (\hyperlink{classCell}{Cell} $\ast$C, int a, int b)
+\begin{DoxyCompactList}\small\item\em Memberikan nilai C pada matrix\mbox{[}a\mbox{]}\mbox{[}b\mbox{]}. \end{DoxyCompactList}\item 
+int \hyperlink{classMatrixCell_a5dfc42820be4f8dc3ae4e7edd705c29b}{get\-N\-B\-R\-S} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai baris matrix. \end{DoxyCompactList}\item 
+int \hyperlink{classMatrixCell_a792439d6592516385676b629500ae0c3}{get\-N\-K\-O\-L} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai kolom matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kelas Marix\-Cell merupakan kontainer \hyperlink{classCell}{Cell} berbentuk matrix 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMatrixCell_aa3193302e7060271c18d5200e9b02bfd}{\index{Matrix\-Cell@{Matrix\-Cell}!Matrix\-Cell@{Matrix\-Cell}}
+\index{Matrix\-Cell@{Matrix\-Cell}!MatrixCell@{Matrix\-Cell}}
+\subsubsection[{Matrix\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\-Cell\-::\-Matrix\-Cell (
+\begin{DoxyParamCaption}
+\item[{int}]{brs, }
+\item[{int}]{kol}
+\end{DoxyParamCaption}
+)}}\label{classMatrixCell_aa3193302e7060271c18d5200e9b02bfd}
+
+
+Constructor Menciptakan \hyperlink{classMatrixCell}{Matrix\-Cell} sebesar brs dan kol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em brs} & Merupakan besar baris \\
+\hline
+{\em kol} & Merupakan besar kolom \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMatrixCell_a46e18471d0a80aead96c0623ba77e747}{\index{Matrix\-Cell@{Matrix\-Cell}!get\-Cell@{get\-Cell}}
+\index{get\-Cell@{get\-Cell}!MatrixCell@{Matrix\-Cell}}
+\subsubsection[{get\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell} $\ast$ Matrix\-Cell\-::get\-Cell (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{classMatrixCell_a46e18471d0a80aead96c0623ba77e747}
+
+
+Mendapatkan \hyperlink{classCell}{Cell} dari matrix pada titik (i,j) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Indeks ke i untuk baris matrix \\
+\hline
+{\em j} & Indeks ke j untuk kolom matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCell}{Cell}\mbox{[}i\mbox{]}\mbox{[}j\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classMatrixCell_a5dfc42820be4f8dc3ae4e7edd705c29b}{\index{Matrix\-Cell@{Matrix\-Cell}!get\-N\-B\-R\-S@{get\-N\-B\-R\-S}}
+\index{get\-N\-B\-R\-S@{get\-N\-B\-R\-S}!MatrixCell@{Matrix\-Cell}}
+\subsubsection[{get\-N\-B\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}int Matrix\-Cell\-::get\-N\-B\-R\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMatrixCell_a5dfc42820be4f8dc3ae4e7edd705c29b}
+
+
+Mendapatkan nilai baris matrix. 
+
+\begin{DoxyReturn}{Returns}
+N\-\_\-\-B\-R\-S 
+\end{DoxyReturn}
+\hypertarget{classMatrixCell_a792439d6592516385676b629500ae0c3}{\index{Matrix\-Cell@{Matrix\-Cell}!get\-N\-K\-O\-L@{get\-N\-K\-O\-L}}
+\index{get\-N\-K\-O\-L@{get\-N\-K\-O\-L}!MatrixCell@{Matrix\-Cell}}
+\subsubsection[{get\-N\-K\-O\-L}]{\setlength{\rightskip}{0pt plus 5cm}int Matrix\-Cell\-::get\-N\-K\-O\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMatrixCell_a792439d6592516385676b629500ae0c3}
+
+
+Mendapatkan nilai kolom matrix. 
+
+\begin{DoxyReturn}{Returns}
+N\-\_\-\-K\-O\-L 
+\end{DoxyReturn}
+\hypertarget{classMatrixCell_a382b426e2fe00131482678e8f6cea5fb}{\index{Matrix\-Cell@{Matrix\-Cell}!set\-Cell@{set\-Cell}}
+\index{set\-Cell@{set\-Cell}!MatrixCell@{Matrix\-Cell}}
+\subsubsection[{set\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix\-Cell\-::set\-Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell} $\ast$}]{C, }
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}}\label{classMatrixCell_a382b426e2fe00131482678e8f6cea5fb}
+
+
+Memberikan nilai C pada matrix\mbox{[}a\mbox{]}\mbox{[}b\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Indeks baris matrix \\
+\hline
+{\em b} & Indeks kolom matrix \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+matrix\-\_\-cell.\-h\item 
+matrix\-\_\-cell.\-cpp\end{DoxyCompactItemize}

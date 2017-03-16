@@ -1,0 +1,173 @@
+\hypertarget{classButterfly}{\section{Butterfly Class Reference}
+\label{classButterfly}\index{Butterfly@{Butterfly}}
+}
+
+
+{\ttfamily \#include $<$Butterfly.\-h$>$}
+
+Inheritance diagram for Butterfly\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classButterfly}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classButterfly_aad74a900dcfae28b2f481e86148d6fad}{Butterfly} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classButterfly_aa6e58d14c62f35e6b4d8a84d4396d30e}{\hyperlink{classButterfly_aa6e58d14c62f35e6b4d8a84d4396d30e}{$\sim$\-Butterfly} ()}\label{classButterfly_aa6e58d14c62f35e6b4d8a84d4396d30e}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classButterfly_ad1458d18e99f90979f20123cda50b6b3}{void \hyperlink{classButterfly_ad1458d18e99f90979f20123cda50b6b3}{add\-Bobot} ()}\label{classButterfly_ad1458d18e99f90979f20123cda50b6b3}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classButterfly_ac802d3934d533606ee8c4229265d0be1}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classButterfly}{Butterfly}. \end{DoxyCompactList}\item 
+char \hyperlink{classButterfly_a15c3ae75ea826f50d25bb347abe4a4c4}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classButterfly}{Butterfly}. \end{DoxyCompactList}\item 
+string \hyperlink{classButterfly_a42116546aa9eb5dd2cac11761cfe749e}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classButterfly}{Butterfly} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classButterfly}{Butterfly}. \end{DoxyCompactList}\item 
+string \hyperlink{classButterfly_a64595ce265c79591af2095880bca70f1}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classButterfly}{Butterfly} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classButterfly_a7a11185ad98c664b3d3f052336afec0e}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classButterfly_a1eed2cdb5d97914a6cf5f523d650247b}{const string {\bfseries tipe\-Animal} = \char`\"{}butterfly\char`\"{}}\label{classButterfly_a1eed2cdb5d97914a6cf5f523d650247b}
+
+\item 
+\hypertarget{classButterfly_aca91bfe3883f3c8d580aafcb5f88598a}{const char {\bfseries simbol} = 't'}\label{classButterfly_aca91bfe3883f3c8d580aafcb5f88598a}
+
+\item 
+\hypertarget{classButterfly_a5ba39cb122e32cfdf5946639737389e7}{int {\bfseries bobot}}\label{classButterfly_a5ba39cb122e32cfdf5946639737389e7}
+
+\item 
+\hypertarget{classButterfly_ac90041697ff547883bb1a4398c473c68}{string $\ast$ {\bfseries musuh}}\label{classButterfly_ac90041697ff547883bb1a4398c473c68}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di udara dan merupakan \hyperlink{classHerbivora}{Herbivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classButterfly_aad74a900dcfae28b2f481e86148d6fad}{\index{Butterfly@{Butterfly}!Butterfly@{Butterfly}}
+\index{Butterfly@{Butterfly}!Butterfly@{Butterfly}}
+\subsubsection[{Butterfly}]{\setlength{\rightskip}{0pt plus 5cm}Butterfly\-::\-Butterfly (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classButterfly_aad74a900dcfae28b2f481e86148d6fad}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classButterfly}{Butterfly} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classButterfly}{Butterfly} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classButterfly_ac802d3934d533606ee8c4229265d0be1}{\index{Butterfly@{Butterfly}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Butterfly@{Butterfly}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Butterfly\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classButterfly_ac802d3934d533606ee8c4229265d0be1}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classButterfly}{Butterfly}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classButterfly_a42116546aa9eb5dd2cac11761cfe749e}{\index{Butterfly@{Butterfly}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Butterfly@{Butterfly}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Butterfly\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classButterfly_a42116546aa9eb5dd2cac11761cfe749e}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classButterfly}{Butterfly} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classButterfly}{Butterfly}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classButterfly_a15c3ae75ea826f50d25bb347abe4a4c4}{\index{Butterfly@{Butterfly}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Butterfly@{Butterfly}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Butterfly\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classButterfly_a15c3ae75ea826f50d25bb347abe4a4c4}
+
+
+Mendapatkan simbol dari \hyperlink{classButterfly}{Butterfly}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classButterfly_a7a11185ad98c664b3d3f052336afec0e}{\index{Butterfly@{Butterfly}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Butterfly@{Butterfly}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Butterfly\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classButterfly_a7a11185ad98c664b3d3f052336afec0e}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFlyingAnimal_a1523973b9a6a47e9064825c2134fd65d}{Flying\-Animal}.
+
+\hypertarget{classButterfly_a64595ce265c79591af2095880bca70f1}{\index{Butterfly@{Butterfly}!interact@{interact}}
+\index{interact@{interact}!Butterfly@{Butterfly}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Butterfly\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classButterfly_a64595ce265c79591af2095880bca70f1}
+
+
+Mendapatkan reaksi \hyperlink{classButterfly}{Butterfly} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}flyfly\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFlyingAnimal_ac0eee625fa2235eee8cbdc0a010ae430}{Flying\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Butterfly.\-h\item 
+Butterfly.\-cpp\end{DoxyCompactItemize}

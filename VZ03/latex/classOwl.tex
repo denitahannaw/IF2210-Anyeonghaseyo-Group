@@ -1,0 +1,173 @@
+\hypertarget{classOwl}{\section{Owl Class Reference}
+\label{classOwl}\index{Owl@{Owl}}
+}
+
+
+{\ttfamily \#include $<$Owl.\-h$>$}
+
+Inheritance diagram for Owl\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classOwl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOwl_a47aecdab1457c845171932653951a1ff}{Owl} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classOwl_af4fdeb54c20c5b9f3ad8aa96bf4324ca}{\hyperlink{classOwl_af4fdeb54c20c5b9f3ad8aa96bf4324ca}{$\sim$\-Owl} ()}\label{classOwl_af4fdeb54c20c5b9f3ad8aa96bf4324ca}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classOwl_a168bc318f54f3add5211957d0575aaf2}{void \hyperlink{classOwl_a168bc318f54f3add5211957d0575aaf2}{add\-Bobot} ()}\label{classOwl_a168bc318f54f3add5211957d0575aaf2}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classOwl_a97186cbd55b070213c8db7274d869a7f}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classOwl}{Owl}. \end{DoxyCompactList}\item 
+char \hyperlink{classOwl_a27ffd4aaac71e68350d53f2f340ef4cb}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classOwl}{Owl}. \end{DoxyCompactList}\item 
+string \hyperlink{classOwl_a670f600b72e5fdb04e11511bd14f63d9}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classOwl}{Owl} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classOwl}{Owl}. \end{DoxyCompactList}\item 
+string \hyperlink{classOwl_acc0420063563e1d83d9ae7c3cff311c8}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classOwl}{Owl} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classOwl_afbea38ace5450a7bde8caa813adbcfcd}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOwl_a1915a017232138322b495efa55e8e1da}{const string {\bfseries tipe\-Animal} = \char`\"{}owl\char`\"{}}\label{classOwl_a1915a017232138322b495efa55e8e1da}
+
+\item 
+\hypertarget{classOwl_a069e39ffd838e6e42aa70bac593cd718}{const char {\bfseries simbol} = 'o'}\label{classOwl_a069e39ffd838e6e42aa70bac593cd718}
+
+\item 
+\hypertarget{classOwl_ad7a4f92e7f5368ba9dc313b97887bc52}{int {\bfseries bobot}}\label{classOwl_ad7a4f92e7f5368ba9dc313b97887bc52}
+
+\item 
+\hypertarget{classOwl_a3924bf902458375d7c97379eadba1554}{string $\ast$ {\bfseries musuh}}\label{classOwl_a3924bf902458375d7c97379eadba1554}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di udara dan merupakan \hyperlink{classKarnivora}{Karnivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classOwl_a47aecdab1457c845171932653951a1ff}{\index{Owl@{Owl}!Owl@{Owl}}
+\index{Owl@{Owl}!Owl@{Owl}}
+\subsubsection[{Owl}]{\setlength{\rightskip}{0pt plus 5cm}Owl\-::\-Owl (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classOwl_a47aecdab1457c845171932653951a1ff}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classOwl}{Owl} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classOwl}{Owl} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classOwl_a97186cbd55b070213c8db7274d869a7f}{\index{Owl@{Owl}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Owl@{Owl}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Owl\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOwl_a97186cbd55b070213c8db7274d869a7f}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classOwl}{Owl}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classOwl_a670f600b72e5fdb04e11511bd14f63d9}{\index{Owl@{Owl}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Owl@{Owl}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Owl\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOwl_a670f600b72e5fdb04e11511bd14f63d9}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classOwl}{Owl} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classOwl}{Owl}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classOwl_a27ffd4aaac71e68350d53f2f340ef4cb}{\index{Owl@{Owl}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Owl@{Owl}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Owl\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOwl_a27ffd4aaac71e68350d53f2f340ef4cb}
+
+
+Mendapatkan simbol dari \hyperlink{classOwl}{Owl}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classOwl_afbea38ace5450a7bde8caa813adbcfcd}{\index{Owl@{Owl}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Owl@{Owl}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Owl\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOwl_afbea38ace5450a7bde8caa813adbcfcd}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFlyingAnimal_a1523973b9a6a47e9064825c2134fd65d}{Flying\-Animal}.
+
+\hypertarget{classOwl_acc0420063563e1d83d9ae7c3cff311c8}{\index{Owl@{Owl}!interact@{interact}}
+\index{interact@{interact}!Owl@{Owl}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Owl\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOwl_acc0420063563e1d83d9ae7c3cff311c8}
+
+
+Mendapatkan reaksi \hyperlink{classOwl}{Owl} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}uhukuhuk\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFlyingAnimal_ac0eee625fa2235eee8cbdc0a010ae430}{Flying\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Owl.\-h\item 
+Owl.\-cpp\end{DoxyCompactItemize}

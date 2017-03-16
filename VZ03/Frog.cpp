@@ -35,22 +35,22 @@ string Frog::getTipeAnimal(){
 	return tipeAnimal;
 }
 
-int Frog::getX(){
-	return LandAnimal::x;
-}
+// int Frog::getX(){
+// 	return LandAnimal::x;
+// }
 
-int Frog::getY(){
-	return LandAnimal::y;
-}
+// int Frog::getY(){
+// 	return LandAnimal::y;
+// }
 
-void Frog::setX(int _x){
-	LandAnimal::x = _x;
-	WaterAnimal::x = _x;
-}
+// void Frog::setX(int _x){
+// 	LandAnimal::x = _x;
+// 	WaterAnimal::x = _x;
+// }
 
-void Frog::setY(int _y){
-	LandAnimal::y = _y;
-	WaterAnimal::y = _y;
-}
+// void Frog::setY(int _y){
+// 	LandAnimal::y = _y;
+// 	WaterAnimal::y = _y;
+// }
 
-string  Frog::getTipeHabitat(){}
+// string  Frog::getTipeHabitat(){}

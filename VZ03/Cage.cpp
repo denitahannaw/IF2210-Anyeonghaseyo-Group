@@ -102,14 +102,6 @@ int Cage::getTotalMakanan() {
 	return total_makanan;
 }
 
-/**
-* @brief Setter
-* Set cageArea=area
-* @param area cageArea baru
-*/
-void Cage::setCageArea(int area){
-	cageArea = area;
-}
 
 /**
 * @brief Setter listOfCagePosition.

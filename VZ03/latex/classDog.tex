@@ -1,0 +1,173 @@
+\hypertarget{classDog}{\section{Dog Class Reference}
+\label{classDog}\index{Dog@{Dog}}
+}
+
+
+{\ttfamily \#include $<$Dog.\-h$>$}
+
+Inheritance diagram for Dog\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classDog}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDog_afcf29443cf093c134c3d2febf307d831}{Dog} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classDog_aeacf410641eab28eabea6bc5269eb4ef}{\hyperlink{classDog_aeacf410641eab28eabea6bc5269eb4ef}{$\sim$\-Dog} ()}\label{classDog_aeacf410641eab28eabea6bc5269eb4ef}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classDog_a843dea97bbe95afc6dc4692fcaeb757a}{void \hyperlink{classDog_a843dea97bbe95afc6dc4692fcaeb757a}{add\-Bobot} ()}\label{classDog_a843dea97bbe95afc6dc4692fcaeb757a}
+
+\begin{DoxyCompactList}\small\item\em Menambahkan bobot satu satuan. \end{DoxyCompactList}\item 
+int \hyperlink{classDog_ac115925dae59dd1640161c1a5b163bea}{get\-Bobot} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai bobot dari \hyperlink{classDog}{Dog}. \end{DoxyCompactList}\item 
+char \hyperlink{classDog_a20ea4c8b525fe4610f614f4259029eaa}{get\-Simbol} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan simbol dari \hyperlink{classDog}{Dog}. \end{DoxyCompactList}\item 
+string \hyperlink{classDog_a0b476b766a08a8d43ee40ab96a4425ad}{get\-Musuh} (int i)
+\begin{DoxyCompactList}\small\item\em Mendapatkan musuh ke i dari \hyperlink{classDog}{Dog} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classDog}{Dog}. \end{DoxyCompactList}\item 
+string \hyperlink{classDog_ae281395a2d8329b6abe3a2bc2c26bf5b}{interact} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan reaksi \hyperlink{classDog}{Dog} saat berinteraksi dengan pengunjung. \end{DoxyCompactList}\item 
+string \hyperlink{classDog_a3bc9048629f101f1aa7da5708ff1ef9a}{get\-Tipe\-Animal} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDog_af3d03f883e5c54c8426524a4bc4695ef}{const string {\bfseries tipe\-Animal} = \char`\"{}dog\char`\"{}}\label{classDog_af3d03f883e5c54c8426524a4bc4695ef}
+
+\item 
+\hypertarget{classDog_a754aaf1f196590ac3bd4411218dd02d9}{const char {\bfseries simbol} = 'd'}\label{classDog_a754aaf1f196590ac3bd4411218dd02d9}
+
+\item 
+\hypertarget{classDog_a6710ba8e06bc6afdd9eeaa28efa42c55}{int {\bfseries bobot}}\label{classDog_a6710ba8e06bc6afdd9eeaa28efa42c55}
+
+\item 
+\hypertarget{classDog_a0292ec8f9476757958127cb48abf40f4}{string $\ast$ {\bfseries musuh}}\label{classDog_a0292ec8f9476757958127cb48abf40f4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Merupakan \hyperlink{classAnimal}{Animal} yang tinggal di darat dan merupakan \hyperlink{classKarnivora}{Karnivora} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDog_afcf29443cf093c134c3d2febf307d831}{\index{Dog@{Dog}!Dog@{Dog}}
+\index{Dog@{Dog}!Dog@{Dog}}
+\subsubsection[{Dog}]{\setlength{\rightskip}{0pt plus 5cm}Dog\-::\-Dog (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classDog_afcf29443cf093c134c3d2febf307d831}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & posisi x awal \hyperlink{classDog}{Dog} \\
+\hline
+{\em \-\_\-y} & posisi y awal \hyperlink{classDog}{Dog} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDog_ac115925dae59dd1640161c1a5b163bea}{\index{Dog@{Dog}!get\-Bobot@{get\-Bobot}}
+\index{get\-Bobot@{get\-Bobot}!Dog@{Dog}}
+\subsubsection[{get\-Bobot}]{\setlength{\rightskip}{0pt plus 5cm}int Dog\-::get\-Bobot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDog_ac115925dae59dd1640161c1a5b163bea}
+
+
+Mendapatkan nilai bobot dari \hyperlink{classDog}{Dog}. 
+
+\begin{DoxyReturn}{Returns}
+bobot 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classDog_a0b476b766a08a8d43ee40ab96a4425ad}{\index{Dog@{Dog}!get\-Musuh@{get\-Musuh}}
+\index{get\-Musuh@{get\-Musuh}!Dog@{Dog}}
+\subsubsection[{get\-Musuh}]{\setlength{\rightskip}{0pt plus 5cm}string Dog\-::get\-Musuh (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDog_a0b476b766a08a8d43ee40ab96a4425ad}
+
+
+Mendapatkan musuh ke i dari \hyperlink{classDog}{Dog} Musuh merupakan \hyperlink{classAnimal}{Animal} lain yang tidak bisa tinggal dalam satu kandang dengan \hyperlink{classDog}{Dog}. 
+
+\begin{DoxyReturn}{Returns}
+musuh\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classDog_a20ea4c8b525fe4610f614f4259029eaa}{\index{Dog@{Dog}!get\-Simbol@{get\-Simbol}}
+\index{get\-Simbol@{get\-Simbol}!Dog@{Dog}}
+\subsubsection[{get\-Simbol}]{\setlength{\rightskip}{0pt plus 5cm}char Dog\-::get\-Simbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDog_a20ea4c8b525fe4610f614f4259029eaa}
+
+
+Mendapatkan simbol dari \hyperlink{classDog}{Dog}. 
+
+\begin{DoxyReturn}{Returns}
+simbol 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAnimal}{Animal}.
+
+\hypertarget{classDog_a3bc9048629f101f1aa7da5708ff1ef9a}{\index{Dog@{Dog}!get\-Tipe\-Animal@{get\-Tipe\-Animal}}
+\index{get\-Tipe\-Animal@{get\-Tipe\-Animal}!Dog@{Dog}}
+\subsubsection[{get\-Tipe\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}string Dog\-::get\-Tipe\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDog_a3bc9048629f101f1aa7da5708ff1ef9a}
+
+
+Mendapatkan tipe \hyperlink{classAnimal}{Animal} (nama spesies) 
+
+\begin{DoxyReturn}{Returns}
+tipe\-Animal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+\hypertarget{classDog_ae281395a2d8329b6abe3a2bc2c26bf5b}{\index{Dog@{Dog}!interact@{interact}}
+\index{interact@{interact}!Dog@{Dog}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}string Dog\-::interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDog_ae281395a2d8329b6abe3a2bc2c26bf5b}
+
+
+Mendapatkan reaksi \hyperlink{classDog}{Dog} saat berinteraksi dengan pengunjung. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}barkbark\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classLandAnimal}{Land\-Animal}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Dog.\-h\item 
+Dog.\-cpp\end{DoxyCompactItemize}

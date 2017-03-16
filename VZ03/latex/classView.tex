@@ -1,0 +1,136 @@
+\hypertarget{classView}{\section{View Class Reference}
+\label{classView}\index{View@{View}}
+}
+
+
+{\ttfamily \#include $<$View.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classView_aac96eba98e7f531e94ad15a892e19dbd}{View} (int len, int wid)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classView_aa373ca7c069a854e1e8821b0f13aa186}{\hyperlink{classView_aa373ca7c069a854e1e8821b0f13aa186}{View} (const \hyperlink{classView}{View} \&)}\label{classView_aa373ca7c069a854e1e8821b0f13aa186}
+
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classView_ad0dc854db9aabbea98a334dec89f785c}{\hyperlink{classView_ad0dc854db9aabbea98a334dec89f785c}{$\sim$\-View} ()}\label{classView_ad0dc854db9aabbea98a334dec89f785c}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+char \hyperlink{classView_aa6bd990eaac4d2991f27b304213b54ef}{get\-Val} (int \-\_\-x, int \-\_\-y)
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai val\mbox{[}\-\_\-x\mbox{]}\mbox{[}\-\_\-y\mbox{]}. \end{DoxyCompactList}\item 
+void \hyperlink{classView_a21cba84b1b3374baaec030a21128db47}{set\-Val} (int i, int j, char c)
+\begin{DoxyCompactList}\small\item\em Mengubah nilai val\mbox{[}i\mbox{]}\mbox{[}j\mbox{]} menjadi c. \end{DoxyCompactList}\item 
+int \hyperlink{classView_a62ae4de313b6643810b989ae988a1640}{get\-N\-B\-R\-S} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai baris. \end{DoxyCompactList}\item 
+int \hyperlink{classView_a03b9f87a6e0aada6ddabaa459e261848}{get\-N\-K\-O\-L} ()
+\begin{DoxyCompactList}\small\item\em Mendapatkan nilai kolom. \end{DoxyCompactList}\item 
+\hypertarget{classView_a769e75520faca6d5bd21d8e4905d4341}{void \hyperlink{classView_a769e75520faca6d5bd21d8e4905d4341}{print\-View} ()}\label{classView_a769e75520faca6d5bd21d8e4905d4341}
+
+\begin{DoxyCompactList}\small\item\em Mencetak seluruh karakter yang ada. \end{DoxyCompactList}\item 
+\hypertarget{classView_a228842cd6673f8f436e00bf5f5f649fe}{void \hyperlink{classView_a228842cd6673f8f436e00bf5f5f649fe}{print\-View} (int kiri, int atas, int kanan, int bawah)}\label{classView_a228842cd6673f8f436e00bf5f5f649fe}
+
+\begin{DoxyCompactList}\small\item\em Mencetak karakter pada area mulai dari titik kiri atas sampai kanan bawah. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kelas \hyperlink{classView}{View} merupakan container dalam bentuk matriks dari karakter2 yang nantinya akan dicetak ke layar 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classView_aac96eba98e7f531e94ad15a892e19dbd}{\index{View@{View}!View@{View}}
+\index{View@{View}!View@{View}}
+\subsubsection[{View}]{\setlength{\rightskip}{0pt plus 5cm}View\-::\-View (
+\begin{DoxyParamCaption}
+\item[{int}]{len, }
+\item[{int}]{wid}
+\end{DoxyParamCaption}
+)}}\label{classView_aac96eba98e7f531e94ad15a892e19dbd}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & Nilai N\-B\-R\-S \\
+\hline
+{\em wid} & Nilai N\-K\-O\-L \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classView_a62ae4de313b6643810b989ae988a1640}{\index{View@{View}!get\-N\-B\-R\-S@{get\-N\-B\-R\-S}}
+\index{get\-N\-B\-R\-S@{get\-N\-B\-R\-S}!View@{View}}
+\subsubsection[{get\-N\-B\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}int View\-::get\-N\-B\-R\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classView_a62ae4de313b6643810b989ae988a1640}
+
+
+Mendapatkan nilai baris. 
+
+\begin{DoxyReturn}{Returns}
+N\-B\-R\-S 
+\end{DoxyReturn}
+\hypertarget{classView_a03b9f87a6e0aada6ddabaa459e261848}{\index{View@{View}!get\-N\-K\-O\-L@{get\-N\-K\-O\-L}}
+\index{get\-N\-K\-O\-L@{get\-N\-K\-O\-L}!View@{View}}
+\subsubsection[{get\-N\-K\-O\-L}]{\setlength{\rightskip}{0pt plus 5cm}int View\-::get\-N\-K\-O\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classView_a03b9f87a6e0aada6ddabaa459e261848}
+
+
+Mendapatkan nilai kolom. 
+
+\begin{DoxyReturn}{Returns}
+N\-K\-O\-L 
+\end{DoxyReturn}
+\hypertarget{classView_aa6bd990eaac4d2991f27b304213b54ef}{\index{View@{View}!get\-Val@{get\-Val}}
+\index{get\-Val@{get\-Val}!View@{View}}
+\subsubsection[{get\-Val}]{\setlength{\rightskip}{0pt plus 5cm}char View\-::get\-Val (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{classView_aa6bd990eaac4d2991f27b304213b54ef}
+
+
+Mendapatkan nilai val\mbox{[}\-\_\-x\mbox{]}\mbox{[}\-\_\-y\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & Index baris nilai yang ingin didapatkan \\
+\hline
+{\em \-\_\-y} & Index kolom nilai yang ingin didapatkan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+val\mbox{[}\-\_\-x\mbox{]}\mbox{[}\-\_\-y\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classView_a21cba84b1b3374baaec030a21128db47}{\index{View@{View}!set\-Val@{set\-Val}}
+\index{set\-Val@{set\-Val}!View@{View}}
+\subsubsection[{set\-Val}]{\setlength{\rightskip}{0pt plus 5cm}void View\-::set\-Val (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{classView_a21cba84b1b3374baaec030a21128db47}
+
+
+Mengubah nilai val\mbox{[}i\mbox{]}\mbox{[}j\mbox{]} menjadi c. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index baris nilai yang ingin diubah \\
+\hline
+{\em j} & Index kolom nilai yang ingin diubah \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+View.\-h\item 
+View.\-cpp\end{DoxyCompactItemize}
