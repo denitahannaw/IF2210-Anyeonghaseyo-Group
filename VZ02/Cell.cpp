@@ -9,7 +9,6 @@ Cell :: Cell(int x,int y, char s){
     this->y = y;
     symbol = s;
 
-    // symbol for Cell
     /*
     'w' = water
     'l' = land
@@ -21,30 +20,30 @@ Cell :: Cell(int x,int y, char s){
     't' = restourant
     */
 
-    // if (s = 'w'){
-    //     tipeCell = "water";
-    // }
-    // else if (s = 'l'){
-    //     tipeCell = "land";
-    // }
-    // else if (s = 'a'){
-    //     tipeCell = "air";
-    // }
-    // else if (s = 'p'){
-    //     tipeCell = "park";
-    // }
-    // else if (s = 'r'){
-    //     tipeCell = "road";
-    // }
-    // else if (s = 'n'){
-    //     tipeCell = "entrance";
-    // }
-    // else if (s = 'x'){
-    //     tipeCell = "exit";
-    // }
-    // else if (s = 't'){
-    //     tipeCell = "restourant";
-    // }
+    if (s = '~'){
+        tipeCell = "water";
+    }
+    else if (s = '@'){
+        tipeCell = "land";
+    }
+    else if (s = '#'){
+        tipeCell = "air";
+    }
+    else if (s = '*'){
+        tipeCell = "park";
+    }
+    else if (s = '-'){
+        tipeCell = "road";
+    }
+    else if (s = '\\'){
+        tipeCell = "entrance";
+    }
+    else if (s = '/'){
+        tipeCell = "exit";
+    }
+    else if (s = '$'){
+        tipeCell = "restourant";
+    }
 
 }
 

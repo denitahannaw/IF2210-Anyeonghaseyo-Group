@@ -1,6 +1,6 @@
 all: virtual_zoo.o
 	g++ -o main main.cpp *.o -std=c++11
-virtual_zoo.o: virtual_zoo.cpp virtual_zoo.h Cell.o  Cage.o matrix_cell.o file_reader.o View.o Visitor.o Animal.o
+virtual_zoo.o: virtual_zoo.cpp virtual_zoo.h Cell.o  Cage.o matrix_cell.o  matrix_cell.o file_reader.o View.o Visitor.o
 	g++ -c virtual_zoo.cpp -std=c++11
 matrix_cell.o: matrix_cell.cpp matrix_cell.h
 	g++ -c matrix_cell.cpp -std=c++11

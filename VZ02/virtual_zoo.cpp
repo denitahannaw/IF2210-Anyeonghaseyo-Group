@@ -104,7 +104,7 @@ VirtualZoo::VirtualZoo(string input_file) {
 		}
 		// cout << "n animal:" << jumlah_animal <<endl;
 		for(int j=0; j<jumlah_animal; j++){
-			// cout <<"yang udah ada:"<< cages[i]->getNAnimal() <<endl;
+			//~ cout <<"yang udah ada:"<< cages[i]->getNAnimal() <<endl;
 			if (cages[i]->getTipeHabitat()=="land"){
 				//random posisi awal, pastikan masih kosong 
 				//random dari listOfPosisiCage
@@ -421,6 +421,7 @@ void VirtualZoo::MoveVisitor() {
 	y = y_now;
 
 	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
+		cout << "masuk kanan" << endl;
 		if (matriks_cell->getCell(x,y)->getTipe() == "road") {
 			if (!IsVisited(matriks_cell->getCell(x,y))) {
 				cell_available[n_available] = matriks_cell->getCell(x,y);
@@ -434,6 +435,7 @@ void VirtualZoo::MoveVisitor() {
 	y = y_now + 1;
 
 	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
+		cout << "masuk atas" << endl;
 		if (matriks_cell->getCell(x,y)->getTipe() == "road" || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
 			if (!IsVisited(matriks_cell->getCell(x,y))) {
 				cell_available[n_available] = matriks_cell->getCell(x,y);
@@ -447,6 +449,7 @@ void VirtualZoo::MoveVisitor() {
 	y = y_now;
 
 	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
+		cout << "masuk kiri" << endl;
 		if (matriks_cell->getCell(x,y)->getTipe() == "road"  || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
 			if (!IsVisited(matriks_cell->getCell(x,y))) {
 				cell_available[n_available] = matriks_cell->getCell(x,y);
@@ -460,6 +463,7 @@ void VirtualZoo::MoveVisitor() {
 	y = y_now - 1;
 
 	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
+		cout << "masuk bawah" << endl;
 		if (matriks_cell->getCell(x,y)->getTipe() == "road"  || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
 			if (!IsVisited(matriks_cell->getCell(x,y))) {
 				cell_available[n_available] = matriks_cell->getCell(x,y);
@@ -470,11 +474,13 @@ void VirtualZoo::MoveVisitor() {
 
 
 	if (n_available == 0) {
+		cout << "tidak ada jalan" << endl;
 		current_visited--;
 		int x_next = list_visited[current_visited]->getX();
 		int y_next = list_visited[current_visited]->getY();
 		person->setPosition(x_next, y_next);
 	} else {
+		cout << "ada jalan " << n_available << endl;
 		int rn = rand() % n_available;
 		int x_next = cell_available[rn]->getX();
 		int y_next = cell_available[rn]->getY();
@@ -511,12 +517,14 @@ bool VirtualZoo::IsEndOfTour() {
 }
 
 void VirtualZoo::Tour() {
-	while (!IsEndOfTour()) {
-		PrintVirtualZoo();
-		Interact();
-		cout << endl;
+	system("clear");
+	PrintVirtualZoo();
+	do {
+		sleep(1);
+		system("clear");
 		MoveAnimal();
 		MoveVisitor();
-		sleep(1);
-	}
+		PrintVirtualZoo();
+		Interact();
+	}while (!IsEndOfTour());
 }
