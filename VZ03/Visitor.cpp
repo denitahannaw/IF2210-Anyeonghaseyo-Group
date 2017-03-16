@@ -1,3 +1,6 @@
+// Denita Hanna Widiastuti - 13514008
+// File : Visitor.cpp
+
 #include "Visitor.h"
 
 // ctor Visitor

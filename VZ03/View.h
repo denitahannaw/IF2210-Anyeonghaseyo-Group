@@ -1,3 +1,6 @@
+// Denita Hanna Widiastuti - 13514008
+// File : View.h
+
 #ifndef _VIEW_H_
 #define _VIEW_H_
 

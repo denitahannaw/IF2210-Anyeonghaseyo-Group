@@ -1,3 +1,6 @@
+// Denita Hanna Widiastuti - 13514008
+// File matriks_cell.h
+
 #ifndef _MATRIXCELL_H_
 #define _MATRIXCELL_H_
 

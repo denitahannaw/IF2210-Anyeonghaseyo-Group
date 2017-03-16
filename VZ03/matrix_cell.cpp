@@ -1,3 +1,6 @@
+// Denita Hanna Widiasututi - 13514008
+// File : matrikx_cell.cpp
+
 #include "matrix_cell.h"
 
 // ctor matriks dengan paramater

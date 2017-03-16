@@ -1,3 +1,6 @@
+// Denita Hanna Widiastuti - 13514008
+// File : Visitor.h
+
 #ifndef _VISITOR_H_
 #define _VISITOR_H_
 

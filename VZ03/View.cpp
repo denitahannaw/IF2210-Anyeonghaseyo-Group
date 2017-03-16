@@ -1,3 +1,6 @@
+// Denita Hanna Widiastuti - 13514008
+// File View.cpp
+
 #include "View.h"
 
 using namespace std;
