@@ -7,7 +7,6 @@ using namespace std;
 
 
 class Cell {
-
 public :
     Cell(int,int,char);
     string getTipe();

@@ -97,14 +97,14 @@ VirtualZoo::VirtualZoo(string input_file) {
 	int jumlah_animal;
 	for(int i=0; i< n_cage; i++){
 
-		// cout << "max animal:" <<cages[i]->getMaxAnimal() <<endl;
+		cout << "max animal:" <<cages[i]->getMaxAnimal() <<endl;
 		jumlah_animal = data.GetNAnimal(i);
 		if (jumlah_animal > cages[i]->getMaxAnimal()) {
 			jumlah_animal = cages[i]->getMaxAnimal();
 		}
 		// cout << "n animal:" << jumlah_animal <<endl;
 		for(int j=0; j<jumlah_animal; j++){
-			// cout <<"yang udah ada:"<< cages[i]->getNAnimal() <<endl;
+			//~ cout <<"yang udah ada:"<< cages[i]->getNAnimal() <<endl;
 			if (cages[i]->getTipeHabitat()=="land"){
 				//random posisi awal, pastikan masih kosong 
 				//random dari listOfPosisiCage
@@ -203,7 +203,7 @@ VirtualZoo::VirtualZoo(string input_file) {
 					case 7: cages[i]->addAnimal(new Animal(x,y,"flyingfish"));break;
 				}
 				// int d =cages[i]->getNAnimal()-1; 
-				// // cout << d<< " ";
+				// cout << d<< " ";
 				// cout <<cages[i]->getAnimal(d)->getX()<<" air ";
 				// cout <<cages[i]->getAnimal(d)->getY()<<endl;				
 			}
@@ -421,7 +421,7 @@ void VirtualZoo::MoveVisitor() {
 	y = y_now;
 
 	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
-		if (matriks_cell->getCell(x,y)->getTipe() == "road") {
+		if (matriks_cell->getCell(x,y)->getTipe() == "road" || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
 			if (!IsVisited(matriks_cell->getCell(x,y))) {
 				cell_available[n_available] = matriks_cell->getCell(x,y);
 				n_available++;
@@ -511,12 +511,14 @@ bool VirtualZoo::IsEndOfTour() {
 }
 
 void VirtualZoo::Tour() {
-	while (!IsEndOfTour()) {
-		PrintVirtualZoo();
-		Interact();
-		cout << endl;
+	system("clear");
+	PrintVirtualZoo();
+	do {
+		sleep(1);
+		system("clear");
 		MoveAnimal();
 		MoveVisitor();
-		sleep(1);
-	}
+		PrintVirtualZoo();
+		Interact();
+	}while (!IsEndOfTour());
 }
