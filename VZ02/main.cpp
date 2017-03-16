@@ -7,7 +7,6 @@ int main(){
 	VirtualZoo* virtual_zoo = new VirtualZoo("input.txt");
 	int n;
 	
-	// virtual_zoo->PrintVirtualZoo();
 	
 	cout << "1. Display Virtual Zoo All" << endl;
 	cout << "2. Display Virtual Zoo " << endl;
@@ -29,7 +28,7 @@ int main(){
 		} else {
 			cout << "Out of rage " << endl;
 		}
-		 
+
 	} else if (n == 3) {
 		virtual_zoo->Tour();
 	} else if (n == 4) {

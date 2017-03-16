@@ -9,7 +9,6 @@ Cell :: Cell(int x,int y, char s){
     this->y = y;
     symbol = s;
 
-    // symbol for Cell
     /*
     # airhabitat
     ~ waterhabitat
