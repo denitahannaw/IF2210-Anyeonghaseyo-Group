@@ -25,7 +25,6 @@ var searchData=
   ['_7eowl',['~Owl',['../classOwl.html#af4fdeb54c20c5b9f3ad8aa96bf4324ca',1,'Owl']]],
   ['_7erhino',['~Rhino',['../classRhino.html#a6a11f0f8dcd6ed20ef99d8d698b06f28',1,'Rhino']]],
   ['_7esnake',['~Snake',['../classSnake.html#a941fbaad96ee33ca3a7c30c28ca44ef8',1,'Snake']]],
-  ['_7etabel',['~Tabel',['../classTabel.html#a4ef722f9391380256623b03b498b350d',1,'Tabel']]],
   ['_7eview',['~View',['../classView.html#ad0dc854db9aabbea98a334dec89f785c',1,'View']]],
   ['_7evirtualzoo',['~VirtualZoo',['../classVirtualZoo.html#aa056be888d35090cb069ae927eebd155',1,'VirtualZoo']]]
 ];
