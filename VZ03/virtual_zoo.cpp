@@ -419,7 +419,7 @@ void VirtualZoo::MoveVisitor() {
 	y = y_now;
 
 	if (x>=0 && y>=0 && x<=x_max && y<=y_max) {
-		if (matriks_cell->getCell(x,y)->getTipe() == "road") {
+		if (matriks_cell->getCell(x,y)->getTipe() == "road" || matriks_cell->getCell(x,y)->getTipe() == "exit" ) {
 			if (!IsVisited(matriks_cell->getCell(x,y))) {
 				cell_available[n_available] = matriks_cell->getCell(x,y);
 				n_available++;
